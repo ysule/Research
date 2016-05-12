@@ -32,5 +32,5 @@ print 'done!'
 
 elapsed_time = time.time() - start_time
 
-print 'time taken is(in seconds)'
+print 'time taken is (in seconds)'
 print elapsed_time
