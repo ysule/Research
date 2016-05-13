@@ -11,19 +11,20 @@ start_time = time.time()
 client = MongoClient()
 
 db = client.test1
-collection = db['dummy']
+collection = db['movies']
 '''
 no_records = db.movies.count({})
 print 'There are '
 print no_records
 print ' records in this database'
 '''
-cursor = db.dummy.find({},{'_id':0})
+cursor = db.movies.find({},{'_id':0})
+os.system('./2.sh')
 for result_object in cursor:
         data = json.dumps(result_object)
 	#print data
 	#another optionprint tornado.escape.json_encode(result_object)
-	url = "http://127.0.0.1:9200/dummy/dummy"
+	url = "http://127.0.0.1:9200/movies1/movie"
 	#data = urllib.urlencode(result_object)
 	print data
 	response = requests.post(url, data=data)
