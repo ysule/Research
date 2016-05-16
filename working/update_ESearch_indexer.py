@@ -1,4 +1,5 @@
 #working on the assumption that no records are deleted
+#This script scans for any new additions(insertions) to the MongoDB database "dummy" (collection is dummy4) and indexes only the newly inserted #documents
 import pymongo
 import os
 from pymongo import MongoClient
