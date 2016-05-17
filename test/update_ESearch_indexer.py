@@ -22,7 +22,6 @@ while (1>0):
 	new_count=0
 	for result_object in cursor:
 		new_count = new_count+1
-		#print new_count
 	#checking if the documnet in result_object is new or old
 		if(new_count>old_count):
 			#print 1
