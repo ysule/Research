@@ -5,24 +5,13 @@ import json
 import requests
 import urllib
 import time
+from elasticsearch import Elasticsearch
 
 url = raw_input("Enter the url: ")
-field = raw_input("Enter the field: ")
-term = raw_input("Enter the term: ")
 
-url_new = url + '/_search'
-print url_new
-#function to get data according to url and term
-def search(url_new, field, term):
-    query = json.dumps({"query":{"match":{field:term}}})
-    response = requests.get(url_new, data=query)
-    results = json.loads(response.text)
-    return results
-
-def delete(results):
-	data = [doc for doc in results['hits']['hits']]
-	for doc in data:
-		s = 'curl -XDELETE '+url+'/'+doc['_id']
-		os.system(s)
-		
-delete(search(url_new, field, term))
+while True:
+	id = raw_input("Enter the id of the object you want to update ")
+	data = raw_input("Enter the data in JSON format ")
+	curl = 'curl -XPOST "' + url + '/' + id + '/_update"'+' -d ' + "'{" + '"doc":' + data + "}'"
+	os.system(curl)
+	print 'updated!'
