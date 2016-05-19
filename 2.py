@@ -19,8 +19,8 @@ print no_records
 print ' records in this database'
 '''
 cursor = db.movies.find({},{'_id':0})
-curl = 'curl -XPUT "http://localhost:9200/movies1/movie/_mapping" -d' + "'" + '{ "movie": {"properties": {"director": {"type": "multi_field","fields": {"director": {"type": "string"},"original": {"type" : "string", "index" : "not_analyzed"}} } }}}' + "'"
-os.system('./2.sh')
+c = 'curl -XPUT "http://localhost:9200/movies1/movie/_mapping" -d' + "'" + '{ "movie": {"properties": {"director": {"type": "multi_field","fields": {"director": {"type": "string"},"original": {"type" : "string", "index" : "not_analyzed"}} } }}}' + "'"
+os.system(c)
 for result_object in cursor:
         data = json.dumps(result_object)
 	#print data
