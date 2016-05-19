@@ -38,8 +38,6 @@ while True:
 	cursor_update = db.oplog.rs.find({'op':'u'},{'o':1})
 	for result_object in cursor_update:
 		new_count_update = new_count_update + 1
-		if(new_count_update<=old_count_update):
-			print Waiting!
 		#if new_count_update is greater than old_count_update that means some new values are changed
 		#needs to check if this can be still improved by 
 		if(new_count_update>old_count_update):
@@ -52,8 +50,6 @@ while True:
 	cursor_insert = db.oplog.rs.find({'op':'i'},{'o':1})
 	for result_object in cursor_insert:
 		new_count_insert = new_count_insert + 1
-		if(new_count_insert<=old_count_insert):
-			print Waiting!
 		if(new_count_insert>old_count_insert):
 			del result_object['o']['_id']
 			data = json.dumps(result_object['o'])
