@@ -8,6 +8,17 @@ import urllib
 import time
 from time import sleep
 
+url = raw_input("Enter the url: ")
+
+if not url:
+	url = "http://127.0.0.1:9200/cars/transactions"
+	print 'detected no input..'
+	print ' Assuming default url:' + url
+
+c = 'curl -XPUT '+url+'/_mapping" -d' + "'" + '{ "movie": {"properties": {"director": {"type": "multi_field","fields": {"director": {"type": "string"},"original": {"type" : "string", "index" : "not_analyzed"}} } }}}' + "'"
+os.system(c)
+
+
 client = MongoClient()
 #conencting to database named dummy
 db = client.dummy
@@ -28,5 +39,4 @@ while (1>0):
 			print new_count
 			data = json.dumps(result_object)
 			print data
-			url = "http://127.0.0.1:9200/dummy/dummy"
 			response = requests.post(url, data=data)
