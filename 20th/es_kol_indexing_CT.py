@@ -17,7 +17,8 @@ db = client.dummy20
 #es = Elasticsearch(['http://admin:bedapudi@cd2439091800c988ed9bcbe0640cd795.us-east-1.aws.found.io:9200/'])
 #1.7 is the one below
 es = Elasticsearch(['http://admin:bedapudi@2266fefcd42109a93821ac9f578b98dd.us-east-1.aws.found.io:9200/'])
-
+#2.3 on localhost is below
+es = Elasticsearch(['http://127.0.0.1:9200/'])
 
 
 #es = Elasticsearch(['10.0.1.75:9200'])

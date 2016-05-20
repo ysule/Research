@@ -17,3 +17,13 @@ ON CLOUD
 2.3 - pradumn-27.6847279072
 1.7- pradumn - 27.053442955
 
+The following can be done to make 2.3's performance equal to that of 1.7's
+PUT /dummy/_settings
+{
+    "index.translog.durability": "async",
+    "index.translog.sync_interval": "5s"
+}
+
+POST /dummy/_close
+
+POST /dummy/_open
