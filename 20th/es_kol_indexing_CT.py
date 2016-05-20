@@ -1,5 +1,5 @@
 #AUTHOR: Pradumna Panditrao
-
+#Modified by Bedapudi Praneeth
 from elasticsearch import Elasticsearch
 from pymongo import MongoClient
 import json
@@ -10,7 +10,7 @@ start_time = time.time()
 
 client = MongoClient('localhost',27017)
 
-#db = client.oilbird
+#Change to your own DB
 db = client.dummy20
 
 #2.3 is the one below
@@ -19,62 +19,10 @@ db = client.dummy20
 es = Elasticsearch(['http://admin:bedapudi@2266fefcd42109a93821ac9f578b98dd.us-east-1.aws.found.io:9200/'])
 #2.3 on localhost is below
 es = Elasticsearch(['http://127.0.0.1:9200/'])
+#1.7 on localhost is below
+es = Elasticsearch(['http://127.0.0.1:6788/'])
 
 
-#es = Elasticsearch(['10.0.1.75:9200'])
-#es = Elasticsearch([{'host':'52.29.219.46',"port":"9200"},{"host":'52.29.206.78',"port":"9200"}])
-'''
-# Implementation for full and normal text search
-'''
-'''
-mapping = {
-    "pub_trial": {
-      "properties": {
-        "authors": {
-          "type": "nested", 
-          "properties": {
-            "author_name":  { "type":"multi_field", "fields":{ "name":{ "type":"string", "index":"analyzed" },"raw":{ "type":"string", "index":"not_analyzed" }}},
-          }
-        }
-      }
-    }
-  }
-'''
-'''
-mapping = {
-    "onco_clinical_trials_v12": {
-    "date_detection":False,
-    "properties": {
-        "principal_investigators": {
-          "type": "nested" 
-#          "properties": {
-#           "last_name":  { "type":"multi_field", "fields":{ "name":{ "type":"string", "index":"analyzed" },"raw":{ "type":"string", "index":"not_analyzed" }}},
-#         }
-       }
-     },
-    "dynamic_templates": [
-      {
-        "string_fields": {
-          "mapping": {
-            "type": "string",
-            "fields": {
-              "raw": {
-                "index": "not_analyzed",
-                "ignore_above": 256,
-                "type": "string"
-              }
-            }
-          },
-          "match_mapping_type": "string",
-          "match": "*"
-        }
-      }
-    ]
-  }
-}
-'''
-#es.indices.create("kols_clinical_trials")
-#es.indices.put_mapping(index="dummy", doc_type="dummy", body=mapping)
 
 all_data = db.dummy.find().batch_size(1000)
 count = 0
