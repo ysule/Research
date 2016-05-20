@@ -4,22 +4,13 @@ from elasticsearch import Elasticsearch
 from pymongo import MongoClient
 import json
 from bson import json_util
-import time
-
-start_time = time.time()
 
 client = MongoClient('localhost',27017)
 
 #db = client.oilbird
-db = client.dummy20
+db = client.KTL
 
-#2.3 is the one below
-#es = Elasticsearch(['http://admin:bedapudi@cd2439091800c988ed9bcbe0640cd795.us-east-1.aws.found.io:9200/'])
-#1.7 is the one below
-es = Elasticsearch(['http://admin:bedapudi@2266fefcd42109a93821ac9f578b98dd.us-east-1.aws.found.io:9200/'])
-
-
-
+es = Elasticsearch([{'host':'10.0.1.225',"port":"9200"},{"host":'10.0.1.192',"port":"9200"}])
 #es = Elasticsearch(['10.0.1.75:9200'])
 #es = Elasticsearch([{'host':'52.29.219.46',"port":"9200"},{"host":'52.29.206.78',"port":"9200"}])
 '''
@@ -39,7 +30,7 @@ mapping = {
     }
   }
 '''
-'''
+
 mapping = {
     "onco_clinical_trials_v12": {
     "date_detection":False,
@@ -71,19 +62,20 @@ mapping = {
     ]
   }
 }
-'''
-#es.indices.create("kols_clinical_trials")
-#es.indices.put_mapping(index="dummy", doc_type="dummy", body=mapping)
 
-all_data = db.dummy.find().batch_size(1000)
+#es.indices.create("kols_clinical_trials")
+es.indices.put_mapping(index="kols_clinical_trials", doc_type="onco_clinical_trials_v12", body=mapping)
+
+all_data = db.oilbird_clinical_trials_onco_data_unique.find().batch_size(1000)
 count = 0
 for x in all_data:
-    count = count   + 1
+    count += 1
     print count,
+
     del x['_id']
     try:
         doc_sanitized = json.loads(json_util.dumps(x))
-        ret_val = es.index(index="dummy",doc_type="dummy",ignore=400,body=doc_sanitized,request_timeout=60)
+        ret_val = es.index(index="kols_clinical_trials",doc_type="onco_clinical_trials_v12",ignore=400,body=doc_sanitized,request_timeout=60)
         if ret_val['created'] != True:
                     print ret_val['created']
 #    print ret_val
@@ -92,7 +84,3 @@ for x in all_data:
 #        print x['_id']
         print ret_val
 
-elapsed_time = time.time() - start_time
-print ' '
-print elapsed_time
-print ' '

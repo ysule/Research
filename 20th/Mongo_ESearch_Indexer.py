@@ -23,7 +23,8 @@ for result_object in cursor:
 	data = json.dumps(result_object)
 	#print data
 	#another optionprint tornado.escape.json_encode(result_object)
-	url = "http://127.0.0.1:6788/dummy/dummy"
+	#url = "http://admin:bedapudi@cd2439091800c988ed9bcbe0640cd795.us-east-1.aws.found.io:9200/dummy/dummy"
+	url = "http://admin:bedapudi@2266fefcd42109a93821ac9f578b98dd.us-east-1.aws.found.io:9200/dummy/dummy"
 	#data = urllib.urlencode(result_object)
 	print data
 	response = requests.post(url, data=data)
