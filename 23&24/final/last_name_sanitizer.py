@@ -9,10 +9,12 @@ import urllib
 import time
 from time import sleep
 import string
+import sys
 
 client = MongoClient()
 
 #edit the below line to set the database.
+
 db = client.IVF_data
 
 #edit the following line to set the collection name
@@ -33,11 +35,11 @@ for result_object in cursor_lname:
 				print head
 				result_object['investigators'][i]['last_name'] = result_object['investigators'][i]['last_name'].replace("-"," ")
 			except KeyError:
-				print' '
+				garbage = 0
 				
 			i = i+1
 	#THIS IS IMPORTANT
 	#HERE WRITE THE MONGO OPERATION YOU NEED
 	#IN THE GIVEN EXAMPLE BELOW the output is being inserted into a collection named "praneeth_i"
 	#IF YOU NEED TO UPDATE ORIGINAL TABLE, TAKE A BACKUPa OF IT FIRST AND CHANGE TO FOLLOWING LINE TO update
-	db.praneeth_clinical.insert(result_object)
+	#db.praneeth_clinical.insert(result_object)
