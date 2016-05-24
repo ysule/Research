@@ -16,14 +16,17 @@ db = client.IVF_data
 cursor_lname = db.ivf_clinical_trails_12052016.find()
 
 for result_object in cursor_lname:
-	if('phase' in result_object):
-		if result_object['phase'] =='Phase 4':
-			result_object['phase'] ='Phase IV'
-		if result_object['phase'] =='Phase 3':
-                        result_object['phase'] ='Phase III'
-		if result_object['phase'] =='Phase 2':
-                        result_object['phase'] ='Phase II'
-		if result_object['phase'] =='Phase 1':
-                        result_object['phase'] ='Phase I'
-		print result_object['phase']
-	#db.praneeth_phase.insert(result_object)
+	try:
+		if('phase' in result_object):
+			if result_object['phase'] =='Phase 4':
+				result_object['phase'] ='Phase IV'
+			if result_object['phase'] =='Phase 3':
+	                        result_object['phase'] ='Phase III'
+			if result_object['phase'] =='Phase 2':
+	                        result_object['phase'] ='Phase II'
+			if result_object['phase'] =='Phase 1':
+	                        result_object['phase'] ='Phase I'
+			print result_object['phase']
+		#db.praneeth_phase.insert(result_object)
+	except KeyError:
+		garbage = 0
