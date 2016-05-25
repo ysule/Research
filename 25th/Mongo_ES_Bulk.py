@@ -1,6 +1,4 @@
 #Author: Bedapudi Praneeth
-#0.285064935684 to 1.7 for 1000 records
-#0.567033052444 to 2.3 for 1000 records
 from elasticsearch import Elasticsearch
 import pymongo
 import os
