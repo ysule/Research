@@ -1,5 +1,7 @@
 #AUTHOR: Pradumna Panditrao
 #Modified by Bedapudi Praneeth
+#0.831253051758 to 1.7 for 1000 records
+#49.3417150974 to 2.3 for 1000 records
 from elasticsearch import Elasticsearch
 from pymongo import MongoClient
 import json
@@ -11,7 +13,7 @@ start_time = time.time()
 client = MongoClient('localhost',27017)
 
 #Change to your own DB
-db = client.dummy20
+db = client.dummy
 
 #2.3 is the one below
 #es = Elasticsearch(['http://admin:bedapudi@cd2439091800c988ed9bcbe0640cd795.us-east-1.aws.found.io:9200/'])
@@ -20,7 +22,7 @@ es = Elasticsearch(['http://admin:bedapudi@2266fefcd42109a93821ac9f578b98dd.us-e
 #2.3 on localhost is below
 es = Elasticsearch(['http://127.0.0.1:9200/'])
 #1.7 on localhost is below
-es = Elasticsearch(['http://127.0.0.1:6788/'])
+#es = Elasticsearch(['http://127.0.0.1:6788/'])
 
 
 

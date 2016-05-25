@@ -1,3 +1,5 @@
+#3.31939101219 to 1.7 for 1000 records
+#50.8462313897 to 2.3 for 1000 records
 import pymongo
 import os
 from pymongo import MongoClient
@@ -10,7 +12,7 @@ start_time = time.time()
 
 client = MongoClient()
 
-db = client.dummy20
+db = client.dummy
 collection = db['dummy']
 '''
 no_records = db.movies.count({})
@@ -19,7 +21,10 @@ print no_records
 print ' records in this database'
 '''
 cursor = db.dummy.find({},{'_id':0})
+i = 0
 for result_object in cursor:
+	i = i+1
+	print i
 	data = json.dumps(result_object)
 	#print data
 	#another optionprint tornado.escape.json_encode(result_object)
