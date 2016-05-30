@@ -29,16 +29,17 @@ if(loggedin())
 		{
 			$time_post = microtime(true);
 			$exec_time = $time_post - $time_pre;
-			if($exec_time>0)
+			if($exec_time>1800)
 			{
-				$output = exec('python mail.py');
+				header('Location: logout.php');
 			}
 			else
 			{
 				$otp = $_POST['otp'];
 				if($otp == $output)
 				{
-
+				$output = 0;
+				$_SESSION['output'] = $output;
 				header('Location: verify.php');
 				}
 				else

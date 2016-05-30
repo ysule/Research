@@ -2,14 +2,17 @@
 require 'core.inc.php';
 require 'connection.inc.php';
 
-if(loggedin())
+$output = $_SESSION['output'];
+
+if(loggedin() && $output == 0)
 {  
 	 $rightvar=$_SESSION['user_id'];
 	 $result = mysql_query("SELECT * FROM users WHERE id = $rightvar") or die(mysql_error());  
 				   $data = mysql_fetch_array($result);  
 	   $username=$data['username'];
 	   $userid=$data['id'];
-	   
+	
+	echo $output;   
 	 $query    = mysql_query("select * from leave_application_temp where username= '$username'");
 	 $data1 = mysql_fetch_array($query);  
 	   $reason=$data1['reason'];
