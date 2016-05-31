@@ -12,7 +12,7 @@ while 1:
         if(no_users == 1):
                 current_time = time.time()
                 print current_time-start_time
-                if(current_time-start_time>60):
+                if(current_time-start_time>1200):
                         os.system('sudo poweroff')
         else:
                 start_time = time.time()
