@@ -19,5 +19,3 @@ while 1:
                         os.system('echo %s|sudo -S %s' % (sudoPassword, command))
         else:
                 start_time = time.time()
--- INSERT --                                                  1,2           Top
-
