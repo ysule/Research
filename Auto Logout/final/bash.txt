@@ -1,0 +1,10 @@
+function nikhil() {
+	cd
+	cd Desktop
+	python wakeup.py
+}
+function nikhil_ping() {
+	cd
+	cd Desktop
+	python ping.py
+}
