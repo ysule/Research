@@ -12,8 +12,9 @@ while 1:
         no_users = len(output.split('\n'))-1
         if(no_users < 1):
                 current_time = time.time()
-                #print current_time-start_time
+                #1200 = 20 minutes. change it to your suitable value
                 if(current_time-start_time>1200):
+                	#change admin123 to sudo password of server
                         sudoPassword = 'admin123'
                         command = 'poweroff'
                         os.system('echo %s|sudo -S %s' % (sudoPassword, command))
