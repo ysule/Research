@@ -5,6 +5,7 @@ import paramiko
 import time
 from time import sleep
 import smtplib
+import string
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
@@ -28,6 +29,7 @@ for server in servers:
 		for line in stdout:
 			if line_no == 6:
 				output = open("monitor.txt","a")
+				string.replace(line, '|', ' ')
 				output.write(ip+"	"+line)
 				output.close
 			line_no = line_no+1
