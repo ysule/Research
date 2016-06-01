@@ -1,0 +1,29 @@
+2.3 - pradyumn - 44.483249836
+2.3 - praneeth - 44.9748060703
+1.7 - pradyumn - 1.56631
+1.7 - praneeth - 2.40312886238
+
+192.168.0.135
+
+2.3 - pradyumn - 84.7613499165
+2.3 - praneeth -  85.0743250847
+1.7 - pradyumn -  1.516040802
+1.7 - praneeth - 2.40044188499
+
+
+ON CLOUD
+2.3 - praneeth - 55.2494709492
+1.7 - praneeth-55.7995078564
+2.3 - pradumn-27.6847279072
+1.7- pradumn - 27.053442955
+
+The following can be done to make 2.3's performance equal to that of 1.7's
+PUT /dummy/_settings
+{
+    "index.translog.durability": "async",
+    "index.translog.sync_interval": "5s"
+}
+
+POST /dummy/_close
+
+POST /dummy/_open
