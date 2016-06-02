@@ -1,4 +1,4 @@
-#install vnstat before doing all this
+#run setup.py everytime you add a new server
 from __future__ import with_statement
 import os
 import paramiko
