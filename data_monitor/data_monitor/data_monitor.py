@@ -116,4 +116,4 @@ for t in toaddr:
 	text = msg.as_string()
 	server.sendmail(fromaddr, t, text)
 	server.quit()
-	print'Mails sent!!'
+	#print'Mails sent!!'
