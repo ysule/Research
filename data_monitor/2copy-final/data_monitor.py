@@ -14,6 +14,7 @@ from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
 from email import encoders
 #Reading server information from text file
+down = ''
 with open('servers.txt') as f:
 	servers = f.readlines()
 for server in servers:
@@ -25,7 +26,10 @@ for server in servers:
 	user = server.split(" ",1)[0]
 	ip = user.split("@",1)[1]
 	username = user.split("@",1)[0]
-	
+	result = ''
+	for i in range(0, len(pswd)):
+		result = result + chr(ord(pswd[i]) + 2) 
+	pswd = result
 	try:
 		#connecting to server using ssh and reading output of command vnstat -d
 		client = paramiko.SSHClient()
@@ -46,7 +50,6 @@ for server in servers:
 		#VERY VERY VERY IMPORTANT. UNLESS YOU DO THIS, CHANGES TO FILE WON'T BE SAVED UNTIL AFTER SCRIPT COMPLETES EXECUTION AND OLD VERSION OF FILE WILL BE MAILED
 		output.flush()
 	except:
-		down = ''
 		down = down+'\n'+ip
 #Converting text file to Excel sheet
 data = []
