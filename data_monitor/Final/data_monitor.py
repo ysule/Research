@@ -51,9 +51,7 @@ for t in toaddr:
 	body = "data usage log attached"					 
 	msg.attach(MIMEText(body, 'plain'))					 
 	filename = "info.txt"
-	os.system('rm info-copy.txt')
-	os.system('cp info.txt info-copy.txt')
-	attachment = open("info-copy.txt", "rb")
+	attachment = open("info.txt", "rb")
 					 
 	part = MIMEBase('application', 'octet-stream')
 	part.set_payload((attachment).read())
