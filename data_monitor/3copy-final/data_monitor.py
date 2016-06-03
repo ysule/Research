@@ -31,35 +31,43 @@ for server in servers:
 	for i in range(0, len(pswd)):
 		result = result + chr(ord(pswd[i]) + 2) 
 	pswd = result
-	try:
-		#connecting to server using ssh and reading output of command vnstat -d
-		client = paramiko.SSHClient()
-		client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-		client.connect(ip, username=username, password=pswd)
-		stdin, stdout, stderr = client.exec_command('vnstat -d')
-		stdin_h, stdout_h, stderr_h = client.exec_command('hostname')
-		x =''
-		for line in stdout:
-			x = x+line
-		for l in stdout_h:
-			l = l.replace("\n", "")
-		#Latest day's information is always the 3rd line from last.
-		data = x.splitlines()[-3].encode('utf-8')
-		data =ip+'    '+l+ data.replace("|", "")
+	response = os.system("ping -c 1 " + ip+" >/dev/null")
+	if response == 0:
+		try:
+			#connecting to server using ssh and reading output of command vnstat -d
+			client = paramiko.SSHClient()
+			client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+			client.connect(ip, username=username, password=pswd)
+			stdin, stdout, stderr = client.exec_command('vnstat -d')
+			stdin_h, stdout_h, stderr_h = client.exec_command('hostname')
+			x =''
+			for line in stdout:
+				x = x+line
+			for l in stdout_h:
+				l = l.replace("\n", "")
+			#Latest day's information is always the 3rd line from last.
+			data = x.splitlines()[-3].encode('utf-8')
+			data =ip+'    '+l+ data.replace("|", "")
 
-		#print data
-		output = open("info.txt","a")
-		#Writing data to text file
-		output.write(data+"\n")
-		output.close
-		#VERY VERY VERY IMPORTANT. UNLESS YOU DO THIS, CHANGES TO FILE WON'T BE SAVED UNTIL AFTER SCRIPT COMPLETES EXECUTION AND OLD VERSION OF FILE WILL BE MAILED
-		output.flush()
-	except:
+			#print data
+			output = open("info.txt","a")
+			#Writing data to text file
+			output.write(data+"\n")
+			output.close
+			#VERY VERY VERY IMPORTANT. UNLESS YOU DO THIS, CHANGES TO FILE WON'T BE SAVED UNTIL AFTER SCRIPT COMPLETES EXECUTION AND OLD VERSION OF FILE WILL BE MAILED
+			output.flush()
+		except:
+			down = down+'    '+ip
+			o1 = open("down.txt","a")
+			o1.write(down+"\n")
+			o1.close
+			o1.flush()
+	else:
 		down = down+'    '+ip
-		o1 = open("down.txt","a")
-		output.write(data+"\n")
-		output.close
-		output.flush()
+		o2 = open("down.txt","a")
+		o2.write(down+"\n")
+		o2.close
+		o2.flush()
 #Converting text file to Excel sheet
 data = []
 with open("info.txt") as f:
@@ -80,19 +88,7 @@ for row_index in range(len(data)):
 	for col_index in range(len(data[row_index])):
 		sheet.write(row_index, col_index, data[row_index][col_index])
 wb.save("info.xls")
-"""
-data = []
-with open("down.txt") as f:
-	for line in f:
-		data.append([word for word in line.split("  ") if word])
-#print data
-wb = xlwt.Workbook()
-sheet = wb.add_sheet("New Sheet")
-for row_index in range(len(data)):
-	for col_index in range(len(data[row_index])):
-		sheet.write(row_index, col_index, data[row_index][col_index])
-wb.save("down.xls")
-"""
+
 #Mailing
 fromaddr = "serverstatus@app.innoplexus.de"
 #toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com"]
