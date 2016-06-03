@@ -27,8 +27,8 @@ for server in servers:
 	username = user.split("@",1)[0]
 	#print ip
 	#if server is pingable we proceed
-	response = os.system("ping -c 1 " + ip+" >/dev/null")
-	if response == 0:
+	#response = os.system("ping -c 1 " + ip+" >/dev/null")
+	try:
 		#connecting to server using ssh and reading output of command vnstat -d
 		client = paramiko.SSHClient()
 		client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -47,9 +47,9 @@ for server in servers:
 		output.close
 		#VERY VERY VERY IMPORTANT. UNLESS YOU DO THIS, CHANGES TO FILE WON'T BE SAVED UNTIL AFTER SCRIPT COMPLETES EXECUTION AND OLD VERSION OF FILE WILL BE MAILED
 		output.flush()
-	else:
+	except:
 		down = ''
-		down = down+ip
+		down = down+'\n'+ip
 #Converting text file to Excel sheet
 data = []
 with open("info.txt") as f:
@@ -71,8 +71,8 @@ for t in toaddr:
 	msg = MIMEMultipart()
 	msg['From'] = fromaddr
 	msg['To'] = t
-	msg['Subject'] = "data usage log"			 
-	body = "data usage log attached"					 
+	msg['Subject'] = "data usage log attached"			 
+	body = "The following servers are unreachable (This means that the script was unable to SSH into the following servers for whatever the reason" +'\n'+ down			 
 	msg.attach(MIMEText(body, 'plain'))					 
 	filename = "info.xls"
 	attachment = open("info.xls", "rb")
