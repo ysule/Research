@@ -1,2 +1,7 @@
+IP of Server      Date    Received Data    Sent Data   Total Data    Average Speed
 127.0.0.1      06/03/16    489.23 MiB    28.11 MiB   517.34 MiB    83.69 kbit/s
 127.0.0.1      06/03/16    489.23 MiB    28.11 MiB   517.34 MiB    83.69 kbit/s
+192.168.121.128     06/02/2016    98.75 MiB     1.18 MiB    99.93 MiB    34.29 kbit/s
+192.168.121.128     06/02/2016    98.75 MiB     1.18 MiB    99.93 MiB    34.29 kbit/s
+192.168.121.128     06/02/2016    98.75 MiB     1.18 MiB    99.93 MiB    34.29 kbit/s
+192.168.121.128     06/02/2016    98.75 MiB     1.18 MiB    99.93 MiB    34.29 kbit/s
