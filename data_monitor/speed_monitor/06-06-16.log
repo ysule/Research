@@ -13156,3 +13156,69 @@ Mon Jun  6 11:24:03 2016; UDP; wlan0; 199 bytes; from 192.168.0.186:60771 to 239
 Mon Jun  6 11:24:03 2016; UDP; wlan0; 58 bytes; from 192.168.1.72:11785 to 192.168.1.56:37976
 Mon Jun  6 11:24:03 2016; UDP; wlan0; 328 bytes; from 192.168.0.186:68 to 255.255.255.255:67
 Mon Jun  6 11:24:03 2016; UDP; wlan0; 202 bytes; from 192.168.1.65:57161 to 239.255.255.250:1900
+Mon Jun  6 11:24:04 2016; UDP; wlan0; 56 bytes; from 192.168.1.56:24619 to 192.168.0.1:53
+Mon Jun  6 11:24:04 2016; UDP; wlan0; 56 bytes; from 192.168.1.56:65021 to 192.168.0.1:53
+Mon Jun  6 11:24:04 2016; UDP; wlan0; 72 bytes; from 192.168.0.1:53 to 192.168.1.56:24619
+Mon Jun  6 11:24:04 2016; UDP; wlan0; 121 bytes; from 192.168.0.1:53 to 192.168.1.56:65021
+Mon Jun  6 11:24:04 2016; TCP; wlan0; 60 bytes; from 192.168.1.56:48380 to 192.30.252.123:443; first packet (SYN)
+Mon Jun  6 11:24:04 2016; UDP; wlan0; 199 bytes; from 192.168.1.86:38367 to 239.255.255.250:1900
+Mon Jun  6 11:24:04 2016; UDP; wlan0; 199 bytes; from 192.168.0.186:60771 to 239.255.255.250:1900
+Mon Jun  6 11:24:04 2016; TCP; wlan0; 60 bytes; from 192.30.252.123:443 to 192.168.1.56:48380; first packet (SYN)
+Mon Jun  6 11:24:04 2016; UDP; wlan0; 202 bytes; from 192.168.1.65:57161 to 239.255.255.250:1900
+Mon Jun  6 11:24:05 2016; UDP; wlan0; 199 bytes; from 192.168.1.86:38367 to 239.255.255.250:1900
+Mon Jun  6 11:24:05 2016; UDP; wlan0; 199 bytes; from 192.168.0.186:60771 to 239.255.255.250:1900
+Mon Jun  6 11:24:05 2016; TCP; wlan0; 60 bytes; from 192.168.1.56:48382 to 192.30.252.123:443; first packet (SYN)
+Mon Jun  6 11:24:05 2016; TCP; wlan0; 60 bytes; from 192.30.252.123:443 to 192.168.1.56:48382; first packet (SYN)
+Mon Jun  6 11:24:06 2016; UDP; wlan0; 199 bytes; from 192.168.1.86:38367 to 239.255.255.250:1900
+Mon Jun  6 11:24:06 2016; UDP; wlan0; 199 bytes; from 192.168.0.186:60771 to 239.255.255.250:1900
+Mon Jun  6 11:24:06 2016; UDP; wlan0; 56 bytes; from 192.168.1.56:13556 to 192.168.0.1:53
+Mon Jun  6 11:24:06 2016; UDP; wlan0; 56 bytes; from 192.168.1.56:64878 to 192.168.0.1:53
+Mon Jun  6 11:24:06 2016; UDP; wlan0; 72 bytes; from 192.168.0.1:53 to 192.168.1.56:13556
+Mon Jun  6 11:24:06 2016; UDP; wlan0; 56 bytes; from 192.168.0.1:53 to 192.168.1.56:64878
+Mon Jun  6 11:24:06 2016; TCP; wlan0; 60 bytes; from 192.168.1.56:48384 to 192.30.252.123:443; first packet (SYN)
+Mon Jun  6 11:24:06 2016; TCP; wlan0; 60 bytes; from 192.30.252.123:443 to 192.168.1.56:48384; first packet (SYN)
+Mon Jun  6 11:24:06 2016; UDP; wlan0; 160 bytes; from 192.168.0.6:46910 to 239.255.255.250:1900
+Mon Jun  6 11:24:08 2016; UDP; wlan0; 78 bytes; from 192.168.0.133:137 to 192.168.7.255:137
+Mon Jun  6 11:24:08 2016; UDP; wlan0; 50 bytes; from 192.168.0.133:56986 to 224.0.0.252:5355
+Mon Jun  6 11:24:08 2016; UDP; wlan0; 50 bytes; from 192.168.0.133:64271 to 224.0.0.252:5355
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 52 bytes; from 192.168.1.56:48384 to 192.30.252.123:443; FIN sent; 73 packets, 92801 bytes, avg flow rate 371.00 kbits/s
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 52 bytes; from 192.30.252.123:443 to 192.168.1.56:48384; FIN acknowleged
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 52 bytes; from 192.30.252.123:443 to 192.168.1.56:48380; FIN sent; 13 packets, 4429 bytes, avg flow rate 8.75 kbits/s
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 40 bytes; from 192.168.1.56:48384 to 192.30.252.123:443; Connection reset; 74 packets, 92841 bytes, avg flow rate 371.00 kbits/s; opposite direction 71 packets, 4622 bytes; avg flow rate 371.00 kbits/s
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 40 bytes; from 192.168.1.56:48384 to 192.30.252.123:443; Connection reset; 1 packets, 40 bytes, avg flow rate 0.00 kbits/s; opposite direction 0 packets, 0 bytes; avg flow rate 0.00 kbits/s
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 52 bytes; from 192.30.252.123:443 to 192.168.1.56:48382; FIN sent; 15 packets, 2280 bytes, avg flow rate 6.00 kbits/s
+Mon Jun  6 11:24:08 2016; UDP; wlan0; 50 bytes; from 192.168.0.133:56986 to 224.0.0.252:5355
+Mon Jun  6 11:24:08 2016; UDP; wlan0; 50 bytes; from 192.168.0.133:64271 to 224.0.0.252:5355
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 52 bytes; from 192.30.252.123:443 to 192.168.1.56:48382; FIN sent; 16 packets, 2332 bytes, avg flow rate 6.00 kbits/s
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 64 bytes; from 192.168.1.56:48382 to 192.30.252.123:443; FIN acknowleged
+Mon Jun  6 11:24:08 2016; TCP; wlan0; 52 bytes; from 192.168.1.56:48380 to 192.30.252.123:443; FIN acknowleged
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 78 bytes; from 192.168.0.133:137 to 192.168.7.255:137
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 227 bytes; from 192.168.1.77:138 to 192.168.7.255:138
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 260 bytes; from 192.168.0.170:138 to 192.168.7.255:138
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 202 bytes; from 192.168.0.164:138 to 192.168.7.255:138
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 202 bytes; from 192.168.0.164:138 to 192.168.7.255:138
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 78 bytes; from 192.168.0.164:137 to 192.168.7.255:137
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 78 bytes; from 192.168.0.133:137 to 192.168.7.255:137
+Mon Jun  6 11:24:09 2016; UDP; wlan0; 78 bytes; from 192.168.0.164:137 to 192.168.7.255:137
+Mon Jun  6 11:24:10 2016; UDP; wlan0; 78 bytes; from 192.168.0.150:137 to 192.168.7.255:137
+Mon Jun  6 11:24:10 2016; UDP; wlan0; 78 bytes; from 192.168.0.164:137 to 192.168.7.255:137
+Mon Jun  6 11:24:10 2016; UDP; wlan0; 227 bytes; from 192.168.1.77:138 to 192.168.7.255:138
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 219 bytes; from 192.168.0.170:138 to 192.168.7.255:138
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 78 bytes; from 192.168.0.150:137 to 192.168.7.255:137
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 172 bytes; from 192.168.1.48:17500 to 255.255.255.255:17500
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 172 bytes; from 192.168.1.48:17500 to 192.168.7.255:17500
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 195 bytes; from 192.168.1.41:58779 to 239.255.255.250:1900
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 68 bytes; from 192.168.1.41:5353 to 224.0.0.251:5353
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 78 bytes; from 192.168.0.150:137 to 192.168.7.255:137
+Mon Jun  6 11:24:11 2016; UDP; wlan0; 161 bytes; from 192.168.0.6:46910 to 239.255.255.250:1900
+Mon Jun  6 11:24:12 2016; UDP; wlan0; 195 bytes; from 192.168.1.41:58779 to 239.255.255.250:1900
+Mon Jun  6 11:24:12 2016; UDP; wlan0; 68 bytes; from 192.168.1.41:5353 to 224.0.0.251:5353
+Mon Jun  6 11:24:12 2016; UDP; wlan0; 78 bytes; from 192.168.0.216:137 to 192.168.7.255:137
+Mon Jun  6 11:24:13 2016; UDP; wlan0; 219 bytes; from 192.168.0.170:138 to 192.168.7.255:138
+Mon Jun  6 11:24:13 2016; UDP; wlan0; 78 bytes; from 192.168.0.216:137 to 192.168.7.255:137
+Mon Jun  6 11:24:13 2016; UDP; wlan0; 195 bytes; from 192.168.1.41:58779 to 239.255.255.250:1900
+Mon Jun  6 11:24:14 2016; UDP; wlan0; 78 bytes; from 192.168.0.216:137 to 192.168.7.255:137
+Mon Jun  6 11:24:14 2016; UDP; wlan0; 200 bytes; from 192.168.1.56:37976 to 157.55.130.144:40002
+Mon Jun  6 11:24:14 2016; UDP; wlan0; 198 bytes; from 192.168.1.56:37976 to 157.55.130.144:40002
+Mon Jun  6 11:24:14 2016; UDP; wlan0; 68 bytes; from 192.168.1.41:5353 to 224.0.0.251:5353
+Mon Jun  6 11:24:14 2016; UDP; wlan0; 195 bytes; from 192.168.1.41:58779 to 239.255.255.250:1900
