@@ -53,6 +53,7 @@ while 1:
 		print list_m
 		list_m_old = list_m
 		"""
+		print list_m
 		name1 = str(h)+'.txt'
 		os.system('touch '+name1)
 		o = open(name1,"a")
@@ -74,7 +75,8 @@ while 1:
 		#Mailing
 		fromaddr = "serverstatus@app.innoplexus.de"
 		#toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com"]
-		toaddr = ["bedapudi.praneeth@innoplexus.com"]
+		#toaddr = ["bedapudi.praneeth@innoplexus.com"]
+		toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com","pradumna.panditrao@innoplexus.com"]
 		for t in toaddr:
 			msg = MIMEMultipart()
 			msg['From'] = fromaddr
@@ -104,4 +106,4 @@ while 1:
 			date_old = date_now
 			break
 		h = h+1
-		sleep(3590)
+		sleep(20)

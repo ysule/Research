@@ -12,8 +12,6 @@ from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
 from email import encoders
 
-from_ip = '192.168.1.56'
-statement = 'from' + from_ip
 date_old = time.strftime("%x")
 while 1:
 	date_now = time.strftime("%x")
@@ -24,6 +22,10 @@ while 1:
 	#command = 'sudo iptraf -i all -L ./'+name+'-t 1430 -B'
 	command = 'sudo iptraf -i all -L ./'+name+' -B'
 	os.system(command)
+	delete_command_txt = 'find . -name "*.txt" -type f -delete'
+	delete_command_xls = 'find . -name "*.xls" -type f -delete'
+	os.system(delete_command_txt)
+	os.system(delete_command_xls)
 	time_old = int(time.strftime('%X')[:2]) - 1
 	#list_m_old = ''
 	while 1:
@@ -36,7 +38,7 @@ while 1:
 			repeat = ''
 			list_m = ''	
 			for line in lines:
-				if statement in line:
+				if 'from 192.168.1.56' in line:
 					for s in line.split():
 						if s.isdigit():
 							if(int(s)>100):
@@ -58,25 +60,52 @@ while 1:
 			list_m_old = list_m
 			"""
 			print list_m
+			name1 = str(h)+'.txt'
+			os.system('touch '+name1)
+			o = open(name1,"a")
+			o.write(list_m)
+			o.close
+			o.flush()
+
+			data = []
+			with open(name1) as f:
+				for line in f:
+					data.append([word for word in line.split("  ") if word])
+			#print data
+			wb = xlwt.Workbook()
+			sheet = wb.add_sheet("Info")
+			for row_index in range(len(data)):
+				for col_index in range(len(data[row_index])):
+					sheet.write(row_index, col_index, data[row_index][col_index])
+			wb.save(str(h)+".xls")
 			#Mailing
 			fromaddr = "serverstatus@app.innoplexus.de"
-			#toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com","pradumna.panditrao@innoplexus.com"]
-			toaddr = ["bedapudi.praneeth@innoplexus.com"]
+			toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com","pradumna.panditrao@innoplexus.com"]
+			#toaddr = ["bedapudi.praneeth@innoplexus.com"]
 			for t in toaddr:
 				msg = MIMEMultipart()
 				msg['From'] = fromaddr
 				msg['To'] = t
-				msg['Subject'] = statement + ' till ' + str(h) + ' :00' + ' time'		 
-				body = list_m		 
+				msg['Subject'] = "IP addresses attached"			 
+				body = 'IP addresses attached'			 
 				msg.attach(MIMEText(body, 'plain'))					 
-				filename = str(h)+".xls"								
+				filename = str(h)+".xls"
+				attachment = open(str(h)+".xls", "rb")
+								 
+				part = MIMEBase('application', 'octet-stream')
+				part.set_payload((attachment).read())
+				encoders.encode_base64(part)
+				part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+								 
+				msg.attach(part)
+								
 				server = smtplib.SMTP('email-smtp.us-east-1.amazonaws.com:587')
 				server.starttls()
 				server.login("AKIAJLVT63DSM247NJHQ", "AvAqwJImHHr9Ow98fImQo9E4GvI73WiKQgsSKAGfId70")
 				text = msg.as_string()
 				server.sendmail(fromaddr, t, text)
 				server.quit()
-			print'Mails sent!!'
+				print'Mails sent!!'
 
 			if(time.strftime("%x")>date_old):
 				date_old = date_now
