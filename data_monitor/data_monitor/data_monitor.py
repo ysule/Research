@@ -3,6 +3,7 @@
 #Install vnstat on each server before you add it to servers.txt and enable vnstat
 from __future__ import with_statement
 import os
+import sys
 import paramiko
 import time
 import datetime
@@ -18,9 +19,10 @@ from email import encoders
 date_old = '00/00/00'
 while 1:
 	if(time.strftime("%x")>date_old):
+		path = os.path.dirname(os.path.realpath(sys.argv[0])) + '/'
 		date_old = time.strftime("%x")
 		down = str(datetime.date.today())
-		with open('servers.txt') as f:
+		with open(path+'servers.txt') as f:
 			servers = f.readlines()
 		for server in servers:
 			#As each server info is in new line, when Python reads the info "\n" is also present. So we need to remove it.
@@ -54,7 +56,7 @@ while 1:
 					data =ip+'    '+l+ data.replace("|", "")
 
 					#print data
-					output = open("info.txt","a")
+					output = open(path+"info.txt","a")
 					#Writing data to text file
 					output.write(data+"\n")
 					output.close
@@ -62,19 +64,19 @@ while 1:
 					output.flush()
 				except:
 					down = down+'    '+ip
-					o1 = open("down.txt","a")
+					o1 = open(path+"down.txt","a")
 					o1.write(down+"\n")
 					o1.close
 					o1.flush()
 			else:
 				down = down+'    '+ip
-				o2 = open("down.txt","a")
+				o2 = open(path+"down.txt","a")
 				o2.write(down+"\n")
 				o2.close
 				o2.flush()
 		#Converting text file to Excel sheet
 		data = []
-		with open("info.txt") as f:
+		with open(path+"info.txt") as f:
 			for line in f:
 				data.append([word for word in line.split("  ") if word])
 		#print data
@@ -84,7 +86,7 @@ while 1:
 			for col_index in range(len(data[row_index])):
 				sheet.write(row_index, col_index, data[row_index][col_index])
 		data = []
-		with open("down.txt") as f:
+		with open(path+"down.txt") as f:
 			for line in f:
 				data.append([word for word in line.split("  ") if word])
 		sheet = wb.add_sheet("Down")
@@ -105,7 +107,7 @@ while 1:
 			body = "The following servers are unreachable (This means that the script was unable to SSH into the following servers for whatever the reason)" +'\n'+ down			 
 			msg.attach(MIMEText(body, 'plain'))					 
 			filename = "info.xls"
-			attachment = open("info.xls", "rb")
+			attachment = open(path+"info.xls", "rb")
 							 
 			part = MIMEBase('application', 'octet-stream')
 			part.set_payload((attachment).read())
