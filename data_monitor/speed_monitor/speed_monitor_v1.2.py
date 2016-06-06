@@ -5,6 +5,7 @@ import time
 import datetime
 import xlwt
 from time import sleep
+import netifaces as ni
 import smtplib
 import string
 from email.MIMEMultipart import MIMEMultipart
@@ -13,6 +14,7 @@ from email.MIMEBase import MIMEBase
 from email import encoders
 
 from_ip = '192.168.1.56'
+#ni.ifaddresses('eth0')[2][0]['addr']
 statement = 'from' + from_ip
 date_old = time.strftime("%x")
 while 1:
