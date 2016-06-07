@@ -15,7 +15,7 @@ from email import encoders
 
 from_ip = '192.168.1.56'
 #ni.ifaddresses('eth0')[2][0]['addr']
-statement = 'from' + from_ip
+statement = 'from ' + from_ip
 date_old = time.strftime("%x")
 while 1:
 	date_now = time.strftime("%x")
@@ -34,14 +34,17 @@ while 1:
 			time_old = h
 			with open('./'+name) as f:
 				lines = f.readlines()
+			#print lines
 			list = ''
 			repeat = ''
 			list_m = ''	
+			print statement
 			for line in lines:
 				if statement in line:
 					for s in line.split():
 						if s.isdigit():
 							if(int(s)>100):
+								print s
 								list = list+ (line.split("to ",1)[1]).split(":",1)[0] + '\n'
 								if list.count((line.split("to ",1)[1]).split(":",1)[0]) > 5:
 									if((line.split("to ",1)[1]).split(":",1)[0] not in list_m):
@@ -59,6 +62,7 @@ while 1:
 			print list_m
 			list_m_old = list_m
 			"""
+			print 'list'
 			print list_m
 			#Mailing
 			fromaddr = "serverstatus@app.innoplexus.de"
