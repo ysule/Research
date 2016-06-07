@@ -1,6 +1,6 @@
 AD,University of Andorra,http://www.uda.ad/
 AE,Abu Dhabi University,http://www.adu.ac.ae/
-AE,Ajman University of Science & Technology,http://www.ajman.ac.ae/
+AE,Ajman University of ScienceIndian Ins & Technology,http://www.ajman.ac.ae/
 AE,Alain University of Science and Technology,http://www.alainuniversity.ac.ae/
 AE,Al Ghurair University,http://www.agu.ae/
 AE,Alhosn University,http://www.alhosnu.ae/
