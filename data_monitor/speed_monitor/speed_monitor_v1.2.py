@@ -22,7 +22,7 @@ while 1:
 	name = date_now + '.log'
 	name = string.replace(name, '/', '-')
 	#os.system('rm ./'+name)
-	#os.system('touch ./'+name)
+	os.system('touch ./'+name)
 	#command = 'sudo iptraf -i all -L ./'+name+'-t 1430 -B'
 	command = 'sudo iptraf -i all -L ./'+name+' -B'
 	os.system(command)
@@ -62,8 +62,8 @@ while 1:
 			print list_m
 			#Mailing
 			fromaddr = "serverstatus@app.innoplexus.de"
-			#toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com","pradumna.panditrao@innoplexus.com"]
-			toaddr = ["bedapudi.praneeth@innoplexus.com"]
+			toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com","pradumna.panditrao@innoplexus.com"]
+			#toaddr = ["bedapudi.praneeth@innoplexus.com"]
 			for t in toaddr:
 				msg = MIMEMultipart()
 				msg['From'] = fromaddr
