@@ -10,11 +10,8 @@ def corrector(line, not_wanted):
 	for word in words:
 		letter_count = 0
 		for letter in word:
-			if letter in 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM':
+			if letter in 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890':
 				letter_count = letter_count + 1
-			else:
-				if letter in '1234567890':
-					letter_count = letter_count + 1
 		if letter_count > (len(word)/2): 
 			if(len(word) == 1):
 				if word in 'aAiI,.':
