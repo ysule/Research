@@ -27,3 +27,8 @@ with open('./not_wanted.txt') as Myfile:
 	not_wanted_list = Myfile.read().replace('\n', '')
 while 1:
 	corrector(raw_input("line: "), not_wanted_list)
+	missed = raw_input("Enter the letters I missed up. \n eg: enter 'Iu' if I missed Iu\n:")
+	o1 = open("./not_wanted.txt","a")
+	o1.write(missed)
+	o1.close
+	o1.flush()
