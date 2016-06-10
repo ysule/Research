@@ -1,0 +1,5 @@
+mongo-connector -m localhost:27017 -t http://localhost:7474/db/data -d neo4j_doc_manager
+sudo pip install py2neo==2.0.8
+sudo pip install neo4j-doc-manager
+Repleset
+sudo mongod --port 27017 --dbpath /srv/mongodb/db0 --replSet rs0
