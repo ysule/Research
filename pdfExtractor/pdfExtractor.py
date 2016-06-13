@@ -18,12 +18,15 @@ def is_empty(x):
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 files = filter(lambda f: f.endswith(('.pdf')), files)
 for pdf_file in files:
-    #checking and creating text file for pdf file if text file is not there
-    text_files = [f for f in os.listdir('.') if os.path.isfile(f)]
-    text_files = filter(lambda f: f.endswith(('.txt')), text_files)
-    text_file = pdf_file.replace('.pdf','') + '.txt'
-    if text_file not in text_files:
-        os.system("pdf2txt.py -o " + pdf_file.replace('.pdf','') + '.txt -t text '+pdf_file)
+    try:
+        #checking and creating text file for pdf file if text file is not there
+        text_files = [f for f in os.listdir('.') if os.path.isfile(f)]
+        text_files = filter(lambda f: f.endswith(('.txt')), text_files)
+        text_file = pdf_file.replace('.pdf','') + '.txt'
+        if text_file not in text_files:
+            os.system("pdf2txt.py -o " + pdf_file.replace('.pdf','') + '.txt -t text '+pdf_file)
+    except:
+        praneeth = 2
 #getting the text files names (in the folder) after generating text files for pdfs
 text_files = [f for f in os.listdir('.') if os.path.isfile(f)]
 text_files = filter(lambda f: f.endswith(('.txt')), text_files)
@@ -61,6 +64,6 @@ for text_file in text_files:
                         if k>0:
                             affliation = affliation + p
                     #print affliation + '==================='
-                    insert_data = '{"authorName":"'+str(b[0].replace('\n',''))+'","affiliation":"'+affliation+'","designation":"","body_name":"'+body_name+'"}'
+                    insert_data = '{"authorName":"'+str(b[0].replace('\n','')).split(',',1)[0]+'","affiliation":"'+affliation+'","designation":"","body_name":"'+body_name+'"}'
                     insert_data = insert_data.replace('\n',' ')
                     db.reg_bodies.insert(ast.literal_eval(insert_data))
