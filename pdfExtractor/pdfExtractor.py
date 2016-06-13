@@ -31,6 +31,10 @@ for html_file in html_files:
                 if font_size_new > font_size_old:
                     title = line.rsplit('">', 1)[-1].replace("\n","")
                     font_size_old = font_size_new
+                    if 'font-size' not in lines[i+1]:
+                        if '<br>' in lines[i+1]:
+                            if '<' or '>' not in lines[i+1].replace('<br>',''):
+                                title = title + lines[i+1].replace('<br','')
     if title:
         print 'title: '+title
     """
