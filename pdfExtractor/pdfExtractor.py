@@ -3,7 +3,7 @@ import pymongo
 import ast
 from pymongo import MongoClient
 client = MongoClient()
-db = client.dummy
+db = client.KTL
 def is_empty(x):
     n = 0
     s = 'qwertyuiopasdfghjklzxcvbnm0123456789'
@@ -29,6 +29,14 @@ text_files = [f for f in os.listdir('.') if os.path.isfile(f)]
 text_files = filter(lambda f: f.endswith(('.txt')), text_files)
 for text_file in text_files:
     with open(text_file) as f:
+        all_lines = f.read()
+        f.close()
+    body_names = [ "EMA", "FDA", "GOV.UK", "CDSCO", "PMDA" ]
+    for a in body_names:
+        if a in all_lines:
+            body_name = a
+    #print body_name
+    with open(text_file) as f:
         lines = f.readlines()
         f.close()
     list_empty_lines = 0
@@ -53,6 +61,6 @@ for text_file in text_files:
                         if k>0:
                             affliation = affliation + p
                     #print affliation + '==================='
-                    insert_data = '{"name":"'+str(b[0].replace('\n',''))+'","affiliation":"'+affliation+'"}'
+                    insert_data = '{"authorName":"'+str(b[0].replace('\n',''))+'","affiliation":"'+affliation+'","designation":"","body_name":"'+body_name+'"}'
                     insert_data = insert_data.replace('\n',' ')
-                    db.dummy.insert(ast.literal_eval(insert_data))
+                    db.reg_bodies.insert(ast.literal_eval(insert_data))
