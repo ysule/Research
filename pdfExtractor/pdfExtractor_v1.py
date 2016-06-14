@@ -70,6 +70,8 @@ for text_file in text_files:
                         if k>0:
                             affliation = affliation + p
                     #The insert statement is like the following
+                    if len(affliation.replace(' ',''))<15:
+                        affliation = ''
                     insert_data = '{"authorName":"'+str(b[0].replace('\n','')).split(',',1)[0]+'","affiliation":"'+affliation+'","designation":"","body_name":"'+body_name+'"}'
                     #we are removing '\n' because we don't want it to go to next line
                     insert_data = insert_data.replace('\n',' ')
