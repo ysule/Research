@@ -52,7 +52,7 @@ cursor = db.normalized_author_list.find({},{'_id':0,'Original affiliation name':
 for count,result_object in enumerate(cursor):
     if count>=start_at:
         try:
-        	bulk_body = bulk_body + '{ "index" : { "_index" : "kols_author_list", "_type" : "author_list_intelligence_v2"} }\n'
+        	bulk_body = bulk_body + '{ "index" : { "_index" : "normalizedaffiliation", "_type" : "micro"} }\n'
         	bulk_body = bulk_body + json.dumps(result_object)+'\n'
         	if (count+1)%1000 == 0:
         		client.bulk(body=bulk_body)
