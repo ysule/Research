@@ -15,13 +15,14 @@ from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
 from email import encoders
-#Reading server information from text file
 date_old = '00/00/00'
 while 1:
+	#We need to run this script each day, so in a while loop the present day's date being date_old whenever the date changes if is executed.
 	if(time.strftime("%x")>date_old):
 		path = os.path.dirname(os.path.realpath(sys.argv[0])) + '/'
 		date_old = time.strftime("%x")
 		down = str(datetime.date.today())
+		#Reading server information from text file
 		with open(path+'servers.txt') as f:
 			servers = f.readlines()
 		for server in servers:
@@ -34,9 +35,11 @@ while 1:
 			ip = user.split("@",1)[1]
 			username = user.split("@",1)[0]
 			result = ''
+			#Decrypting the password
 			for i in range(0, len(pswd)):
-				result = result + chr(ord(pswd[i]) + 2) 
+				result = result + chr(ord(pswd[i]) + 2)
 			pswd = result
+			#checking if the server is up by pinging
 			response = os.system("ping -c 1 " + ip+" >/dev/null")
 			if response == 0:
 				try:
@@ -44,6 +47,7 @@ while 1:
 					client = paramiko.SSHClient()
 					client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 					client.connect(ip, username=username, password=pswd)
+					#in the following line change "vnstat -d" to suitable command i.e: change it to the correct interface IF NEEDED
 					stdin, stdout, stderr = client.exec_command('vnstat -d')
 					stdin_h, stdout_h, stderr_h = client.exec_command('hostname')
 					x =''
@@ -97,25 +101,26 @@ while 1:
 
 		#Mailing
 		fromaddr = "serverstatus@app.innoplexus.de"
+		#For Mailing to multiple emails uncomment the following line and comment the next line
 		#toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com"]
 		toaddr = ["bedapudi.praneeth@innoplexus.com"]
 		for t in toaddr:
 			msg = MIMEMultipart()
 			msg['From'] = fromaddr
 			msg['To'] = t
-			msg['Subject'] = "data usage log attached"			 
-			body = "The following servers are unreachable (This means that the script was unable to SSH into the following servers for whatever the reason)" +'\n'+ down			 
-			msg.attach(MIMEText(body, 'plain'))					 
+			msg['Subject'] = "data usage log attached"
+			body = "The following servers are unreachable (This means that the script was unable to SSH into the following servers for whatever the reason)" +'\n'+ down
+			msg.attach(MIMEText(body, 'plain'))
 			filename = "info.xls"
 			attachment = open(path+"info.xls", "rb")
-							 
+
 			part = MIMEBase('application', 'octet-stream')
 			part.set_payload((attachment).read())
 			encoders.encode_base64(part)
 			part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
-							 
+
 			msg.attach(part)
-							
+
 			server = smtplib.SMTP('email-smtp.us-east-1.amazonaws.com:587')
 			server.starttls()
 			server.login("AKIAJLVT63DSM247NJHQ", "AvAqwJImHHr9Ow98fImQo9E4GvI73WiKQgsSKAGfId70")
