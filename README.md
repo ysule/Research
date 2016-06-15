@@ -16,5 +16,5 @@ https://docs.google.com/a/innoplexus.com/document/d/1onR0Iz0xsXuOaHUos5MrcYhRuNW
 Elasticsearch - setting up a Cluster
 https://docs.google.com/a/innoplexus.com/document/d/1rknZjvnZEqxrOwi63tcNEiWrhxm4DdhKfIqc8qgs5t8/edit?usp=sharing
 
-Elas
+Elasticsearch - setting up SHIELD
 https://docs.google.com/document/d/1sQMJo2ubTuAZSO1gunLVMO0BUjx81CLee4mgXkcCofg/edit?usp=sharing
