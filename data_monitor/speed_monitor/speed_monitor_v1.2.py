@@ -37,12 +37,13 @@ while 1:
 			#print lines
 			list = ''
 			repeat = ''
-			list_m = ''	
+			list_m = ''
 			print statement
 			for line in lines:
 				if statement in line:
 					for s in line.split():
 						if s.isdigit():
+							#change 100 in the following line to minimum thershold value
 							if(int(s)>100):
 								print s
 								list = list+ (line.split("to ",1)[1]).split(":",1)[0] + '\n'
@@ -72,10 +73,10 @@ while 1:
 				msg = MIMEMultipart()
 				msg['From'] = fromaddr
 				msg['To'] = t
-				msg['Subject'] = statement + ' till ' + str(h) + ' :00' + ' time'		 
-				body = list_m		 
-				msg.attach(MIMEText(body, 'plain'))					 
-				filename = str(h)+".xls"								
+				msg['Subject'] = statement + ' till ' + str(h) + ' :00' + ' time'
+				body = list_m
+				msg.attach(MIMEText(body, 'plain'))
+				filename = str(h)+".xls"
 				server = smtplib.SMTP('email-smtp.us-east-1.amazonaws.com:587')
 				server.starttls()
 				server.login("AKIAJLVT63DSM247NJHQ", "AvAqwJImHHr9Ow98fImQo9E4GvI73WiKQgsSKAGfId70")
