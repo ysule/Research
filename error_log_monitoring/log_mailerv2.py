@@ -7,7 +7,7 @@ from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
 from email import encoders
 
-
+#change the path to error log location
 with open('/var/log/nginx/error.log') as f:
 		sum_start = sum(1 for _ in f)
 while 1:
