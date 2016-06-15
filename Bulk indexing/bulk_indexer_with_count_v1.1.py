@@ -60,6 +60,7 @@ for count,result_object in enumerate(cursor):
         		bulk_body = ''
         except:
             print 'stopped at '+str(count)
+            exit()
 
 #print bulk_body
 
