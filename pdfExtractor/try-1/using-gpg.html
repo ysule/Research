@@ -1,0 +1,377 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body>
+<span style="position:absolute; border: gray 1px solid; left:0px; top:50px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:50px;"><a name="1">Page 1</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:131px; top:122px; width:348px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">Creating Your Personal Key Pair 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:172px; width:422px; height:101px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG uses public key cryptography for encrypting and signing messages. Public key 
+<br>cryptography involves your </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">public key</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> which is distributed to the public and is used to 
+<br>encrypt messages to be delivered you and to decrypt signatures you have created, and 
+<br>your </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">private key</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> which complements your public key by allowing you to decrypt 
+<br>messages you receive and to encrypt signatures. Together, these are referred to as a </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">key 
+<br>pair</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:285px; width:244px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">1.1 About Key Security 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:336px; width:433px; height:273px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">When you create a key pair, both your public and private keys must be stored on your 
+<br>computer. This creates a security risk, because anyone who can gain access to your 
+<br>private key can decrypt your messages and impersonate you. You can't commit your 
+<br>private key to memory and erase it from your computer­­it is far too long (usually at least 
+<br>1024 bits­­that's like memorizing a 300­digit phone number!) Besides, even if you could 
+<br>memorize it, it would take too long to type it out each time you wanted to use it. 
+<br>The practical solution to this problem is to go a step further and actually encrypt your 
+<br>private key using a reasonably short </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">passphrase</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> as a key for the key; this is what GPG 
+<br>does. Each time you perform an operation involving your private key, GPG reads the 
+<br>encrypted key from the disk, prompts you for your passphrase, decrypts the key in 
+<br>memory, and finally uses it. In order for this system to work, you must have a 
+<br>cryptographically strong passphrase­­something that can't be guessed or brute­force 
+<br>attacked. For example, &quot;orange&quot; is so short that a dictionary attack will find it in seconds, 
+<br>and your spouse's full name is a poor choice because anyone who knows you might guess 
+<br>that you used it as your passphrase.  Your passphrase should be a combination of letters 
+<br>and numbers and upper and lower case.
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:621px; width:403px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">1.2 Using the GPG Gen­key Command 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:671px; width:430px; height:51px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Now that you've got your passphrase, you're ready to generate your personal key pair. At 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">the command prompt, type 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­gen­key
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:737px; width:420px; height:16px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG responds with a menu asking what kind of key pair you want to generate. Choose 
+<br></span></div><span style="position:absolute; border: gray 1px solid; left:0px; top:892px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:892px;"><a name="2">Page 2</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:964px; width:434px; height:376px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">the default, &quot;DSA and ElGamal.&quot; 
+<br>Next, it asks you the size of the key. Again, choose the default of &quot;1024.&quot; If your key is 
+<br>too small, it is easier to crack; if it is too large, then every operation that uses it may 
+<br>execute too slowly. 
+<br>The next prompt asks you when (if) the key should expire. Letting the key expire after a 
+<br>certain amount of time adds a little bit of security, because documents encrypted after this 
+<br>time are not connected with the old key in any way. The tradeoff, of course, is that 
+<br>everyone you correspond with must fetch your new key when the old one expires. At the 
+<br>prompt, choose a reasonable time period for the lifetime of your key, or select &quot;key does 
+<br>not expire.&quot; 
+<br>Now you enter the </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">Real Name</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> and </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">Email Address</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> which will be used to identify the key 
+<br>in everyone's key collections, not just yours. If you don't feel comfortable attaching your 
+<br>full real name to your key, be sure to pick something unique so that your key won't be 
+<br>confused with anyone else's. 
+<br>Finally, enter the passphrase you selected. GPG will </span><span style="font-family: NimbusRomNo9L-Medi; font-size:17px">NOT </span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">give you any feedback as you 
+<br>type your passphrase­­it won't print asterisks or spaces as most password input functions 
+<br>do. This is yet another security measure. After you enter and then confirm your 
+<br>passphrase, GPG will start doing some number crunching to generate all the random bits 
+<br>it needs in your key pair. It uses all sorts of sources inside the computer to simulate 
+<br>randomness, including console input­­so if you want to speed up the process, type some 
+<br>random characters on the keyboard. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:1352px; width:329px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">1.3 Publishing Your Public Key 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:1402px; width:432px; height:201px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">The easiest way to publish your public key is to simply post it on a web page or email it 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">directly to people who need it. Of course, this is also one of the least secure ways of 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">doing it­­plaintext email and web pages can be (theoretically, at least) subject to man­in­
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">the­middle attacks.</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:13px"> </span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">More advanced methods of key exchange involve things such as webs 
+<br>of trust and key servers, which are beyond the scope of this guide. If you don't believe 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">specifically that someone will try to attack you, you may be comfortable with the method 
+<br>described here. 
+<br></span><span style="font-family: NimbusRomNo9L-Medi; font-size:17px">You have been warned. The exchange of public keys without a trusted intermediary 
+<br></span><span style="font-family: NimbusRomNo9L-Medi; font-size:17px">can be subject to a man­in­the­middle attack.</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">To transmit your public key over the Internet, the first step is to export it to ASCII 
+<br>format. Open a command prompt window and go to a folder where you want to place the 
+<br></span></div><span style="position:absolute; border: black 1px solid; left:181px; top:1464px; width:2px; height:0px;"></span>
+<span style="position:absolute; border: gray 1px solid; left:0px; top:1734px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:1734px;"><a name="3">Page 3</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:1806px; width:306px; height:35px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">exported key. Type 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­armor ­­output &quot;key.txt&quot; ­­export &quot;YOUR­NAME&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:1855px; width:426px; height:137px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">You may change </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">key.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> to some other filename if you'd like. </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">YOUR­NAME</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> can be your 
+<br></span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">Real Name</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> or your </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">Email Address</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">; GPG will find it either way. The &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­armor</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; option 
+<br>instructs GPG to format the output &quot;armored&quot; for plain­text transmission. This makes it 
+<br>easy to copy and paste the key to and from web pages and email messages. The &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­
+<br>armor</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; option applies to most GPG commands that produce any kind of output. 
+<br>Open the output file, </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">key.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. You should see something resembling this: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">­­­­­BEGIN PGP PUBLIC KEY BLOCK­­­­­
+<br>Version: GnuPG v1.2.1 (MingW32)
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:2005px; width:384px; height:259px;"><span style="font-family: NimbusMonL-Regu; font-size:12px">mQGiBD53m34RBAC6GXvDFWD3a+GOkQKubz5Koq9lks9d+gel29/sA5kqSfQnoaeR
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">qdTKLlB+oNsVjDX/Szfi3fsrK5zmKKZVHv3JO4DkxtABf4HgfaGkpav2PvXevYoB
+<br>YWSGTclHOHN5D3xsbIX6wvunkNhllcqrFlC3braG2tQnt2+PMk1gMA2jhwCg7qam
+<br>RtC27n0RY25jMfM/fESTImcD/1OtFwRtchqjPvl2IHSCBlltJyksuStevOfAFnc1
+<br>p3H+JqdUiKVf8oAF4NP4KarXL34xPCJXLKlBwHC3SH8powy2HX0mhsCjvVQQeLOP
+<br>fU3Q5DJxGM16hfmqlD1k4a7NUjnXwlCrce4rVToFbCnLrJTVoMDyNhowrXPbPCVM
+<br>N3FNA/0Uciz19raTBGkwo6kpsicpZG7Mk4eGFK5ssWxPxlLYoQ7yzgekWd9h6zBT
+<br>IQpdkatzdNf7xDEaUEBhO4vD7Il02OLigro95N5savsH9StTNCsJgmaiwtX5hxuF
+<br>WpW974xgfCmbGOPnbs1QTuyT85VllLxHI5fsGOYKCd/qo8H4nLQHQksgVGVzdIhZ
+<br>BBMRAgAZBQI+d5t+BAsHAwIDFQIDAxYCAQIeAQIXgAAKCRDCVd5vH6A96m7fAKDs
+<br>YVhdSqNn+u/rkj1pU6kFldY0JwCcCCXth72RJ9tAIz5gq9M3m6y2+7q5AQ0EPneb
+<br>gRAEAIb/sxLIAKaahBfBpGxpn3ZKhvug1z6yP7jLWFNLFugaakYjm5LXsI5Hpj06
+<br>mAE2fJPUNc1of0ZaK4La3XA8l/nVaadDP6FDqnxuPv3ne5JAxcK76ecT+m0ljQXZ
+<br>oVnUkUqeNnwtcIs0fmmXnaeD68OHdidYsIuuEDhrFvPAT6cfAAMFA/923B1Bm4NR
+<br>riLy8QxYNuTxImtxoVg4NtfnYuHWyoxP1Ic3C1nZD2+fxf2685KNKx+3ZwaE81zN
+<br>ZNl0kNdFhB24Vmr6HM5C+eSlHj8C+LOUdP1A/9Un5utceg/qjNYkRXJx5mjyCizh
+<br>Gg/+1mLB5e+OA9Tl5R+96PKPFov+UjNPu4hGBBgRAgAGBQI+d5uBAAoJEMJV3m8f
+<br>oD3qewYAoNFRCBVfbX+LKxmWOZoqyQhB7jfnAKDDOCzQhZLZmrf0Uqdk6yj+HDm0
+<br>rA==
+<br>=+DfK
+<br>­­­­­END PGP PUBLIC KEY BLOCK­­­­­
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:2279px; width:431px; height:156px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Copy the entire contents of that file, including the lines beginning with &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­­­­</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">,&quot; and 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">paste them on a web page or in an email message to someone else. That's all it takes to 
+<br>export your public key. 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Note: it is possible to export your private key in the same manner, with the &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­export­
+<br>secret­keys</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; instead of &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­export</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">.&quot; This is useful for backup or for transferring it 
+<br>to another computer, as long as you know what you're doing and you can be sure the new 
+<br>copy will be secure. Make sure you don't ever accidentally publish your </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">private</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> key! 
+<br>Before you publish a key in ASCII form, check that the first line has the word 
+<br>&quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">PUBLIC</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">,&quot; not &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">PRIVATE</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">.&quot; 
+<br></span></div><span style="position:absolute; border: gray 1px solid; left:0px; top:2576px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:2576px;"><a name="4">Page 4</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:2648px; width:278px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">1.4 Backing Up Your Keys 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:2698px; width:431px; height:173px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Keeping your GPG key files safe is just as important as remembering your passphrase­­
+<br>your passphrase does you no good if you don't have a copy of your full private key on 
+<br>your computer. If your key file is destroyed, there is absolutely no way to reconstruct it, 
+<br>short of executing a cryptanalysis on your own data. To back up your GPG keys, 
+<br>including all your private keys, locate the files </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">pubring.gpg</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">, </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">secring.gpg</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">, and </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">trustdb.gpg 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">in the folder where you have installed GPG, and copy them to a safe location, such as a 
+<br>CD­R disc. Store this disc in a safe place where potential attackers won't likely be able to 
+<br>find it. (Of course, your keys are safe long as your attacker doesn't know your 
+<br>passphrase.) 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Now, you are finally ready to actually encrypt something. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:2883px; width:365px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">2. Encrypting and Decrypting Files 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:2933px; width:434px; height:142px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">The basic encryption and decryption procedure in GPG is this: The sender determines the 
+<br></span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">recipient</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> of a file, acquires that recipient's public key if he hasn't already done so, and 
+<br>then runs the plaintext through GPG along with this key to obtain the cyphertext.</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:13px">4.1</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">When 
+<br>the recipient wants to decrypt the file, he applies his private key to the cyphertext to 
+<br>obtain the plaintext. 
+<br>In fact, the sender and recipient aren't always different people. One important use of GPG 
+<br>is to encrypt your own data, storing the cyphertext and destroying the plaintext. This is an 
+<br>excellent defense against physical attacks on your computer or your local file server. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3088px; width:400px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">2.1 Using the GPG Encrypt Command 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3138px; width:432px; height:98px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Choose a file you want to encrypt. For example, let's assume you have diary, where each 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">month is a new file, and you're done with February 2003, which is called </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">diary 2003­
+<br>02.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. Suppose you want to encrypt this file and then put it away in an archive folder or a 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">CD­R disc. At the command prompt, type (all on one line) 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­recipient &quot;YOUR­NAME&quot; ­­output &quot;diary 2003­02.txt.gpg&quot;
+<br> ­­encrypt &quot;diary 2003­02.txt&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3251px; width:430px; height:33px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Don't forget to fill in </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">YOUR­NAME</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> with the actual name </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">you</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> attached to your key. 
+<br>Always remember the &quot;­output&quot; option when you use an encryption command in GPG; if 
+<br></span></div><span style="position:absolute; border: black 1px solid; left:478px; top:2979px; width:12px; height:0px;"></span>
+<span style="position:absolute; border: gray 1px solid; left:0px; top:3418px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:3418px;"><a name="5">Page 5</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3490px; width:431px; height:140px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">you omit this option, the output will be dumped to the command prompt window instead 
+<br>of to a file. Finally, notice that the command (usually an action verb) always goes in the 
+<br>last position on the GPG command line, after any options. Now </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">diary 2003­02.txt.gpg 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">will contain a seemingly random string of bytes. You can look at it with Notepad if you'd 
+<br>like. 
+<br>There is a similar command, &quot;­encrypt­files,&quot; which will automatically choose and name 
+<br>an output file for you. But the filename it chooses will be missing the extension of the 
+<br>plaintext filename (</span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">, </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.jpg</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">, </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.zip</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">, etc.) so I don't use it, myself. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3642px; width:341px; height:72px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">2.2 Using the GPG Decrypt­Files 
+<br>Command 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3728px; width:427px; height:68px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Now, suppose a year from now you're feeling nostalgic and you want to read February 
+<br>2003's diary. You would copy the cyphertext back to your workspace on your computer, 
+<br>and type the following at the command prompt: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­decrypt­files &quot;diary 2003­02.txt.gpg&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3811px; width:424px; height:100px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG will look up your private key and prompt you for the passphrase. Provided your 
+<br>private key is still installed on your computer, and you still remember your passphrase 
+<br>(you didn't write it on a Post­It and stick it on your monitor, did you?) you will get back 
+<br>the original plaintext exactly as it was before you encrypted it. If you want to decrypt a 
+<br>short file and display it immediately in the console, you can use the &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­decrypt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; 
+<br>command instead of the &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­decrypt­files</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; command. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3923px; width:413px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">2.3 Sending an Encrypted File by Email 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:3973px; width:431px; height:89px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Encrypting your own files is useful, but a more common use of GPG is to send encrypted 
+<br>data to someone else. Before you can use GPG to encrypt a file for someone else, you 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">need to get their public key. 
+<br></span><span style="font-family: NimbusRomNo9L-Medi; font-size:26px">2.3.1 Importing the key 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:4077px; width:433px; height:50px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">As I said before, two convenient ways of getting someone's public key are email and 
+<br>personal web pages. As an example, you can download </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">my</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> public key from my web 
+<br>server; try it right now. Go to www.glump.net/signature . If you scroll down a page or so, 
+<br></span></div><span style="position:absolute; border: black 1px solid; left:234px; top:4125px; width:124px; height:0px;"></span>
+<span style="position:absolute; border: gray 1px solid; left:0px; top:4260px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:4260px;"><a name="6">Page 6</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:4332px; width:425px; height:85px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">you will see a familiar­looking block of text representing my public key. Save the entire 
+<br>page to a text file. (In Internet Explorer, choose the type &quot;Text File&quot; in the &quot;Save As&quot; 
+<br>dialog box.) Suppose you named the saved file </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">brendan.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. At the command prompt, 
+<br>type 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­import &quot;brendan.txt&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:4431px; width:402px; height:72px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG should say 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg: key A3CA0378: public key &quot;Brendan Kidwell &lt;brendan@glump.net&gt;&quot;
+<br> imported
+<br>gpg: Total number processed: 1
+<br>gpg:               imported: 1
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:4517px; width:434px; height:157px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Notice that GPG wasn't distracted by all the extra text on the page. It looks for the telltale 
+<br>&quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">BEGIN PGP PUBLIC KEY BLOCK</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; line and ignores everything outside that block 
+<br>of text. 
+<br>One more step you need to perform after you've imported a key from an external source 
+<br>is set the trust level on it. GPG is paranoid, and if you use the key right now as it is, you 
+<br>will get a warning message saying that you haven't established the authenticity of the key. 
+<br>To make this warning message go away, use the GPG &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­edit­key</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; command to set 
+<br>the trust level: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­edit­key &quot;Brendan Kidwell&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:4690px; width:432px; height:73px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG will enter the interactive key editing mode. Enter the command &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">trust</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; and select 
+<br>level &quot;</span><span style="font-family: NimbusRomNo9L-Medi; font-size:17px">5</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">) I trust ultimately.&quot; Then enter &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">quit</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; to save your change. 
+<br></span><span style="font-family: NimbusRomNo9L-Medi; font-size:26px">2.3.2 Encrypting the message 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:4778px; width:431px; height:76px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Now you're ready to encrypt the file. Let's assume you have a file you want to send to me 
+<br>called </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">message to brendan.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. At the command prompt, type 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­armor ­­recipient &quot;Brendan Kidwell&quot;
+<br> ­­output &quot;message to brendan.txt.asc&quot;
+<br> ­­encrypt &quot;message to brendan.txt&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:4869px; width:423px; height:91px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG will produce a file called </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">message to brendan.txt.asc</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">, whose content you can copy 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">and paste into an email. 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Alternatively, if you need to send a particularly large file, you should use the encrypt 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">command without the &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­armor</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; option: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­recipient &quot;RECIPIENT&quot; ­­output &quot;FILE.gpg&quot; ­­encrypt &quot;FILE&quot;
+<br></span></div><span style="position:absolute; border: gray 1px solid; left:0px; top:5102px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:5102px;"><a name="7">Page 7</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5174px; width:432px; height:90px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">and instead of pasting </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">FILE.gpg</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> into the body of the email, include it as an attachment. 
+<br>Make sure the </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">name</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> of the file doesn't reveal anything that should be secret. 
+<br>If you'd like, you can go ahead and try to send an encrypted message to me. I'll let you 
+<br>know if I receive it correctly. If you want an encrypted reply, make sure you include your 
+<br>public key or tell me where I can get it. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5276px; width:361px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">2.4 Decrypting Files Sent by Email 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5326px; width:425px; height:51px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">How you deal with an encrypted email message which you have received depends on 
+<br>how it was sent to you. When you receive an encrypted message, its body might contain 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">­­­­­BEGIN PGP MESSAGE­­­­­
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5392px; width:430px; height:72px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">followed by a string of random­looking characters. Or the message might simply have an 
+<br>attached file whose name ends with &quot;</span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.gpg</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; or &quot;</span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.pgp</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">.&quot; 
+<br></span><span style="font-family: NimbusRomNo9L-Medi; font-size:26px">2.4.1 Encrypted data is in the message body 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5479px; width:433px; height:102px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">If the encrypted data is in the message body, save the entire message to a file, and end the 
+<br>file name with </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.asc</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. If you know that the encrypted data is some binary format, include 
+<br>the file extension before the </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.asc</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. For example, if you know the message contains an 
+<br>encrypted Microsoft Word file, you would name the file </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">message.doc.asc</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. At the 
+<br>command prompt, type 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­decrypt­files &quot;FILE.asc&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5596px; width:432px; height:142px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">where </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">FILE.asc</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> is the filename you used to save the message. GPG will tell you who the 
+<br>file was encrypted for and prompt you for the passphrase. If the file wasn't encrypted 
+<br>using </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">your</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> public key, GPG give up and tell you that it doesn't have the private key 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">needed to decrypt this file. If the decryption succeeded, you should get the original file 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">back, with the name you gave it, minus the </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.asc</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> extension. 
+<br>Remember, if you know the encrypted data is just a short text message, you can display it 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">on the console instead of storing it in a file with the &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­decrypt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; command: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­decrypt &quot;FILE.asc&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5752px; width:323px; height:26px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:26px">2.4.2 Encrypted data is in an attached file 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:5794px; width:389px; height:16px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">If the encrypted data is in an attached file, save that file to your computer. At the 
+<br></span></div><span style="position:absolute; border: gray 1px solid; left:0px; top:5944px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:5944px;"><a name="8">Page 8</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6016px; width:180px; height:35px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">command prompt, type 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­decrypt­files &quot;FILE.gpg&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6065px; width:427px; height:53px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">where </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">FILE.gpg</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> is the name of the file you saved. (If the message was created using 
+<br>PGP,</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:13px">4.2</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">the name of the attached file will probably end with &quot;</span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">.pgp</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; instead.) Again, GPG 
+<br>will only work if you have the private key needed to decrypt the file. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6130px; width:401px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">2.5 Encrypting for Multiple Recipients 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6180px; width:429px; height:251px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Sometimes, you'll want to send an encrypted file to more than one person. This could 
+<br>create a problem, though, because no one should be sharing a private key with anyone 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">else. You could always make a separate encrypted file for each recipient, but this can get 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">tiring if you need to send a file to as many as five people. 
+<br>There is a better way: GPG allows you to specify a list of people who may be able to 
+<br>decrypt a file. GPG will then use all of those individuals' public keys to encrypt the data 
+<br>in such a way that any one of their private keys (and no one else's) can decrypt the data. 
+<br>The syntax is straightforward. Just add more &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­recipient</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; options to the command 
+<br>line. Suppose you wanted to encrypt the same message as in Subsection 4.3.2 above, but 
+<br>wanted to send the message so that both you and I could decrypt it later. You would type 
+<br>the following at the command prompt: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­armor ­­recipient &quot;Brendan Kidwell&quot;
+<br> ­­recipient &quot;YOUR­NAME&quot;
+<br> ­­output &quot;message to brendan.txt.asc&quot;
+<br> ­­encrypt &quot;message to brendan.txt&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6446px; width:434px; height:212px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">and then copy the output file into an email message as before. 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Sending encrypted email this way can make it easier to manage your saved 
+<br>correspondence. Normally when you send plaintext email, a copy of the sent message is 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">saved somewhere in your email software (unless you specified that you don't want to save 
+<br>copies.) You can always go back and review your sent email to recall what was said. If 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">you specify your target </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">and</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> yourself as recipients when you prepare an encrypted 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">message, then you can go back and review it in your sent email collection whenever you 
+<br>need to, with only the added step that you need to decrypt it before you view it. You 
+<br>needn't save a separate plaintext copy of the message, nor do you need to make another 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">copy encrypted for yourself. 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Specifying several recipients does not adversely affect the size of the encrypted data. I 
+<br>tried encrypting a large (</span><span style="font-family: NimbusMonL-Regu; font-size:14px">~</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">8MB) compressed binary file for one and then two recipients. 
+<br></span></div><span style="position:absolute; border: black 1px solid; left:114px; top:6094px; width:12px; height:0px;"></span>
+<span style="position:absolute; border: gray 1px solid; left:0px; top:6786px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:6786px;"><a name="9">Page 9</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6858px; width:337px; height:16px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">The difference in the size of the output was only a few hundred bytes. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6886px; width:161px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">3. Signing Files 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:6937px; width:434px; height:378px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Often it is desirable to verify the origin of data, whether it is encrypted or not. GPG's 
+<br>signature functions provide a means of verifying authenticity. 
+<br>The theory is simple. Public and private GPG keys work either way. Once you have 
+<br>encrypted data with one of the keys in a pair, it can only be decrypted with its 
+<br>complement in a the same key pair. Normally GPG operates by encrypting with the 
+<br>public key so that only the recipient can decrypt the data using his private key. 
+<br>Digital signatures work the other way around; data is encrypted using the signer's private 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">key. If someone receives the file and succeeds in decrypting the data with the signer's 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">public key, then presumably, the data </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">must</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> have been encrypted by that signer. Therefore, 
+<br>the signer must have created the data himself, or at least approve of its contents in some 
+<br>way (depending on the nature of the actual data.) A digital signature is just as useful as a 
+<br>physical one made with a pen, and arguably, it is more secure. 
+<br>When GPG creates a digital signature, it doesn't encrypt the entire file with the signer's 
+<br>private key. Instead, it computes a </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">hash value</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">,</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:13px">5.1</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">encrypts that, and </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">appends</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> it to the 
+<br>original data as the signature. This makes it possible to create signed files that are 
+<br>readable without any encryption software, and aren't significantly larger; GPG is needed 
+<br>only to </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">verify</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> the authenticity of the file. 
+<br>To verify a signature, GPG reads the data that was signed and computes its hash value. 
+<br>Then it decrypts the signature, using the signer's public key, to obtain the true hash value. 
+<br>If the two hash values match, the signature is valid and the data you have is exactly the 
+<br>data the signer had when he created the signature. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7327px; width:415px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">3.1 Using the GPG Clearsign Command 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7377px; width:432px; height:68px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Suppose you want to send a message to someone in such a way that they can prove it was 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">you who authored the message. First, compose the message in a text editor and save it as 
+<br></span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">message.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px"> in a convenient folder. Then, at the command prompt, type 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­local­user &quot;YOUR­NAME&quot; ­­clearsign &quot;message.txt&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7460px; width:434px; height:33px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Since this operation involves your private key, GPG will prompt you for your passphrase. 
+<br>After that, GPG will compute a signature and write a new file called </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">message.asc 
+<br></span></div><span style="position:absolute; border: black 1px solid; left:311px; top:7184px; width:12px; height:0px;"></span>
+<span style="position:absolute; border: gray 1px solid; left:0px; top:7628px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:7628px;"><a name="10">Page 10</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7700px; width:425px; height:86px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">containing the plaintext and the signature. The contents of this file can be copied into an 
+<br>email and sent to the intended recipient. 
+<br>As an example, here is message that I have signed: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">­­­­­BEGIN PGP SIGNED MESSAGE­­­­­
+<br>Hash: SHA1
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7799px; width:294px; height:37px;"><span style="font-family: NimbusMonL-Regu; font-size:12px">This is a test message signed by Brendan Kidwell.
+<br>­­­­­BEGIN PGP SIGNATURE­­­­­
+<br>Version: GnuPG v1.2.1 (MingW32)
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7848px; width:384px; height:49px;"><span style="font-family: NimbusMonL-Regu; font-size:12px">iD8DBQE+fnwc4lxlBKPKA3gRAq13AJ4557Md6xF15OoEDyIIB+UvDQKwmwCfcrCY
+<br>na12Ng9W4K5mP1ZWEueNjCo=
+<br>=73hB
+<br>­­­­­END PGP SIGNATURE­­­­­
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7912px; width:378px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">3.2 Verifying a Clearsigned Message 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:7962px; width:427px; height:158px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Suppose you receive a message like the one produced in the previous section. Or you 
+<br>might find such a message posted on a public web site or electronic message board. 
+<br>Before you can verify its signature, you need to obtain the signer's public key and install 
+<br>it on your computer. This procedure is described in the previous chapter, under the 
+<br>heading &quot;Importing the key.&quot; 
+<br>If the message to be verified is contained in an email, export it to a text file. If the 
+<br>message is displayed on a web page or some other online medium, save it as a text file 
+<br>(named, for example, </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">message.txt</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">.) Then type the following at the command prompt: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­verify &quot;message.txt.asc&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8134px; width:433px; height:89px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG will locate the signer's key if you have it, and use it to check the signature and 
+<br>report whether or not it is valid. 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">If you're reading the online version of this document and you've already installed my key, 
+<br>you can try copying the test message displayed in the previous section into a text file and 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">verifying the signature with this procedure. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8236px; width:398px; height:35px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">3.3 Signing and Verifying Binary Files 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8286px; width:432px; height:49px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Text messages can have signatures appended to them without disrupting the contents of 
+<br>the message too much, but binary files such as Microsoft Word documents and Zip 
+<br>archives can't have arbitrary data attached to them. To sign binary files, it is costumary to 
+<br></span></div><span style="position:absolute; border: gray 1px solid; left:0px; top:8470px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:8470px;"><a name="11">Page 11</a></div>
+<div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8542px; width:419px; height:64px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">have GPG create a separate signature file. Suppose you have a Zip archive you want to 
+<br>sign, called </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">monthly report.zip</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. Type the following at the command prompt: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­local­user &quot;YOUR­NAME&quot; ­­output &quot;monthly report.zip.sig&quot;
+<br> ­­detach­sign &quot;monthly report.zip&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8620px; width:433px; height:108px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">Again, GPG will prompt you for your passphrase and then it will generate a signature in 
+<br></span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">monthly report.zip.sig</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. If you were going to email this to someone, you would attach both 
+<br>files to the email message. 
+<br>Now suppose you're on the other end and you receive a file with a signature like this via 
+<br>email. Save both files to the same folder and type the following at the command prompt: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­verify &quot;monthly report.zip.sig&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8743px; width:430px; height:139px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG will verify the signature of the file using the signer's public key and report whether 
+<br>or not it is valid. Again, the person doing the verifying must have a the signer's public 
+<br>key installed. 
+<br>Software distributed over the Internet is often signed in this manner­­especially software 
+<br>that relates to security. A user can download a large installation package quickly from a 
+<br>local site, which need not be trusted. After the download is complete, he can go back to 
+<br>the creator's web site and fetch a public key and the signature for the installation package 
+<br>and use them to verify the package's authenticity. 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8894px; width:412px; height:72px;"><span style="font-family: NimbusRomNo9L-Medi; font-size:35px">3.4 Encrypting and Signing at the Same 
+<br>Time 
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:8980px; width:433px; height:64px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">It is possible to encrypt and sign a file at the same time. Use this command to encrypt and 
+<br>sign a file: 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­local­user &quot;YOUR­NAME&quot; ­­recipient &quot;RECIPIENT&quot; ­­armor
+<br> ­­sign ­­output &quot;FILENAME.asc&quot; ­­encrypt &quot;FILENAME&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:9059px; width:255px; height:58px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">This produces an output file named </span><span style="font-family: NimbusRomNo9L-ReguItal; font-size:16px">FILENAME.asc</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">. 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">To decrypt such a file, simply run 
+<br></span><span style="font-family: NimbusMonL-Regu; font-size:12px">gpg ­­decrypt­files &quot;FILENAME.asc&quot;
+<br></span></div><div style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:90px; top:9131px; width:421px; height:55px;"><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">GPG will see that the file has been signed and it will automatically verify it if it has the 
+<br></span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">signer's public key. 
+<br>And, as always if you prefer simple binary output, omit the &quot;</span><span style="font-family: NimbusMonL-Regu; font-size:14px">­­armor</span><span style="font-family: NimbusRomanNo9L-Regu; font-size:16px">&quot; option. 
+<br></span></div><span style="position:absolute; border: gray 1px solid; left:0px; top:9312px; width:612px; height:792px;"></span>
+<div style="position:absolute; top:9312px;"><a name="12">Page 12</a></div>
+<div style="position:absolute; top:0px;">Page: <a href="#1">1</a>, <a href="#2">2</a>, <a href="#3">3</a>, <a href="#4">4</a>, <a href="#5">5</a>, <a href="#6">6</a>, <a href="#7">7</a>, <a href="#8">8</a>, <a href="#9">9</a>, <a href="#10">10</a>, <a href="#11">11</a>, <a href="#12">12</a></div>
+</body></html>
