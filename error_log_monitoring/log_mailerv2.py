@@ -18,6 +18,7 @@ while 1:
 		f.seek (max (fsize-1024, 0), 0)
 		lines = f.readlines()
 	if(sum_now > sum_start):
+		#change '[error]' to needed keyword
 		find_str = "[error]"
 		count = sum_now - sum_start
 		lines = lines[-count:]
@@ -28,25 +29,25 @@ while 1:
 				toaddr = ["suyash.masugade@innoplexus.com","bedapudi.praneeth@innoplexus.com"]
 				for t in toaddr:
 					msg = MIMEMultipart()
-					 
+
 					msg['From'] = fromaddr
 					msg['To'] = t
 					msg['Subject'] = "error log"
-					 
+
 					body = "error log attached"
-					 
+
 					msg.attach(MIMEText(body, 'plain'))
-					 
+
 					filename = "error.log"
 					attachment = open("/var/log/nginx/error.log", "rb")
-					 
+
 					part = MIMEBase('application', 'octet-stream')
 					part.set_payload((attachment).read())
 					encoders.encode_base64(part)
 					part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
-					 
+
 					msg.attach(part)
-					
+
 					server = smtplib.SMTP('email-smtp.us-east-1.amazonaws.com:587')
 					server.starttls()
 					server.login("AKIAJLVT63DSM247NJHQ", "AvAqwJImHHr9Ow98fImQo9E4GvI73WiKQgsSKAGfId70")
