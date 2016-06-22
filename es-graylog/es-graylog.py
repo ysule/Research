@@ -54,7 +54,11 @@ def node_name(x, y):
 def full_message(x, y):
     x = x.split(y,1)[1]
     x = x.split(']',1)[1]
-    x = x.replace('\\',' ')
+    x = x.replace('\\n',' ')
+    if x[-1] == ']':
+        x = x[:-1]
+    if x[-1] == "'":
+        x = x[:-1]
     return x
 #function that obtains timestamp from a line
 def timestamp(x):
