@@ -9,8 +9,10 @@ gelf = UdpClient(gelf_server)
 
 gelf = UdpClient(gelf_server, port=12201, mtu=8000, source='ES-server')
 #getting the names of all log files in the specified folder
-#path = raw_input('Enter the path for log folder here. Eg: /usr/share/elasticsearch/logs/ :')
-path = '/home/praneeth/Python-scripts/es-graylog/'
+path = raw_input('Enter the path for log folder here. Eg: /usr/share/elasticsearch/logs/ :')
+#path = '/home/praneeth/Python-scripts/es-graylog/'
+if path[-1] != '/':
+    path = path + '/'
 log_files = [f for f in listdir(path) if isfile(join(path, f))]
 log_files = filter(lambda f: f.endswith(('.log')), log_files)
 old_count = {}
@@ -54,7 +56,8 @@ def node_name(x, y):
 def full_message(x, y):
     x = x.split(y,1)[1]
     x = x.split(']',1)[1]
-    x = x.replace('\\n',' ')
+    x = x.replace('\n',' ')
+    x = x.replace('\t',' ')
     if x[-1] == ']':
         x = x[:-1]
     if x[-1] == "'":
@@ -70,29 +73,33 @@ def timestamp(x):
     return (x-b).total_seconds()-19800
 while 1:
     for count,log_file in enumerate(log_files):
-        data_position = list('')
-        data = list('')
-        data_main = {}
-        with open(path+log_file) as f:
-            lines = f.readlines()
-        for i,line in enumerate(lines):
-            if i>int(old_count[count]):
-                if line[0] == '[':
-                    data.append('')
-                    data_position.append(i)
-                    old_count[count] = i
-        for i,x in enumerate(data_position):
-            try:
-                data[i] = lines[int(x):][:int(data_position[i+1])-int(x):]
-            except:
-                data[i] = lines[int(x):]
-        for i,value in enumerate(data):
-            data_main[i] = {}
-            data_main[i]['level'] = level(str(value))
-            data_main[i]['short_message'] = short_message(str(value),str(data_main[i]['level']))
-            data_main[i]['node_name'] = node_name(str(value),str(data_main[i]['short_message']))
-            data_main[i]['timestamp'] = timestamp(str(value))
-            data_main[i]['level'] = level_no(str(value))
-            data_main[i]['full_message'] = full_message(str(value),str(data_main[i]['node_name']))
-        for i in range(0,len(data_main)):
-            gelf.log(data_main[i])
+        try:
+            data_position = list('')
+            data = list('')
+            data_main = {}
+            with open(path+log_file) as f:
+                #print log_file
+                lines = f.readlines()
+            for i,line in enumerate(lines):
+                if i>int(old_count[count]):
+                    if line[0] == '[':
+                        data.append('')
+                        data_position.append(i)
+                        old_count[count] = i
+            for i,x in enumerate(data_position):
+                try:
+                    data[i] = lines[int(x):][:int(data_position[i+1])-int(x):]
+                except:
+                    data[i] = lines[int(x):]
+            for i,value in enumerate(data):
+                data_main[i] = {}
+                data_main[i]['level'] = level(str(value))
+                data_main[i]['short_message'] = short_message(str(value),str(data_main[i]['level']))
+                data_main[i]['node_name'] = node_name(str(value),str(data_main[i]['short_message']))
+                data_main[i]['timestamp'] = timestamp(str(value))
+                data_main[i]['level'] = level_no(str(value))
+                data_main[i]['full_message'] = full_message(str(value),str(data_main[i]['node_name']))
+            for i in range(0,len(data_main)):
+                gelf.log(data_main[i])
+        except:
+            garbage = 'garbage'
