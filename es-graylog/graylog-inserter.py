@@ -6,11 +6,12 @@ gelf_server = 'localhost'
 gelf = UdpClient(gelf_server)
 
 # Using all arguments
-gelf = UdpClient(gelf_server, port=12202, mtu=8000, source='macbook.local')
+gelf = UdpClient(gelf_server, port=12201, mtu=8000, source='macbook.local')
 
 # Bare minimum is to send a string, which will map to gelf['short_message']
-gelf.log('server is DOWN')
+gelf.log(timestamp = 1466570428.85)
 
+'''
 # 'source' and 'host' are the same. Defaults to socket.gethostname() but can be overridden
 gelf.log('server is DOWN', source='hostchecker')
 
@@ -27,3 +28,4 @@ data['short_message'] = 'warning from python'
 data['host'] = 'hostchecker'
 data['level'] = syslog.LOG_WARNING
 gelf.log(data)
+'''

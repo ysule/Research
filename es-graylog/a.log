@@ -1,40 +1,49 @@
-[2016-06-21 10:39:47,411][INFO ][node                     ] [Sluggo] version[2.3.2], pid[6629], build[b9e4a6a/2016-04-21T16:03:47Z]
-[2016-06-21 10:39:47,413][INFO ][node                     ] [Sluggo] initializing ...
-[2016-06-21 10:39:48,217][INFO ][plugins                  ] [Sluggo] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
-[2016-06-21 10:39:48,257][INFO ][env                      ] [Sluggo] using [1] data paths, mounts [[/ (/dev/sda7)]], net usable_space [3.6gb], net total_space [21.8gb], spins? [possibly], types [ext4]
-[2016-06-21 10:39:48,257][INFO ][env                      ] [Sluggo] heap size [990.7mb], compressed ordinary object pointers [true]
-[2016-06-21 10:39:48,257][WARN ][env                      ] [Sluggo] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
-[2016-06-21 10:39:50,784][INFO ][node                     ] [Sluggo] initialized
-[2016-06-21 10:39:50,784][INFO ][node                     ] [Sluggo] starting ...
-[2016-06-21 10:39:50,877][INFO ][transport                ] [Sluggo] publish_address {192.168.1.63:9400}, bound_addresses {[::]:9400}
-[2016-06-21 10:39:50,881][INFO ][discovery                ] [Sluggo] a/Ct8Ca0vbTJ-4e9syLSIKZw
-[2016-06-21 10:39:53,911][INFO ][cluster.service          ] [Sluggo] new_master {Sluggo}{Ct8Ca0vbTJ-4e9syLSIKZw}{192.168.1.63}{192.168.1.63:9400}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2016-06-21 10:39:53,918][INFO ][http                     ] [Sluggo] publish_address {192.168.1.63:9200}, bound_addresses {[::]:9200}
-[2016-06-21 10:39:53,919][INFO ][node                     ] [Sluggo] started
-[2016-06-21 10:39:54,191][INFO ][gateway                  ] [Sluggo] recovered [1] indices into cluster_state
-[2016-06-21 10:39:54,704][INFO ][cluster.routing.allocation] [Sluggo] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[graylog2_0][0]] ...]).
-[2016-06-21 10:40:23,882][INFO ][cluster.service          ] [Sluggo] added {{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{_ljm16MUQUy9Lxm31XH45g}{127.0.0.1}{127.0.0.1:9350}{client=true, data=false, master=false},}, reason: zen-disco-join(join from node[{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{_ljm16MUQUy9Lxm31XH45g}{127.0.0.1}{127.0.0.1:9350}{client=true, data=false, master=false}])
-[2016-06-21 11:40:05,600][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
-[2016-06-21 11:40:51,588][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
-[2016-06-21 12:15:08,587][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
-[2016-06-21 16:45:35,592][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
-[2016-06-21 17:19:42,507][INFO ][node                     ] [Sluggo] stopping ...
-[2016-06-21 17:19:42,546][INFO ][node                     ] [Sluggo] stopped
-[2016-06-21 17:19:42,546][INFO ][node                     ] [Sluggo] closing ...
-[2016-06-21 17:19:42,554][INFO ][node                     ] [Sluggo] closed
-[2016-06-21 17:25:46,228][INFO ][node                     ] [Vashti] version[2.3.2], pid[2722], build[b9e4a6a/2016-04-21T16:03:47Z]
-[2016-06-21 17:25:46,240][INFO ][node                     ] [Vashti] initializing ...
-[2016-06-21 17:25:48,908][INFO ][plugins                  ] [Vashti] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
-[2016-06-21 17:25:49,049][INFO ][env                      ] [Vashti] using [1] data paths, mounts [[/ (/dev/sda7)]], net usable_space [3.9gb], net total_space [21.8gb], spins? [possibly], types [ext4]
-[2016-06-21 17:25:49,049][INFO ][env                      ] [Vashti] heap size [990.7mb], compressed ordinary object pointers [true]
-[2016-06-21 17:25:49,049][WARN ][env                      ] [Vashti] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
-[2016-06-21 17:25:57,645][INFO ][node                     ] [Vashti] initialized
-[2016-06-21 17:25:57,645][INFO ][node                     ] [Vashti] starting ...
-[2016-06-21 17:25:57,991][INFO ][transport                ] [Vashti] publish_address {192.168.1.63:9400}, bound_addresses {[::]:9400}
-[2016-06-21 17:25:57,995][INFO ][discovery                ] [Vashti] a/5jXnyeYMQq-UzwHv1wuN7Q
-[2016-06-21 17:26:01,086][INFO ][cluster.service          ] [Vashti] new_master {Vashti}{5jXnyeYMQq-UzwHv1wuN7Q}{192.168.1.63}{192.168.1.63:9400}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2016-06-21 17:26:01,103][INFO ][http                     ] [Vashti] publish_address {192.168.1.63:9200}, bound_addresses {[::]:9200}
-[2016-06-21 17:26:01,103][INFO ][node                     ] [Vashti] started
-[2016-06-21 17:26:01,405][INFO ][gateway                  ] [Vashti] recovered [1] indices into cluster_state
-[2016-06-21 17:26:02,102][INFO ][cluster.routing.allocation] [Vashti] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[graylog2_0][0]] ...]).
-[2016-06-21 17:26:42,767][INFO ][cluster.service          ] [Vashti] added {{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{DPYpLvAhSfSw90adaGkK7w}{127.0.0.1}{127.0.0.1:9350}{client=true, data=false, master=false},}, reason: zen-disco-join(join from node[{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{DPYpLvAhSfSw90adaGkK7w}{127.0.0.1}{127.0.0.1:9350}{client=true, data=false, master=false}])
+[2016-06-22 08:39:47,409][INFO ][node                     ] [Sluggo] version[2.3.2], pid[6629], build[b9e4a6a/2016-04-21T16:03:47Z]
+[2016-06-22 08:39:47,413][INFO ][node                     ] [Sluggo] initializing ...
+[2016-06-22 08:39:48,217][INFO ][plugins                  ] [Sluggo] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2016-06-22 08:39:48,257][INFO ][env                      ] [Sluggo] using [1] data paths, mounts [[/ (/dev/sda7)]], net usable_space [3.6gb], net total_space [21.8gb], spins? [possibly], types [ext4]
+[2016-06-22 08:39:48,257][INFO ][env                      ] [Sluggo] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-06-22 08:39:48,257][WARN ][env                      ] [Sluggo] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
+[2016-06-22 08:39:50,784][INFO ][node                     ] [Sluggo] initialized
+[2016-06-22 08:39:50,784][INFO ][node                     ] [Sluggo] starting ...
+[2016-06-22 08:39:50,877][INFO ][transport                ] [Sluggo] publish_address {192.168.1.63:9400}, bound_addresses {[::]:9400}
+[2016-06-22 08:39:50,881][INFO ][discovery                ] [Sluggo] a/Ct8Ca0vbTJ-4e9syLSIKZw
+[2016-06-22 08:39:53,909][INFO ][cluster.service          ] [Sluggo] new_master {Sluggo}{Ct8Ca0vbTJ-4e9syLSIKZw}{192.168.1.63}{192.168.1.63:9400}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-06-22 08:39:53,918][INFO ][http                     ] [Sluggo] publish_address {192.168.1.63:9200}, bound_addresses {[::]:9200}
+[2016-06-22 08:39:53,919][INFO ][node                     ] [Sluggo] started
+[2016-06-22 08:39:54,191][INFO ][gateway                  ] [Sluggo] recovered [1] indices into cluster_state
+[2016-06-22 08:39:54,704][INFO ][cluster.routing.allocation] [Sluggo] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[graylog2_0][0]] ...]).
+[2016-06-22 08:40:23,882][INFO ][cluster.service          ] [Sluggo] added {{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{_ljm16MUQUy9Lxm31XH45g}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false},}, reason: zen-disco-join(join from node[{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{_ljm16MUQUy9Lxm31XH45g}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false}])
+[2016-06-22 09:40:05,600][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
+[2016-06-22 09:40:51,588][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
+[2016-06-22 10:15:08,587][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
+[2016-06-22 16:45:35,592][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
+[2016-06-22 17:19:42,507][INFO ][node                     ] [Sluggo] stopping ...
+[2016-06-22 17:19:42,546][INFO ][node                     ] [Sluggo] stopped
+[2016-06-22 17:19:42,546][INFO ][node                     ] [Sluggo] closing ...
+[2016-06-22 17:19:42,554][INFO ][node                     ] [Sluggo] closed
+[2016-06-22 17:25:46,228][INFO ][node                     ] [Vashti] version[2.3.2], pid[2722], build[b9e4a6a/2016-04-21T16:03:47Z]
+[2016-06-22 17:25:46,240][INFO ][node                     ] [Vashti] initializing ...
+[2016-06-22 17:25:48,908][INFO ][plugins                  ] [Vashti] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2016-06-22 17:25:49,049][INFO ][env                      ] [Vashti] using [1] data paths, mounts [[/ (/dev/sda7)]], net usable_space [3.9gb], net total_space [21.8gb], spins? [possibly], types [ext4]
+[2016-06-22 17:25:49,049][INFO ][env                      ] [Vashti] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-06-22 17:25:49,049][WARN ][env                      ] [Vashti] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
+[2016-06-22 17:25:57,645][INFO ][node                     ] [Vashti] initialized
+[2016-06-22 17:25:57,645][INFO ][node                     ] [Vashti] starting ...
+[2016-06-22 17:25:57,991][INFO ][transport                ] [Vashti] publish_address {192.168.1.63:9400}, bound_addresses {[::]:9400}
+[2016-06-22 17:25:57,995][INFO ][discovery                ] [Vashti] a/5jXnyeYMQq-UzwHv1wuN7Q
+[2016-06-22 17:26:01,086][INFO ][cluster.service          ] [Vashti] new_master {Vashti}{5jXnyeYMQq-UzwHv1wuN7Q}{192.168.1.63}{192.168.1.63:9400}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-06-22 17:26:01,083][INFO ][http                     ] [Vashti] publish_address {192.168.1.63:9200}, bound_addresses {[::]:9200}
+[2016-06-22 17:26:01,083][INFO ][node                     ] [Vashti] started
+[2016-06-22 17:26:01,405][INFO ][gateway                  ] [Vashti] recovered [1] indices into cluster_state
+[2016-06-22 17:26:02,082][INFO ][cluster.routing.allocation] [Vashti] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[graylog2_0][0]] ...]).
+[2016-06-22 17:26:42,767][INFO ][cluster.service          ] [Vashti] added {{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{DPYpLvAhSfSw90adaGkK7w}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false},}, reason: zen-disco-join(join from node[{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{DPYpLvAhSfSw90adaGkK7w}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false}])
+[2016-06-22 18:09:55,501][INFO ][cluster.metadata         ] [Vashti] [graylog2_0] update_mapping [message]
+[2016-06-22 18:27:48,961][INFO ][cluster.service          ] [Vashti] removed {{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{DPYpLvAhSfSw90adaGkK7w}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false},}, reason: zen-disco-node_left({graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{DPYpLvAhSfSw90adaGkK7w}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false})
+[2016-06-22 18:28:28,655][INFO ][cluster.service          ] [Vashti] added {{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{ys_yM7CYR6mGc2LMQ3OhIg}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false},}, reason: zen-disco-join(join from node[{graylog-5bfd0eb0-ee50-421b-9cb1-a49944a05fe3}{ys_yM7CYR6mGc2LMQ3OhIg}{107.0.0.1}{107.0.0.1:9350}{client=true, data=false, master=false}])
+[2016-06-22 20:47:55,735][INFO ][node                     ] [Vashti] stopping ...
+[2016-06-22 20:47:56,864][INFO ][node                     ] [Vashti] stopped
+[2016-06-22 20:47:56,865][INFO ][node                     ] [Vashti] closing ...
+[2016-06-22 20:47:56,887][INFO ][node                     ] [Vashti] closed
+[2016-06-22 11:11:55,887][INFO ][node                     ] [Vashti] closed
+[2016-06-22 11:09:56,887][INFO ][node                     ] [Vashti] praneeth
