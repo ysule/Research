@@ -17,7 +17,7 @@
 [2016-06-22 09:40:05,600][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
 [2016-06-22 09:40:51,588][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
 [2016-06-22 10:15:08,587][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
-[2016-06-22 16:45:35,592][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
+[2016-06-22 12:45:35,592][INFO ][cluster.metadata         ] [Sluggo] [graylog2_0] update_mapping [message]
 [2016-06-22 17:19:42,507][INFO ][node                     ] [Sluggo] stopping ...
 [2016-06-22 17:19:42,546][INFO ][node                     ] [Sluggo] stopped
 [2016-06-22 17:19:42,546][INFO ][node                     ] [Sluggo] closing ...
@@ -47,3 +47,6 @@
 [2016-06-22 20:47:56,887][INFO ][node                     ] [Vashti] closed
 [2016-06-22 11:11:55,887][INFO ][node                     ] [Vashti] closed
 [2016-06-22 11:09:56,887][INFO ][node                     ] [Vashti] praneeth
+[2016-06-22 12:09:56,887][INFO ][node                     ] [Vashti] praneeth
+[2016-06-22 12:22:56,887][INFO ][node                     ] [Vashti] praneeth
+[2016-06-22 12:23:56,887][INFO ][node                     ] [Vashti] praneeth
