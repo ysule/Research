@@ -1,0 +1,11 @@
+U-Uganda
+T-Turky
+S-Spain
+A-Argentina
+N-Netherlands
+G-Germany
+NZ-New Zeland
+SW-Switzerland
+AS-Australia
+US-USA
+C-Canada
