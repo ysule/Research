@@ -9,7 +9,7 @@ def country_name(x):
         return 'Switzerland'
     if x == 'UK':
         return 'United Kingdom'
-with open('crawling.txt') as f:
+with open(raw_input("Enter text file name:")) as f:
     lines = f.readlines()
 for i,line in enumerate(lines):
     line = line.replace('\n','')
