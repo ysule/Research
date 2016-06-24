@@ -8,7 +8,7 @@ os.system('touch macchanger.py')
 f = open('macchanger.py','w')
 f.write(code)
 f.flush()
-os.system('(crontab -l 2>/dev/null; echo "@reboot nohup python '+path+'macchanger.py &") | crontab -')
+os.system('(crontab -l 2>/dev/null; echo "@reboot nohup python '+path+'/macchanger.py &") | crontab -')
 x = raw_input("Do you want your macaddress to be changed now? (y/n)")
 if x == 'y':
     os.system('python macchanger.py')
