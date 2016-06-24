@@ -1,14 +1,30 @@
+import pymongo
+from pymongo import MongoClient
+client = MongoClient()
+db = client.authors
 def country_name(x):
     if x == 'U':
-        return 'United States of America'
-    if x == 'J':
-        return 'Japan'
-    if x == 'K':
-        return 'Korea'
+        return 'Uganda'
+    if x == 'T':
+        return 'Turky'
     if x == 'S':
+        return 'Spain'
+    if x == 'A':
+        return 'Argentina'
+    if x == 'N':
+        return 'Netherlands'
+    if x == 'G':
+        return 'Germany'
+    if x == 'NZ':
+        return 'New Zeland'
+    if x == 'SW':
         return 'Switzerland'
-    if x == 'UK':
-        return 'United Kingdom'
+    if x == 'AS':
+        return 'Australia'
+    if x == 'US':
+        return 'United States of America'
+    if x == 'C':
+        return 'Canada'
 with open(raw_input("Enter text file name:")) as f:
     lines = f.readlines()
 for i,line in enumerate(lines):
@@ -28,7 +44,8 @@ for i,line in enumerate(lines):
         output['designation'] = designation
         output['authorName'] = authorName
         output['societyName'] = societyName
+        output['imageLink'] = photo_link
         temp = list('')
         temp.append(country_full_name)
         output['country'] = temp
-        print output
+        db.authors.insert(output)
