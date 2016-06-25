@@ -1,6 +1,6 @@
 #likes -1
-#comments -10
-#shares -5
+#comments -5
+#shares -10
 #First scores are calculated by above weightages
 #Scores are divided by max possible score
 #Scores are divided by sum of score
