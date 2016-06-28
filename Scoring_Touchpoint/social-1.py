@@ -45,7 +45,7 @@ f_max_score = max(f_no['l'])+max(f_no['v'])+max(f_no['c'])
 f_total = 0
 
 for i in range(0,f_i):
-    f_data[i]['score'] = float(f_no['d'][i]+f_no['c'][i]+f_no['l'][i]+f_no['l'][i])/float(f_max_score)
+    f_data[i]['score'] = float(f_no['d'][i]+f_no['c'][i]+f_no['l'][i]+f_no['v'][i])/float(f_max_score)
     f_total = f_total + f_data[i]['score']
 db.youtube_scored.remove({})
 for i in range(0,f_i):
