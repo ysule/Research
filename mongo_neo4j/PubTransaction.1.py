@@ -6,7 +6,7 @@ from pymongo import MongoClient
 from py2neo import *
 import neo4jWrapperTransaction as nj
 client = MongoClient("localhost",maxPoolSize=None)
-db = client['oilbird']
+db = client['test']
 graph = Graph()
 
 
@@ -57,12 +57,12 @@ def mongoQuery() :
 
 
 '''Process Records'''
-def processRecords(record) : 
+def processRecords(record) :
     if 'pmid' in record :
         pmid  = record['pmid']
     else :
         pmid = ''
-    
+
     # makePMIDNode(record)
 
     makeInterventionNode(record)
@@ -72,7 +72,7 @@ def processRecords(record) :
 #     makeGeneNode(record)
 
 #     makeBiomarkerNode(record)
-    
+
 
 def makePMIDNode(record) :
     tx =graph.begin()
@@ -89,9 +89,9 @@ def makeInterventionNode(record) :
         nj.createNode(interventionList,tx)
         makeAuthorNode(record,interventionList)
         interventionList = []
-    else : 
-        pass 
- 
+    else :
+        pass
+
 
 def makeMOANode(record) :
     tx =graph.begin()
@@ -101,8 +101,8 @@ def makeMOANode(record) :
         nj.createNode(moaList,tx)
         moaList = []
     else :
-        pass    
- 
+        pass
+
 
 def makeIndicationNode(record):
     tx=graph.begin()
@@ -126,7 +126,7 @@ def makeAuthorNode(record,listofDicts) :
     	authorList = []
     else :
     	pass
-   
+
 
 def makeAffiliationNode(record) :
     tx =graph.begin()
@@ -137,10 +137,9 @@ def makeAffiliationNode(record) :
         affList = []
     else :
         pass
-  
+
 
 
 if __name__ == '__main__' :
 #     setupDB()
-    mongoQuery()    
-
+    mongoQuery()

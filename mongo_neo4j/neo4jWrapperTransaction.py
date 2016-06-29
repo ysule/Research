@@ -28,10 +28,10 @@ def createNode(listNodeNames,transactionVar) :
     #     if 'pmid' in inner_dict.keys() :
     #         statement = 'MERGE(n:'+entry['nodeLabel']+'{'+entry['nodeType']+':"'+entry['nodeValue']+'title:'+entry['journal_title']+'abstract:'+entry['abstract']+'})'
     #         tx.run(statement)
-        
+
     #     else :
     for entry in listNodeNames :
-        statement = 'MERGE(n:'+entry['nodeLabel']+'{'+entry['nodeType']+':"'+str(entry['nodeValue'])+'"})'
+        statement = 'MERGE(n:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+str(entry['nodeValue'].encode('utf-8'))+'"})'
         tx.run(statement)
 
 
@@ -40,9 +40,12 @@ def createRelation(listofDict1,listofDict2,relationName,transactionVar) :
     rel = relationName
     tx = transactionVar
     for entry in listofDict1 :
+        statement3 = 'MERGE(n:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+str(entry['nodeValue'].encode('utf-8'))+'"})'
+        tx.run(statement3)
         for entry1 in listofDict2 :
+            statement2 = 'MERGE(n:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+str(entry1['nodeValue'].encode('utf-8'))+'"})'
+            tx.run(statement2)
+            statement1 = 'MATCH (u1:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+entry['nodeValue'].encode('utf-8')+'"}),(u2:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+entry1['nodeValue'].encode('utf-8')+'"}) MERGE(u1)-[:'+relationName+']->(u2)'
 
-            statement1 = 'MATCH (u1:'+entry['nodeLabel']+'{'+entry['nodeType']+':"'+entry['nodeValue']+'"}),(u2:'+entry1['nodeLabel']+'{'+entry1['nodeType']+':"'+entry1['nodeValue']+'"}) MERGE(u1)-[:'+relationName+']->(u2)'
-            
             tx.run(statement1)
     tx.commit()
