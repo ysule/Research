@@ -2,6 +2,7 @@
 '''MongoDB Connection and Neo4j Transaction Class import'''
 import sys
 import ast
+from socket import *
 from pymongo import MongoClient
 from py2neo import *
 import neo4jWrapperTransaction as nj
@@ -53,7 +54,6 @@ def mongoQuery() :
         print(count,':',record['pmid'])
         processRecords(record)
         count += 1
-
 
 
 '''Process Records'''
