@@ -46,6 +46,5 @@ def createRelation(listofDict1,listofDict2,relationName,transactionVar) :
             statement2 = 'MERGE(n:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+str(entry1['nodeValue'].encode('utf-8'))+'"})'
             tx.run(statement2)
             statement1 = 'MATCH (u1:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+entry['nodeValue'].encode('utf-8')+'"}),(u2:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+entry1['nodeValue'].encode('utf-8')+'"}) MERGE(u1)-[:'+relationName+']->(u2)'
-
             tx.run(statement1)
     tx.commit()
