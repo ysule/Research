@@ -22,7 +22,7 @@ import sys
 '''list of Dictionaries containing the values of label, nodeType and its value'''
 
 def createNode(listNodeNames,transactionVar) :
-    tx = transactionVar
+    #tx = transactionVar
     # for inner_dict in listNodeNames :
     #     print(inner_dict)
     #     if 'pmid' in inner_dict.keys() :
@@ -30,10 +30,10 @@ def createNode(listNodeNames,transactionVar) :
     #         tx.run(statement)
 
     #     else :
-    for entry in listNodeNames :
-        statement = 'MERGE(n:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+str(entry['nodeValue'].encode('utf-8'))+'"})'
-        tx.run(statement)
-
+    #for entry in listNodeNames :
+    #    statement = 'MERGE(n:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+str(entry['nodeValue'].encode('utf-8'))+'"})'
+    #    tx.run(statement)
+    a = 1
 
 '''Method to create relationships between nodes'''
 def createRelation(listofDict1,listofDict2,relationName,transactionVar) :
