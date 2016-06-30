@@ -6,7 +6,7 @@ from socket import *
 from pymongo import MongoClient
 from py2neo import *
 import time
-import neo4jWrapperTransaction as nj
+#import neo4jWrapperTransaction as nj
 client = MongoClient("localhost",maxPoolSize=None)
 db = client['test']
 graph = Graph()
@@ -46,7 +46,8 @@ relationNameAffiliation = 'AFFILIATED_TO'
 relationNameAuthor = 'AUTHOR_OF'
 
 t1 = time.time()
-f = open('times.txt','w')
+f = open('times.txt','a')
+f.write('--------------------------------------------------\n')
 '''Make Mongo Cursor'''
 def mongoQuery() :
     count = 0
@@ -56,6 +57,7 @@ def mongoQuery() :
         if count%1000 == 0:
             print time.time() - t1
             f.write(str(count)+'    '+str(time.time() - t1)+'\n')
+            f.flush()
         processRecords(record)
         count += 1
 
@@ -84,7 +86,7 @@ def makePMIDNode(record) :
     # attDict = {'journal_title':record['journal_title'], 'abstract':record['abstract']}
     dictOfPMID = {'nodeLabel':masterNodeType,'nodeType':masterUniqueName,'pmid':record['pmid']}
     # dictOfPMID.update(attDict)
-    nj.createNode(list(dictOfPMID),t)
+    createNode(list(dictOfPMID),t)
 
 def makeInterventionNode(record) :
     #tx =graph.begin()
@@ -92,7 +94,7 @@ def makeInterventionNode(record) :
     if keyNameIntervention in record :
         intervention = list(set(record[keyNameIntervention]))
         interventionList = [{'nodeLabel':nodeTypeIntervention,'nodeType':uniqueNameInter,'nodeValue':entry} for entry in intervention]
-        nj.createNode(interventionList,t)
+        createNode(interventionList,t)
         makeAuthorNode(record,interventionList)
         interventionList = []
     else :
@@ -105,7 +107,7 @@ def makeMOANode(record) :
     if keyNameMOA in record :
         moas = list(set(record[keyNameMOA]))
         moaList = [{'nodeLabel':nodeTypeMOA,'nodeType':uniqueNameMOA,'nodeValue':entry} for entry in moas]
-        nj.createNode(moaList,t)
+        createNode(moaList,t)
         moaList = []
     else :
         pass
@@ -117,7 +119,7 @@ def makeIndicationNode(record):
     if keyNameIndication in record :
         indications = list(set(record[keyNameIndication]))
         indicationList = [{'nodeLabel':nodeTypeIndication,'nodeType':uniqueNameIndication,'nodeValue':entry} for entry in indications]
-        nj.createNode(indicationList,t)
+        createNode(indicationList,t)
         indicationList = []
     else :
         pass
@@ -130,8 +132,8 @@ def makeAuthorNode(record,listofDicts) :
     	relationName = 'knows_About'
     	authors = record['author_names']
     	authorList = [{'nodeLabel':nodeTypeAuthor,'nodeType':uniqueNameAuthor,'nodeValue':entry} for entry in authors]
-    	nj.createNode(authorList,t)
-    	nj.createRelation(authorList,listofDicts,relationName,tx)
+    	createNode(authorList,t)
+    	createRelation(authorList,listofDicts,relationName,tx)
     	authorList = []
     else :
     	pass
@@ -143,10 +145,62 @@ def makeAffiliationNode(record) :
     if keyNameAffiliation in record :
         affiliations = list(set(record[keyNameAffiliation]))
         affList = [{'nodeLabel':nodeTypeAffiliation,'nodeType':uniqueNameAffiliation,'nodeValue':entry} for entry in affiliations]
-        nj.createNode(affList,t)
+        createNode(affList,t)
         affList = []
     else :
         pass
+
+
+
+
+
+
+def createNode(listNodeNames,transactionVar) :
+    #tx = transactionVar
+    # for inner_dict in listNodeNames :
+    #     print(inner_dict)
+    #     if 'pmid' in inner_dict.keys() :
+    #         statement = 'MERGE(n:'+entry['nodeLabel']+'{'+entry['nodeType']+':"'+entry['nodeValue']+'title:'+entry['journal_title']+'abstract:'+entry['abstract']+'})'
+    #         tx.run(statement)
+
+    #     else :
+    #for entry in listNodeNames :
+    #    statement = 'MERGE(n:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+str(entry['nodeValue'].encode('utf-8'))+'"})'
+    #    tx.run(statement)
+    a = 1
+
+'''Method to create relationships between nodes'''
+list_s3 = list('')
+list_s2 = list('')
+list_s1 = list('')
+def createRelation(listofDict1,listofDict2,relationName,transactionVar) :
+    rel = relationName
+    tx = transactionVar
+    for entry in listofDict1 :
+        statement3 = 'CREATE(n:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+str(entry['nodeValue'].encode('utf-8'))+'"})'
+        if statement3 in list_s3:
+            pass
+        else:
+            list_s3.append(statement3)
+            tx.run(statement3)
+        for entry1 in listofDict2 :
+            statement2 = 'CREATE(n:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+str(entry1['nodeValue'].encode('utf-8'))+'"})'
+            if statement2 in list_s2:
+                pass
+            else:
+                list_s2.append(statement2)
+                tx.run(statement2)
+            statement1 = 'MATCH (u1:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+entry['nodeValue'].encode('utf-8')+'"}),(u2:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+entry1['nodeValue'].encode('utf-8')+'"}) CREATE(u1)-[:'+relationName+']->(u2)'
+            if statement1 in list_s1:
+                pass
+            else:
+                list_s1.append(statement1)
+                tx.run(statement1)
+    tx.commit()
+
+
+
+
 
 
 
