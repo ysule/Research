@@ -181,20 +181,20 @@ def createRelation(listofDict1,listofDict2,relationName,transactionVar) :
         if statement3 in list_s3:
             pass
         else:
-            list_s3.append(statement3)
+            list_s3.insert(0, statement3)
             tx.run(statement3)
         for entry1 in listofDict2 :
             statement2 = 'CREATE(n:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+str(entry1['nodeValue'].encode('utf-8'))+'"})'
             if statement2 in list_s2:
                 pass
             else:
-                list_s2.append(statement2)
+                list_s2.insert(0, statement2)
                 tx.run(statement2)
             statement1 = 'MATCH (u1:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+entry['nodeValue'].encode('utf-8')+'"}),(u2:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+entry1['nodeValue'].encode('utf-8')+'"}) CREATE(u1)-[:'+relationName+']->(u2)'
             if statement1 in list_s1:
                 pass
             else:
-                list_s1.append(statement1)
+                list_s1.insert(0, statement1)
                 tx.run(statement1)
     tx.commit()
 
