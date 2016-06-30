@@ -5,6 +5,7 @@ import ast
 from socket import *
 from pymongo import MongoClient
 from py2neo import *
+import time
 import neo4jWrapperTransaction as nj
 client = MongoClient("localhost",maxPoolSize=None)
 db = client['test']
@@ -44,14 +45,17 @@ relationNameIndication = 'TREATMENT_FOR'
 relationNameAffiliation = 'AFFILIATED_TO'
 relationNameAuthor = 'AUTHOR_OF'
 
-
-
+t1 = time.time()
+f = open('times.txt','w')
 '''Make Mongo Cursor'''
 def mongoQuery() :
     count = 0
     cursor = db.publicationsNeo.find(no_cursor_timeout=True).batch_size(500)
     for record in cursor :
         print(count,':',record['pmid'])
+        if count%1000 == 0:
+            print time.time() - t1
+            f.write(str(count)+'    '+str(time.time() - t1)+'\n')
         processRecords(record)
         count += 1
 
