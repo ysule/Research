@@ -169,6 +169,8 @@ def createRelation(listofDict1,listofDict2,relationName) :
         x_m.add(statement_m)
         for entry1 in listofDict2 :
             statement_m2 = 'CREATE(n:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+str(entry1['nodeValue'].encode('utf-8'))+'"})'
+            # #statement_r = MATCH (u1:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+entry['nodeValue'].encode('utf-8')+'"}),(u2:'+entry1['nodeLabel'].encode('utf-8')+'{'+entry1['nodeType'].encode('utf-8')+':"'+entry1['nodeValue'].encode('utf-8')'"}) CREATE(u1)-[:'+relationName+']->(u2)'
+            # statement_r = 'MATCH (u1:'+entry['nodeLabel'].encode('utf-8')+'),(u2:'+entry1['nodeLabel'].encode('utf-8')+')CREATE(u1)-[:'+relationName+']->(u2)'
             statement_r = 'MATCH (u1:'+entry['nodeLabel']+'{'+entry['nodeType']+':"'+entry['nodeValue']+'"}),(u2:'+entry1['nodeLabel']+'{'+entry1['nodeType']+':"'+entry1['nodeValue']+'"}) CREATE(u1)-[:'+relationName+']->(u2)'
             x_m2.add(statement_m2)
             x_r.add(statement_r)
@@ -180,8 +182,6 @@ t2 = time.time()
 x_m = set()
 x_m2 = set()
 x_r = set()
-node_id_m = 0
-node_id_m = 1
 mongoQuery()
 tx =graph.begin()
 for i,value in enumerate(x_m):
