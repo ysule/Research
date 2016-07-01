@@ -209,12 +209,14 @@ for i,value in enumerate(x_m2):
         t2 = time.time()
 tx.commit()
 
+tx =graph.begin()
 for i,value in enumerate(x_r):
-    tx =graph.begin()
+    print value
     print i
     tx.run(value)
-    tx.commit()
-    if i%100 == 0:
+    if i%40 == 0:
+        tx.commit()
+        tx =graph.begin()
         print '--------------------------'
         print time.time()-t2
         print '--------------------------'
