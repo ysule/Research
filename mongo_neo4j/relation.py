@@ -209,17 +209,15 @@ for i,value in enumerate(x_m2):
         t2 = time.time()
 tx.commit()
 
-tx =graph.begin()
 for i,value in enumerate(x_r):
+    tx =graph.begin()
     print i
     tx.run(value)
-    if i%2000 == 0:
-        tx.commit()
-        tx =graph.begin()
+    tx.commit()
+    if i%100 == 0:
         print '--------------------------'
         print time.time()-t2
         print '--------------------------'
         t2 = time.time()
-tx.commit()
 print 'TOTAL'
 print time.time()-t1
