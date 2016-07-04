@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "speed_monitor_v1.2.py", line 35, in <module>
-    with open('./'+name) as f:
-IOError: [Errno 2] No such file or directory: './06-07-16.log'

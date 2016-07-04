@@ -212,14 +212,14 @@ tx.commit()
 tx =graph.begin()
 for i,value in enumerate(x_r):
     print value
-    print i
-    tx.run(value)
-    if i%40 == 0:
-        tx.commit()
-        tx =graph.begin()
-        print '--------------------------'
-        print time.time()-t2
-        print '--------------------------'
-        t2 = time.time()
+    # print i
+    # tx.run(value)
+    # if i%40 == 0:
+    #     tx.commit()
+    #     tx =graph.begin()
+    #     print '--------------------------'
+    #     print time.time()-t2
+    #     print '--------------------------'
+    #     t2 = time.time()
 print 'TOTAL'
 print time.time()-t1
