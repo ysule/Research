@@ -152,13 +152,13 @@ function hideAd(){
                     <ul class="list15">
 									<li> <a href="http://www.gulte.com/movienews/50309/Thank-You-SIIMA-Mahesh-Breaks-His-Silence-At-Last" style = "color:#dc4b37">
 										<img src="http://content.gulte.com/content/2016/07/news/1467616161-1169_thumb.jpg" alt="Thank You SIIMA, Mahesh Breaks His Silence At Last" title="Thank You SIIMA, Mahesh Breaks His Silence At Last" border="0">
-										<span>Thank You SIIMA, Mahesh Breaks His Silence At Last</span><br><code>2 hours ago</code></a></li>
+										<span>Thank You SIIMA, Mahesh Breaks His Silence At Last</span><br><code>3 hours ago</code></a></li>
              
 					 				  <li>
-				   <a href="http://www.gulte.com/movienews/50301/Director-Allegations-on-Sharwanand" title="Director Allegations on Sharwanand!" ><img src="http://content.gulte.com/content/2016/07/news/1467596960-122_thumb.jpg" alt="Director Allegations on Sharwanand!"><span>Director Allegations on Sharwanand!<br><code>8 hours ago</code></a>
+				   <a href="http://www.gulte.com/movienews/50301/Director-Allegations-on-Sharwanand" title="Director Allegations on Sharwanand!" ><img src="http://content.gulte.com/content/2016/07/news/1467596960-122_thumb.jpg" alt="Director Allegations on Sharwanand!"><span>Director Allegations on Sharwanand!<br><code>9 hours ago</code></a>
 				  </li>
 								  <li>
-				   <a href="http://www.gulte.com/movienews/50297/Nayan-Upset-with-False-Propaganda" title="Nayan Upset with False Propaganda!" ><img src="http://content.gulte.com/content/2016/07/news/1467546883-1891_thumb.jpg" alt="Nayan Upset with False Propaganda!"><span>Nayan Upset with False Propaganda!<br><code>22 hours ago</code></a>
+				   <a href="http://www.gulte.com/movienews/50297/Nayan-Upset-with-False-Propaganda" title="Nayan Upset with False Propaganda!" ><img src="http://content.gulte.com/content/2016/07/news/1467546883-1891_thumb.jpg" alt="Nayan Upset with False Propaganda!"><span>Nayan Upset with False Propaganda!<br><code>23 hours ago</code></a>
 				  </li>
 								  <li>
 				   <a href="http://www.gulte.com/news/50286/AP-Tops-Most-Corrupted-States-List-But-How" title="AP Tops Most Corrupted States List, But How?" ><img src="http://content.gulte.com/content/2016/07/news/1467519618-1202_thumb.jpg" alt="AP Tops Most Corrupted States List, But How?"><span>AP Tops Most Corrupted States List, But How?<br><code>1 day ago</code></a>
