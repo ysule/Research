@@ -1,5 +1,3 @@
-
-'''MongoDB Connection and Neo4j Transaction Class import'''
 import sys
 import ast
 from socket import *
@@ -45,120 +43,76 @@ relationNameIndication = 'TREATMENT_FOR'
 relationNameAffiliation = 'AFFILIATED_TO'
 relationNameAuthor = 'AUTHOR_OF'
 
-t1 = time.time()
 '''Make Mongo Cursor'''
 def mongoQuery() :
-    count = 0
     cursor = db.publicationsNeo.find(no_cursor_timeout=True).batch_size(500)
     for record in cursor :
         processRecords(record)
 
 
+
 '''Process Records'''
 def processRecords(record) :
-    if 'pmid' in record :
-        pmid  = record['pmid']
-    else :
-        pmid = ''
-
-    # makePMIDNode(record)
-
-    makeInterventionNode(record)
-
- 	# makeAuthorNode(record,listofDicts)
-
-#     makeGeneNode(record)
-
-#     makeBiomarkerNode(record)
+    pmid = record['pmid']
+    makePMIDNode(record)
 
 
 def makePMIDNode(record) :
-    #tx =graph.begin()
-    t = 1
-    # attDict = {'journal_title':record['journal_title'], 'abstract':record['abstract']}
-    dictOfPMID = {'nodeLabel':masterNodeType,'nodeType':masterUniqueName,'pmid':record['pmid']}
-    # dictOfPMID.update(attDict)
-    createNode(list(dictOfPMID),t)
+    dictOfPMID = [{'nodeLabel':masterNodeType,'nodeType':masterUniqueName,'nodeValue':record['pmid']}]
+    makeInterventionNode(record,dictOfPMID)
+    makeAuthorNode(record,dictOfPMID)
 
-def makeInterventionNode(record) :
-    #tx =graph.begin()
-    t = 0
-    if keyNameIntervention in record :
-        intervention = list(set(record[keyNameIntervention]))
+def makeInterventionNode(record,listofDict) :
+   if keyNameIntervention in record :
+        intervention = record['intervention_search_tag']
         interventionList = [{'nodeLabel':nodeTypeIntervention,'nodeType':uniqueNameInter,'nodeValue':entry} for entry in intervention]
-        createNode(interventionList,t)
-        makeAuthorNode(record,interventionList)
+        makeIndicationNode(record,interventionList)
+        makeMOANode(record,interventionList)
         interventionList = []
+   else :
+        pass
+
+def makeAuthorNode(record,listofDicts) :
+    if keyNameAuthor in record :
+        relationName = 'knows_About'
+        authors = record['author_names']
+        authorList = [{'nodeLabel':nodeTypeAuthor,'nodeType':uniqueNameAuthor,'nodeValue':entry} for entry in authors]
+        createRelation(authorList,listofDicts,relationName)
+        makeAffiliationNode(record,authorList)
+        authorList = []
     else :
         pass
 
-
-def makeMOANode(record) :
-    #tx =graph.begin()
-    t = 0
+def makeMOANode(record,listofDicts) :
     if keyNameMOA in record :
-        moas = list(set(record[keyNameMOA]))
+        moas = record['target_tag']
         moaList = [{'nodeLabel':nodeTypeMOA,'nodeType':uniqueNameMOA,'nodeValue':entry} for entry in moas]
-        createNode(moaList,t)
+        createRelation(listofDicts,moaList,relationNameMOA)
         moaList = []
     else :
         pass
 
 
-def makeIndicationNode(record):
-    #tx=graph.begin()
-    t = 0
+def makeIndicationNode(record,listofDicts):
     if keyNameIndication in record :
-        indications = list(set(record[keyNameIndication]))
+        listofPMID = [{'nodeLabel':masterNodeType,'nodeType':masterUniqueName,'nodeValue':record['pmid']}]
+        indications = record['oncology_indication']
         indicationList = [{'nodeLabel':nodeTypeIndication,'nodeType':uniqueNameIndication,'nodeValue':entry} for entry in indications]
-        createNode(indicationList,t)
         indicationList = []
     else :
         pass
 
 
-def makeAuthorNode(record,listofDicts) :
-    t = 0
-    if keyNameAuthor in record :
-    	relationName = 'knows_About'
-    	authors = record['author_names']
-    	authorList = [{'nodeLabel':nodeTypeAuthor,'nodeType':uniqueNameAuthor,'nodeValue':entry} for entry in authors]
-    	createNode(authorList,t)
-    	createRelation(authorList,listofDicts,relationName)
-    	authorList = []
-    else :
-    	pass
-
-
-def makeAffiliationNode(record) :
-    #tx =graph.begin()
-    t = 0
+def makeAffiliationNode(record,listofDicts) :
     if keyNameAffiliation in record :
-        affiliations = list(set(record[keyNameAffiliation]))
+        affiliations = record['affiliations']
         affList = [{'nodeLabel':nodeTypeAffiliation,'nodeType':uniqueNameAffiliation,'nodeValue':entry} for entry in affiliations]
-        createNode(affList,t)
         affList = []
     else :
         pass
 
 
 
-
-
-
-def createNode(listNodeNames,transactionVar) :
-    #tx = transactionVar
-    # for inner_dict in listNodeNames :
-    #     print(inner_dict)
-    #     if 'pmid' in inner_dict.keys() :
-    #         statement = 'MERGE(n:'+entry['nodeLabel']+'{'+entry['nodeType']+':"'+entry['nodeValue']+'title:'+entry['journal_title']+'abstract:'+entry['abstract']+'})'
-    #         tx.run(statement)
-
-    #     else :
-    #for entry in listNodeNames :
-    #    statement = 'MERGE(n:'+entry['nodeLabel'].encode('utf-8')+'{'+entry['nodeType'].encode('utf-8')+':"'+str(entry['nodeValue'].encode('utf-8'))+'"})'
-    #    tx.run(statement)
-    a = 1
 
 def createRelation(listofDict1,listofDict2,relationName) :
     global x_m
@@ -175,6 +129,7 @@ def createRelation(listofDict1,listofDict2,relationName) :
             x_m2.add(statement_m2)
             x_r.add(statement_r)
             print str(len(x_m)) + '     ' + str(len(x_m2)) + '      ' + str(len(x_r))
+
 
 
 t1 = time.time()
@@ -212,14 +167,14 @@ tx.commit()
 tx =graph.begin()
 for i,value in enumerate(x_r):
     print value
-    # print i
-    # tx.run(value)
-    # if i%40 == 0:
-    #     tx.commit()
-    #     tx =graph.begin()
-    #     print '--------------------------'
-    #     print time.time()-t2
-    #     print '--------------------------'
-    #     t2 = time.time()
+    print i
+    tx.run(value)
+    if i%40 == 0:
+        tx.commit()
+        tx =graph.begin()
+        print '--------------------------'
+        print time.time()-t2
+        print '--------------------------'
+        t2 = time.time()
 print 'TOTAL'
 print time.time()-t1
