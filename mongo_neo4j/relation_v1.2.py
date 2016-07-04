@@ -135,7 +135,7 @@ def createRelation(listofDict1,listofDict2,relationName) :
                 id_m2 = int(x_m2[statement_m2])
             except:
                 x_m2[statement_m2] = k+1
-                id_m = int(x_m2[statement_m2])
+                id_m2 = int(x_m2[statement_m2])
                 k = k+1
             #MATCH (a),(b) WHERE ID(a) = 202594 AND ID(b) = 207120 CREATE(a)-[:knows_About]->(b)
             statement_r = 'MATCH (a), (b) WHERE ID(a) = ' + str(id_m) + ' AND ID(b) = ' + str(id_m2) + ' CREATE(a)-[:'+relationName+']->(b)'
