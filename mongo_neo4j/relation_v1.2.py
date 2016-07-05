@@ -139,12 +139,12 @@ def createRelation(listofDict1,listofDict2,relationName) :
                 k = k+1
             #MATCH (a),(b) WHERE ID(a) = 202594 AND ID(b) = 207120 CREATE(a)-[:knows_About]->(b)
             statement_r = 'MATCH (a), (b) WHERE ID(a) = ' + str(id_m) + ' AND ID(b) = ' + str(id_m2) + ' CREATE(a)-[:'+relationName+']->(b)'
-            print statement_r
-            #print str(len(x_m)) + '     ' + str(len(x_m2)) + '      ' + str(len(x_r))
+            x_r.add(statement_r)
+            print str(len(x_m)) + '     ' + str(len(x_m2)) + '      ' + str(len(x_r))
 
 
 tx = graph.begin()
-a = Node("Person", name="Alice")
+a = Node("Bedapudi", name="Praneeth")
 tx.create(a)
 tx.commit()
 tx = graph.begin()
@@ -163,10 +163,10 @@ x_m = dict()
 x_m_id = 0
 x_m2 = dict()
 x_m2_id = 0
-x_r = dict()
+x_r = set()
 mongoQuery()
 tx =graph.begin()
-for i,value in enumerate(x_m):
+for i,value in enumerate(x_m.keys()):
     print i
     tx.run(value)
     if i%2000 == 0:
@@ -179,7 +179,7 @@ for i,value in enumerate(x_m):
 tx.commit()
 
 tx =graph.begin()
-for i,value in enumerate(x_m2):
+for i,value in enumerate(x_m2.keys()):
     print i
     tx.run(value)
     if i%2000 == 0:
@@ -196,7 +196,7 @@ for i,value in enumerate(x_r):
     print value
     print i
     tx.run(value)
-    if i%40 == 0:
+    if i%1000 == 0:
         tx.commit()
         tx =graph.begin()
         print '--------------------------'
