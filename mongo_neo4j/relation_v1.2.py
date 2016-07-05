@@ -196,7 +196,7 @@ for i,value in enumerate(x_r):
     print value
     print i
     tx.run(value)
-    if i%1000 == 0:
+    if i%2000 == 0:
         tx.commit()
         tx =graph.begin()
         print '--------------------------'
