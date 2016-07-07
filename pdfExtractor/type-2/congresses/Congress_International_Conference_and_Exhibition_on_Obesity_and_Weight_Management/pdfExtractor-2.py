@@ -46,8 +46,22 @@ for text_file in text_files:
                                     d['abstract'] = d['abstract'] + line2
                             else:
                                 break
+        d['title'] = ''
+        d['author_details'] = list()
+        names = dict()
+        data = list()
+        for i,line in enumerate(lines):
+            if i>10 and i<18:
+                if len(line)>4:
+                    if ',' not in line:
+                        data.append(line)
+        d['author_details'] = [{"author_name":data[-1].rstrip().lstrip().replace('\n',' ')}]
+        for i,p in enumerate(data):
+            if i != len(data)-1:
+                d['title'] = d['title'] + p.rstrip().lstrip().replace('\n',' ')
+
     d['abstract'] = d['abstract'].rstrip().lstrip()
     d['biography'] = d['biography'].rstrip().lstrip()
     d['abstract'] = d['abstract'].replace('\n',' ')
     d['biography'] = d['biography'].replace('\n',' ')
-    db.congresses_international.insert(d)
+    db.congresses.insert(d)

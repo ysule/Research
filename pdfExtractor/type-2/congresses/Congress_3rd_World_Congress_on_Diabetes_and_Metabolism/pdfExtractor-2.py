@@ -51,17 +51,17 @@ for text_file in text_files:
         names = dict()
         data = list()
         for i,line in enumerate(lines):
-            if i>10 and i<20:
+            if i>10 and i<18:
                 if len(line)>4:
                     if ',' not in line:
                         data.append(line)
-        d['author_details'] = [{"author_name":data[-1]}]
-        for i,p in data:
-            if p != len(data)-1:
-                d['title'] = d['title'] + p
+        d['author_details'] = [{"author_name":data[-1].rstrip().lstrip().replace('\n',' ')}]
+        for i,p in enumerate(data):
+            if i != len(data)-1:
+                d['title'] = d['title'] + p.rstrip().lstrip().replace('\n',' ')
 
     d['abstract'] = d['abstract'].rstrip().lstrip()
     d['biography'] = d['biography'].rstrip().lstrip()
     d['abstract'] = d['abstract'].replace('\n',' ')
     d['biography'] = d['biography'].replace('\n',' ')
-    db.congresses_3rd_world.insert(d)
+    db.congresses.insert(d)
