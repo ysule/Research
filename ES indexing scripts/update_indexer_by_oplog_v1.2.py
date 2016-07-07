@@ -9,6 +9,7 @@ import time
 from time import sleep
 
 url = raw_input("Enter the url: ")
+collection_name = raw_input("Enter db name and collection name (db.collection):")
 
 if not url:
 	url = "http://127.0.0.1:9200/cars/transactions/"
@@ -29,13 +30,13 @@ old_count_insert = db.oplog.rs.count({'op':'i'})
 
 while True:
 	#setting new count values to zero
-	new_count_update = 0
-	new_count_insert = 0
+	new_count_update = int(db.oplog.rs.count({'op':'u'},{'ns':collection_name}))
+	new_count_insert = int(db.oplog.rs.count({'op':'i'},{'ns':collection_name}))
 	#sleeping for one second
 	#need to think if sleep is necessary at all
 	#sleep(1)
 	#reading the oplog records into cursor. only the object values are being read ignoring the timestamp etc.
-	cursor_update = db.oplog.rs.find({'op':'u'},{'o':1})
+	cursor_update = db.oplog.rs.find({'op':'u'},{'ns':collection_name})
 	for result_object in cursor_update:
 		new_count_update = new_count_update + 1
 		if(new_count_update>old_count_update):
@@ -46,7 +47,7 @@ while True:
 			response = requests.post(url+es_id, data=data)
 	old_count_update = new_count_update
 
-	cursor_insert = db.oplog.rs.find({'op':'i'},{'o':1})
+	cursor_insert = db.oplog.rs.find({'op':'i'},{'ns':collection_name})
 	for result_object in cursor_insert:
 		new_count_insert = new_count_insert + 1
 		if(new_count_insert>old_count_insert):

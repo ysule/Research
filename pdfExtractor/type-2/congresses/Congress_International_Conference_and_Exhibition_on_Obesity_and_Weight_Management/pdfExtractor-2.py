@@ -55,7 +55,7 @@ for text_file in text_files:
                 if len(line)>4:
                     if ',' not in line:
                         data.append(line)
-        d['author_details'] = [{"author_name":data[-1].rstrip().lstrip().replace('\n',' ')}]
+        d['author_details'] = [{"name":data[-1].rstrip().lstrip().replace('\n',' ')}]
         for i,p in enumerate(data):
             if i != len(data)-1:
                 d['title'] = d['title'] + p.rstrip().lstrip().replace('\n',' ')
