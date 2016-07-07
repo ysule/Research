@@ -56,3 +56,5 @@ while True:
 				        	bulk_body = ''
 						#response = requests.post(url+es_id, data=data)
 						old_count = new_count
+	es_client.bulk(body=bulk_body)
+	bulk_body = ''
