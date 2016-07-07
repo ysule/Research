@@ -168,7 +168,10 @@ mongoQuery()
 tx =graph.begin()
 for i,value in enumerate(x_m.keys()):
     print i
-    tx.run(value)
+    try:
+        tx.run(value)
+    except:
+        print value + " was not sent"
     if i%2000 == 0:
         tx.commit()
         tx =graph.begin()
@@ -181,7 +184,10 @@ tx.commit()
 tx =graph.begin()
 for i,value in enumerate(x_m2.keys()):
     print i
-    tx.run(value)
+    try:
+        tx.run(value)
+    except:
+        print value + " was not sent"
     if i%2000 == 0:
         tx.commit()
         tx =graph.begin()
@@ -193,9 +199,11 @@ tx.commit()
 
 tx =graph.begin()
 for i,value in enumerate(x_r):
-    print value
     print i
-    tx.run(value)
+    try:
+        tx.run(value)
+    except:
+        print value + " was not sent"
     if i%2000 == 0:
         tx.commit()
         tx =graph.begin()
