@@ -5,7 +5,6 @@ import ast
 
 client = MongoClient()
 db = client.test
-
 #getting the names of all pdf files in the current folder
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 files = filter(lambda f: f.endswith(('.pdf')), files)
@@ -35,7 +34,8 @@ for text_file in text_files:
                 if 'biography' in line.lower():
                     for j,line1 in enumerate(lines):
                         if j>i:
-                            d['biography'] = d['biography'] + line1
+                            if 'http:' not in line1:
+                                d['biography'] = d['biography'] + line1
                 if 'abstract' in line.lower():
                     for k,line2 in enumerate(lines):
                         if k>i:
@@ -46,4 +46,22 @@ for text_file in text_files:
                                     d['abstract'] = d['abstract'] + line2
                             else:
                                 break
-    db.congresses_data.insert(d)
+        d['title'] = ''
+        d['author_details'] = list()
+        names = dict()
+        data = list()
+        for i,line in enumerate(lines):
+            if i>10 and i<20:
+                if len(line)>4:
+                    if ',' not in line:
+                        data.append(line)
+        d['author_details'] = [{"author_name":data[-1]}]
+        for i,p in data:
+            if p != len(data)-1:
+                d['title'] = d['title'] + p
+
+    d['abstract'] = d['abstract'].rstrip().lstrip()
+    d['biography'] = d['biography'].rstrip().lstrip()
+    d['abstract'] = d['abstract'].replace('\n',' ')
+    d['biography'] = d['biography'].replace('\n',' ')
+    db.congresses_3rd_world.insert(d)

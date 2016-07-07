@@ -1,0 +1,203 @@
+3rd World Congress on
+Diabetes & Metabolism
+
+Diabetes-2012
+
+ 
+Sudoscan: A simple, rapid, and objective method for screening of peripheral 
+neuropathy 
+
+September 24-26, 2012   Marriott Convention Center, Hyderabad, India
+
+ Santosh Ramakrishnan  
+
+ Apollo Hospitals, India 
+
+ 
+
+Abstract 
+
+Background:  Sensorimotor  dysfunction  is  mainly  considered  for  the  diagnosis  of  peripheral  neuropathy. 
+Autonomic  small  C-Fibers  innervating  sweat  glands  are  thin,  long  and  unmyelinated  and  can  be  damaged  very 
+early in the diabetes process. Sweat  dysfunction leading to abnormal skin conditions could increase diabetic foot 
+risk. A consensus statement of  American Diabetes Association  has  suggested that sudomotor function  should be 
+included  in diagnostic  tests  for  the  detection  of  neuropathies  in  diabetes  but  lack  of  simple,  and  quick  methods 
+have  restricted  the  widespread  of  such  examination.  The  aim  of  this  study  was  to  evaluate  SUDOSCAN  a  new 
+method to measure sudomotor function as a screening tool for diabetic peripheral neuropathy. 
+Materials and methods: 191 patients with type 2 diabetes (age 51 ± 11 years, diabetes duration 8 ± 6 years, BMI 
+28  ±  5  kg/m2)  were  measured  for  Vibration  Perception  Threshold  (VPT)  using  a  biothesiometer  with  ≥  15  V  as 
+cut-off value for diagnosis of peripheral neuropathy. Retinopathy status and renal function, based on estimation of 
+glomerular filtration rate using  Modification of Diet in Renal Disease (MDRD), were  also assessed as  indicators 
+of  microvascular  lesions.  All  patients  underwent  the  SUDOSCAN  test.  Patients  place  their  hands  and  feet  on 
+stainless-steel  electrodes  and  an  incremental  low  direct  voltage  (<  4  V)  is  applied  during  a  2  minute  interval. 
+Electrochemical  Sweat  Conductance  (ESC)  as  a  measure  of  sudomotor  function  was  obtained  from  the  voltage 
+and current applied.  Quantitative results are expressed as ESC (microsiemens, µS) for the hands  and feet. A risk 
+score for cardiac neuropathy was calculated based on these values and demographic data.  
+Results:  Based  on  biothesiometer  examination,  patients  were  classified  in  two  groups:  Patients  with  or  without 
+neuropathy.  
+Table: Demographic, biological and Electrochemical Sweat Conductances (ESC) according to neuropathy status diagnosed by biothesiomether (threshold value 15 
+V) 
+
+ 
+
+  
+
+  
+
+No neuropathy 
+
+Neuropathy 
+
+n=139 (male, 63%) 
+
+n=49 (male, 78%) 
+
+P* 
+
+P adjusted** 
+
+Age (Years) 
+
+49 ± 10 
+
+59 ± 9 
+
+Duration diabetes (months) 
+
+82.3 ± 61.2 
+
+146.3 ± 95.6 
+
+BMI (Km/m2) 
+
+Waist (cm) 
+
+27.7 ± 5.1 
+
+98.5 ± 10.7 
+
+27.3 ± 3.8 
+
+98.9 ± 8.2 
+
+Systolic blood pressure (mm Hg) 
+
+123.6 ± 13.2 
+
+124.2 ± 17.9 
+
+FPG (mmol/L) 
+
+HbA1c (%) 
+
+ESC hands (µS) 
+
+ESC feet (µS) 
+
+Cardiac neuropathy risk score (%) 
+
+Nephropathy (%) 
+
+Retinopathy (%) 
+* One way ANOVA 
+** ANOVA adjusted on age 
+
+8.7 ± 3.4 
+
+8.5 ± 2.2 
+
+60 ± 17 
+
+69 ± 15 
+
+35 ± 15.2 
+
+5% 
+
+11% 
+
+ 
+
+9.0 ± 4.7 
+
+8.5 ± 1.9 
+
+53 ± 21 
+
+60 ± 22 
+
+44 ± 12.9 
+
+29% 
+
+38% 
+
+ 
+
+<0.001 
+
+<0.001 
+
+NS 
+
+NS 
+
+NS 
+
+NS 
+
+NS 
+
+0.020 
+
+0.003 
+
+<0.001 
+
+<0.001 
+
+<0.001 
+
+ 
+
+- 
+
+0.003 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+0.125 
+
+0.037 
+
+NS 
+
+0.058 
+
+0.011 
+
+ 
+
+Conclusion:  Sweating  status  using  SUDOSCAN  a  simple,  quick  and  non  inveasive  method  may  be  used  as  a 
+screening tool of diabetic peripheral neuropathy. Relevance  of the method could be explained by earlier damages 
+in small C-fiber when compared to large fibers.  
+Biography 
+
+ 
+
+R. Santosh  did his MBBS from  BJ Medical College Pune, MD Medicine from  JIPMER, Pondicherry and DM 
+Endocrinology from  PGI, Chandigarh. Presently he is working as  Consultant Endocrinolgist,  as Apollo 
+Hospital , Health City , Jubilee Hills, Hyderabad. He has published more than 23 papers in reputed journals and 
+presented in many National and International Conferences. He also addressed more than 60 CME sessions.   
+
+http://omicsonline.org/diabetes2012/ 
+
+

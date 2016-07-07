@@ -1,0 +1,66 @@
+3rd World Congress on
+Diabetes & Metabolism
+
+Diabetes-2012
+
+September 24-26, 2012   Marriott Convention Center, Hyderabad, India
+
+ 
+
+  
+
+Protein prenylation in glucose-induced insulin secretion 
+
+Anjan Kowluru   
+
+John D. Dingell VA Medical Center and Wayne State University, USA 
+
+ 
+
+ 
+
+Abstract 
+
+Insulin  secretion  from  the  pancreatic  beta-cell  is  regulated  principally  by  the  ambient  concentration  of  glucose. 
+However,  the  molecular  and  cellular  mechanisms  underlying  the  stimulus-secretion  coupling  of  glucose-
+stimulated  insulin  secretion  [GSIS]  remain  only  partially  understood.  Emerging  evidence  from  multiple 
+laboratories suggests key regulatory roles for GTP-binding proteins [G-proteins] in the cascade of events leading 
+to  GSIS.  This  class  of  signaling  proteins  undergoes  a  series  of  requisite  post-translational  lipidation  [e.g., 
+prenylation]  by  a  group  of  enzymes  referred  as  prenyltransferases.  A  growing  body  of  evidence  suggests  that 
+prenylation  promotes  targeting  of  modified  proteins  to  respective  membranous  sites  for  optimal  interaction  with 
+their  effector  proteins.    At  least  3  classes  of  prenyltransferases  have  been  identified  thus  far.  The  farnesyl 
+transferase [FTase] catalyzes incorporation of 15-carbon farnesyl group into Ras subfamily of G-proteins [e.g., H-
+Ras]  and  nuclear  lamins  [e.g.,  lamin  B].  Geranylgeranyl  transferases  [GGTases]  mediate  incorporation  of  20-
+carbon  geranyl  geranyl  groups  into  substrate  proteins.  Among  GGTases,  GGTase-I  lipidates  G-proteins  such  as 
+Cdc42,  Rac1,  and  Rho  whereas  GGTase-II  modifies  Rab  GTPases.  Lastly,  both  FTase  and  GGTases  are 
+heterodimeric  in  nature  comprising  of  alpha-  and  beta-subunits.  Interestingly,  FTase  and  GGTase-I  share  a 
+common  alpha-subunit,  but  variable  beta-subunits.  However,  the  alpha-  and  beta-subunits  of  GGTase-II  are 
+distinct  from  GGTase-I.  Data  from  our  laboratory  have  demonstrated  expression  of  FTase,  GGTase-I  and 
+GGTase-II  subunits  in  clonal  beta-cells  [INS  832/13  cells],  normal  rodent  islets  and  human  islets.  
+Pharmacological  inhibition  of  FTase  [FTI-277]  or  GGTase-I  [GGTI-2147]  markedly  attenuated  GSIS.  siRNA-
+mediated knockdown of individual subunits of FTase and GGTase also reduced GSIS significantly.  Furthermore, 
+a dominant negative  mutant of  the  common alpha subunit  of FTase/GGTase also inhibited GSIS suggesting  that 
+activation of FTase/GGTase is critical for GSIS to  occur. In support of these observations, we also observed that 
+both  FTase  and  GGTase  activities  are  increased  significantly  by  glucose  in  INS832/13  cells.  Lastly,  siRNA-
+mediated knockdown of the alpha- or beta-subunit of GGTase-II  also resulted in a marked attenuation of GSIS in 
+isolated  beta-cells.  Together,  our  data 
+indicate  novel  regulatory  roles  for  protein  farnesylation  and 
+geranylgeranylation in GSIS. Potential alterations in the functional alteration of these enzymes in beta-cell models 
+of glucolipotoxicity and diabetes will be discussed. 
+
+Biography 
+
+Anjan  Kowluru  is  Associate  Dean  and  Professor  Pharmaceutical  Sciences  and  Medicine  at  Wayne  State 
+University. He also holds Senior Research Career Scientist position at the John D. Dingell VA Medical Center in 
+Detroit. Dr. Kowluru is involved in  understanding  regulatory roles of small G-proteins in islet  function in health 
+and diabetes. He published more than 125 papers and presented 225 papers at various local, regional, national and 
+international meetings. His research is supported by grants from the NIH, the Department of VA and other private 
+foundations including the ADA and the JDRF. He serves [or served] on scientific advisory panels at the NIH, the 
+VA,  the  ADA  and  the  JDRF.  He  is  currently  serving  [or  served]  on  the  editorial  boards  of  several  journals, 
+including  Endocrinology,  Biochemical  Pharmacology,  American  J.  Physiology-Endocrinology  and  Metabolism, 
+Experimental Diabetes Research and the Journal of Diabetes and Metabolism. 
+ 
+
+http://omicsonline.org/diabetes2012/ 
+
+

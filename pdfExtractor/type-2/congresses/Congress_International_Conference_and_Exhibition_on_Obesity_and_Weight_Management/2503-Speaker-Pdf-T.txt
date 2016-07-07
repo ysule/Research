@@ -1,0 +1,47 @@
+International Conference and Exhibition on
+Obesity & Weight Management
+
+December 3-5, 2012  DoubleTree by Hilton Philadelphia, USA
+
+  
+
+Obesity-2012
+
+ 
+
+An increase in insulin sensitivity of 3T3-L1 adipocytes induced by 
+transmembrane tumor Necrosis Factor –α 
+
+Wenjing Zhou
+Wenjing Zhou    
+Wenjing Zhou
+Wenjing Zhou
+Huazhong University of Science and Technology, China     
+  Abstract 
+
+Tumor necrosis factor (TNF)-α is a proinflammatory cytokine that links obesity and insulin resistance. However, the effect of 
+transmembrane TNF-α (tmTNF-α) on insulin resistance remains unknown. Here, we demonstrated that high concentration of 
+glucose(25mM)  significantly  reduced  insulin-induced  glucose  uptake  by  3T3-L1  adipocytes  that  was  concomitant  with  a 
+decrease in tmTNF-α expression but an increase in soluble TNF-α(sTNF-α) secretion. This insulin resistance, however, could 
+be reversed in part by neutralization of TACE using a specific antibody to prevent the cleavage of tmTNF-α into sTNF-α, as 
+manifested  by  enhancement  of  insulin-induced  glucose  uptake,  pointing  out  a  possible  different  role  of  tmTNF-α  in  insulin 
+resistance. Then, we stimulated 3T3-L1 adipocytes with exogenous tmTNF-α and sTNF-α respectively, and found that sTNF-
+α  inhibited  insulin-induced  tyrosine  phosphorylation  of  IRS-1  and  AKT  phosphorylation,  leading  to  suppression  of  the 
+glucose uptake induced by insulin. In contrast, tmTNF-α has been shown to elevate insulin-induced glucose uptake by twofold 
+as a result of promoting the insulin signaling. Furthermore, we found that tmTNF-α downregulated the expression of IL-6 and 
+MCP-1 through inactivation of NF-κB and upregulated the expression of adiponectin through PPAR-γ in 3T3-L1 adipocytes. 
+Inhibition  of  PPAR-γ  expression  by  GW9662,  an  inhibitor  of  PPAR-γ,  could  decrease  tmTNF-α-induced  adiponectin 
+transcription, blocking tmTNF-α-enhanced AKT phosphorylation and glucose uptake. These data suggest that tmTNF-α may 
+contribute  to  the  improvement  of  insulin  resistance,  which  is  opposite  to  sTNF-α,  thereby  specific  blockage  of  tmTNF-α 
+conversion into sTNF-α may be useful to increase insulin sensitivity for the clinical treatment of type 2 diabetes. 
+
+Biography 
+
+Wenjing Zhou earned her bachelor of medicine at the age of 23 years from Tongji Medical College. She is studying for her 
+Ph.D in the department of Immunology, Tongji Medical College. “Mechanism of tmTNF-α improving insulin resistance” is 
+her first subject, and she is writing the first paper about her research.  
+ 
+
+http://omicsonline.org/obesity2012 
+
+
