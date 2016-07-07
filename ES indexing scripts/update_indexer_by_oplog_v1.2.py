@@ -30,13 +30,26 @@ old_count_insert = db.oplog.rs.count({'op':'i'})
 
 while True:
 	#setting new count values to zero
-	new_count_update = int(db.oplog.rs.count({'op':'u'},{'ns':collection_name}))
-	new_count_insert = int(db.oplog.rs.count({'op':'i'},{'ns':collection_name}))
+	new_count_update = 0
+	new_count_insert = 0
+	old_count_insert = 0
+	old_count_update = 0
+	for_new_count = db.oplog.rs.find({'ns':collection_name})
+	for obj in for_new_count:
+		try:
+			obj['u']
+			old_count_update = old_count_update + 1
+		except:
+			try:
+				obj['i']
+				old_count_insert = old_count_insert + 1
+			except:
+				pass
 	#sleeping for one second
 	#need to think if sleep is necessary at all
 	#sleep(1)
 	#reading the oplog records into cursor. only the object values are being read ignoring the timestamp etc.
-	cursor_update = db.oplog.rs.find({'op':'u'},{'ns':collection_name})
+	cursor_update = db.oplog.rs.find({'op':'u'},{'o':1})
 	for result_object in cursor_update:
 		new_count_update = new_count_update + 1
 		if(new_count_update>old_count_update):
@@ -44,10 +57,10 @@ while True:
 			del result_object['o']['_id']
 			data = json.dumps(result_object['o'])
 			print data + 'is indexed'
-			response = requests.post(url+es_id, data=data)
+			#response = requests.post(url+es_id, data=data)
 	old_count_update = new_count_update
 
-	cursor_insert = db.oplog.rs.find({'op':'i'},{'ns':collection_name})
+	cursor_insert = db.oplog.rs.find({'op':'i'},{'o':1})
 	for result_object in cursor_insert:
 		new_count_insert = new_count_insert + 1
 		if(new_count_insert>old_count_insert):
@@ -55,5 +68,5 @@ while True:
 			del result_object['o']['_id']
 			data = json.dumps(result_object['o'])
 			print data + 'is indexed'
-			response = requests.post(url+es_id, data=data)
+			#response = requests.post(url+es_id, data=data)
 	old_count_insert = new_count_insert
