@@ -6,15 +6,22 @@ import json
 import requests
 import urllib
 import time
+from elasticsearch import Elasticsearch
 from time import sleep
+from sys import getsizeof as size
 
-url = raw_input("Enter the url: ")
+index_doc = raw_input("Enter the index name and doctype index_name/doc_type: ")
 collection_name = raw_input("Enter db name and collection name (db.collection):")
+bulk_size = int(raw_input("Enter bulk object size: "))
 
-if not url:
-	url = "http://127.0.0.1:9200/cars/transactions/"
+if not index_doc:
+	index = 'test'
+	doc = 'test'
 	print 'detected no input..'
-	print ' Assuming default url:' + url
+	print ' Assuming default index and doctype:' + index + '/' + doc
+else:
+	index = index_doc.split('/',1)[0]
+	doc = index_doc.split('/',1)[0]
 
 
 client = MongoClient()
@@ -22,6 +29,9 @@ client = MongoClient()
 db = client.local
 collection = db['oplog.rs']
 
+es_client = Elasticsearch(hosts=['127.0.0.1:9200'])
+
+bulk_body = ''
 cursor = collection.find()
 for new_count, result in enumerate(cursor):
 	if 'ns' in result.keys():
@@ -38,7 +48,11 @@ while True:
 					if new_count > old_count:
 						es_id = str(result['o']['_id'])
 						del result['o']['_id']
-						data = json.dumps(result['o'])
-						print data + 'is indexed'
+						bulk_body = bulk_body + '{ "index" : { "_index" : "'+index+'", "_type" : "'+doc+'"} }\n'
+						bulk_body = bulk_body + json.dumps(result['o'])+'\n'
+						print result['o'] + ' is added to bulk_body'
+						if size(bulk_body)>1000000*bulk_size:
+							es_client.bulk(body=bulk_body)
+				        	bulk_body = ''
 						#response = requests.post(url+es_id, data=data)
 						old_count = new_count
