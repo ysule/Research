@@ -1,0 +1,56 @@
+Short Oral Abstract 8 - Fructose Containing Sugars-Sweetened Beverages and 
+Their Contribution to Body Weight: a Systematic Review and Meta -Analysis of 
+Controlled Feeding Trials  
+(Vivian L. Choo, Canada) 
+ 
+Vivian L. Choo1,2, Russell J. de Souza1,3, Shana J. Kim1,2, Adrian I. Cozma1,2, Arash Mirrahimi1,2, Sonia 
+Blanco Mejia1,2, Joseph Beyene3, Cyril W.C. Kendall 1,2, David J.A. Jenkins1,2,4-6, John L. 
+Sievenpiper1,4,6 
+ 
+1Toronto 3D Knowledge Synthesis and Clinical Trials Unit, St. Michael's Hospital, Toronto, ON; 
+2Department of Nutritional Sciences, Faculty of Medicine, University of Toronto, Toronto, ON; 
+3Department of Clinical Epidemiology & Biostatistics, Faculty of Health Sciences, McMaster University, 
+Hamilton, ON; 4Division of Endocrinology and Metabolism, St. Michael's Hospital, Toronto, ON; 
+5Department of Medicine, Faculty of Medicine, University of Toronto, Toronto, ON; 6Li Ka Shing 
+Knowledge Institute, St. Michael’s Hospital, Toronto, ON 
+ 
+Background: Sugars-sweetened beverages (SSBs) containing fructose are emerging as important 
+public health targets in the epidemic of obesity.  
+Objectives: To conduct a systematic review and meta-analysis of controlled feeding trials to assess 
+the effect of fructose containing SSBs on body weight. 
+Data sources: We searched MEDLINE, EMBASE, CINAHL, and the Cochrane Library (through May 
+23, 2014). 
+Data selection: Analyses included controlled dietary trials ≥7 days on the effect of fructose containing 
+sugars in fluid form on body weight.   
+Data extraction: Two independent reviewers extracted relevant data from eligible trials and assessed 
+study quality. Data were pooled using the generic inverse variance method and expressed as mean 
+differences (MD) with 95% confidence intervals (95% CIs). Heterogeneity was assessed (Cochran’s Q 
+statistic) and quantified (I2 statistic).   
+Data Synthesis: We included 28 substitution trials (isocaloric comparison of fructose containing SSBs 
+with other carbohydrates) (n=822), 26 addition trials (hypercaloric comparison of excess calories from 
+fructose containing SSBs compared to a diet without SSBs) (n=1165), and 6 subtraction trials 
+(hypocaloric comparison through a reduction in calories from fructose containing SSBs using water or 
+low calorie sweetened beverages) (n=2707).  
+Results: There was no effect of fructose containing SSBs in substitution trials, whereas fructose 
+containing SSBs increased body weight in addition trials (MD, 0.59 kg [95% CI, 0.34 to 0.85]), and 
+decreased body weight in subtraction trials (MD, -0.53 kg [95% CI, -1.02 to -0.03]).  
+Conclusion: Pooled analyses show that fructose containing SSBs do not alter body weight when 
+provided in isocaloric substitution for other carbohydrates. However, fructose containing SSBs do lead 
+to weight gain when they supplement diets with excess calories and weight loss when their calories 
+are displaced from diets by water or low calorie sweetened beverages, suggesting that the effects of 
+fructose containing SSBs are mediated through their contribution of energy.  There is a need for 
+larger, longer, higher quality trials that focus on ad libitum replacement of fructose containing SSBs 
+with other sources of calories to inform public health policy. 
+Protocol registration: clinicaltrials.gov identifier, NCT01608607. 
+Funding: Canadian Institutes of Health Research (CIHR) Knowledge Synthesis Grant (funding 
+reference number, 102078), Calorie Control Council, and Banting and Best CIHR Graduate 
+Scholarship (to VLC). 
+ 
+ 
+ 
+ 
+
+58 
+ 
+
+

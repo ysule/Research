@@ -1,0 +1,58 @@
+Objective: Sweet taste receptors are stimulated by natural carbohydrates but also non-caloric natural 
+and artificial sweeteners, for example in energy-reduced softdrinks. Epidemiological studies suggest 
+associations between those dietary components and the development of metabolic diseases. The 
+reason for this relationship might be found in an unfavorable incretin release after ingestion of 
+artificially sweetened food. As a result from the SEGATROM study, we are conducting the ILIAS 
+project which aims to highlight possible selective properties of certain sweeteners and to assess the 
+real-life effects under prolonged stimulation.  
+Methods: First, we will focus on short-term effects of several artificial sweeteners with different 
+chemical structures. Additionally, a four-week stimulation with or without AS in a cross-over design is 
+scheduled. As in SEGATROM, oral stimulation tests will be conducted. Plasma levels for glucose, 
+insulin, GIP, GLP-1 and PYY will be assessed until 120 minutes after ingestion. 
+Results: The sweetener trials of the already completed SEGATROM study focussed primarily on 
+saccharin, an AS with both sweet and bitter taste. Preliminary results show significantly higher insulin, 
+GIP and GLP-1 levels under combined saccharin-glucose stimulation compared to glucose alone. 
+PYY levels remained similar. Saccharin alone did not reliably seem to stimulate incretin release. 
+Conclusions/Outlook: The preliminary results from SEGATROM support the hypothesis, that food 
+containing AS (e.g. softdrinks) may facilitate metabolic derangements, possibly by disturbing a 
+beneficial incretin profile. As saccharin also stimulates bitter receptors, the role of sweet taste 
+receptors could not entirely be clarified by the SEGATROM study, thus requiring a broader 
+experimental design. We will investigate, if other sweeteners show similar or different effects, if co-
+administration of glucose is mandatory for the incretin release and if long-term effects on insulin 
+sensitivity can be detected after four weeks of continuous stimulation.  
+Protocol registration: NCT02219295 (clinicaltrials.gov) 
+Funding Source: Federal Ministry of Education and Research  
+ 
+ 
+3.    PREVIEW: Prevention of diabetes through lifestyle intervention and population 
+
+studies in Europe and around the world - more than 2,000 volunteers randomized 
+to the 3-y intervention trial  
+
+(Jennie Brand-Miller) 
+ 
+Anne Raben1, Mikael Fogelholm2, Thomas M Larsen1, Mathijs Drummen3, Sally Poppitt4, J Alfredo 
+Martinez5, Ian Macdonald6, Svetoslav Handjiev7, Gareth Stratton8, Edith Feskens9, Tony Lam10, 
+Wolfgang Schlicht11, Jennie Brand-Miller*12, on behalf of the PREVIEW consortium 
+1Dep Nutrition, Exercise and Sports, University of Copenhagen, 2Dep Food & Environmental Sciences, 
+University of Helsinki, 3Department of Human Biology, Maastricht University, 4Human Nutrition 
+University, University of Auckland, 5Department of Nutrition, University of Navarra, 6School of Life 
+Sciences, University of Nottingham, 7Department of Pharmacology and Toxicology, Medical University 
+Sofia, 8College of Engineering, Swansea University, 9Division of Human Nutrition, Wageningen 
+University, 10Net Union, Lausanne, 11Department of Sport & Exercise Science, University of Stuttgart, 
+12Charles Perkins Centre, University of Sydney 
+ 
+Objective: PREVIEW is a 6-y EU project (2013-2018) under the FP7, KBBE programme. It involves 
+15 partners from Europe, Australia, Canada, and New Zealand. The primary goal is to identify the 
+most efficient lifestyle pattern for the prevention of type-2 diabetes (T2D) in a population of pre-
+diabetic overweight and obese individuals.  
+Methods: The project comprises 2 main lines of evidence: a 3-y multicentre, 2x2 factorial, clinical, 
+randomized controlled trial (RCT) with up to 2,500 participants as well as large population studies in 
+about 170,000 individuals across all age groups. This presentation is focused on the RCT.  
+The impact of a high-protein, low-glycemic index diet vs a moderate protein, moderate-glycemic index 
+diet in combination with moderate or high intensity physical activity on the incidence of T2D and 
+
+65 
+ 
+
+

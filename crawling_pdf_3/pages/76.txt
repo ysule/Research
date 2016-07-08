@@ -1,0 +1,61 @@
+19.  Sugar-sweetened beverages and type 2 diabetes: a meta-analysis of observational 
+
+prospective studies 
+
+(Douglas Weed) 
+ 
+Douglas L. Weed, M.D., M.P.H., Ph.D., DLW Consulting Services LLC, Salt Lake City, UT 84103, 
+Dominik D. Alexander, Ph.D., M.S.P.H., Cara L. Frankenfeld, Ph.D.  
+ 
+Background.  Whether an association exists between sugar-sweetened beverages (SSB) and type 2 
+diabetes (T2D) is unclear.  We undertook a meta-analysis of observational studies to examine this 
+issue.  
+ 
+Methods. We searched PubMed and Scopus to identify prospective observational studies on SSB 
+and T2DM.  Data were combined using random effects meta-analysis.  We identified possible 
+confounders, assessed the control of confounding, and calculated summary relative risks (SRREs) 
+and 95% Confidence Intervals (CIs) including dose-response.  Publication bias was assessed using 
+funnel plots and Egger’s regression.  
+Results. Eight studies met inclusion criteria. The summary estimate for extreme categories of SSB 
+intake across fully adjusted models (SRRE=1.16; 95% confidence interval, 1.07-1.26) relative to the 
+age-adjusted models (SRRE=1.47) resulted in a large (66%) attenuation in T2D risk and decreased 
+the variance due to statistical heterogeneity (85% to 37%). A dose-dependent increase in risk was 
+observed for categories of SSB intake up to 1 serving/day, although not for the highest serving 
+category (2+/day). Many confounding factors influenced the SSB-T2D association, which differed for 
+each selected study. Statistical examination did not suggest publication bias; however, a tally of 
+cohorts that have reported on diet and T2D (N=22) suggests that the SSB-T2D relationship has been 
+published in only a subset (N=8).  
+Conclusion. Although positive associations between SSB intake and T2D were observed in several 
+meta-analysis models, interpretation is complicated by confounding and the potential for selective 
+reporting of results across cohort studies.  
+Source of Support: Funding was provided by The Coca-Cola Company.  By contractual agreement, 
+all decisions regarding the content of the manuscript—including design, analysis, and interpretation—
+rest solely with the authors. 
+ 
+ 
+20.  Effect of a Low-Glycemic Index/Load Diet on Body Weight: A Systematic Review 
+
+and Meta-Analysis of Randomized Controlled Trials 
+
+(Catherine Braunstein) 
+ 
+Catherine R. Braunstein*12, Cyril WC Kendall234, Vivian Choo23, Sonia Blanco Mejia2, Vanessa Ha25, 
+Livia Augustin2, Cyril WC Kendall234, John L. Sievenpiper2367 
+1 New College, University of Toronto, 2Toronto 3D Knowledge Synthesis and Clinical Trials Unit, Risk 
+Factor Modification Center, St. Michael’s Hospital, 3Department of Nutritional Sciences, Faculty of 
+Medicine, University of Toronto, 4College of Pharmacy and Nutrition, University of Saskatchewan, 
+5Department of Clinical Epidemiology & Biostatistics, Faculty of health Sciences, McMaster University, 
+6 Li Ka Shing Knowledge Institue, St. Michael’s Hospital, 7Division of Endocrinology and Metabolism, 
+St. Michael’s Hospital. 
+ 
+Objective: It is unclear whether low glycemic index and load diets contribute to weight loss. To 
+synthesize the evidence of the effect of low glycemic index/load (GI/GL) diets on body weight in order 
+to inform clinical practice guidelines. 
+ 
+ 
+ 
+
+77 
+ 
+
+

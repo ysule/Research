@@ -1,0 +1,57 @@
+Short Oral Abstract 13 - The Effects of Dietary Glycemic Load on Plasma 
+Proteomic Biomarkers  
+(Joseph Jamnik, Canada) 
+ 
+Joseph Jamnik1*, Christoph H. Borchers2, and Ahmed El-Sohemy1 
+1Department of Nutritional Sciences, Faculty of Medicine, University of Toronto, Toronto, ON, Canada; 
+2University of Victoria-Genome British Columbia Proteomics Centre, University of Victoria, Victoria, 
+BC, Canada. 
+ 
+Background: The consumption of diets with a high glycemic load (GL) has been associated with an 
+increased risk of type II diabetes and other chronic conditions. However, the effects of dietary GL on 
+emerging risk factors for such conditions are unclear. 
+Objective: To determine the association between dietary GL and plasma proteomic biomarkers 
+involved in diverse physiological pathways in a population of healthy young adults. 
+Methods: Subjects (n=1,100) were young adults from the cross-sectional Toronto Nutrigenomics and 
+Health Study. Dietary GL was estimated using a one month 196-item Toronto-modified Willett food 
+frequency questionnaire. The absolute concentrations of 54 plasma proteins were measured using a 
+multiple reaction monitoring HPLC-MS/MS assay. The association between dietary GL and each 
+proteomic biomarker was examined using general linear models adjusted for age, sex, BMI, physical 
+activity, ethnicity, total energy intake and hormonal contraceptive use among women.  
+Results: Dietary GL was inversely associated with circulating concentrations of apolipoprotein A-I, a 
+negative acute phase reactant involved in lipid metabolism and a major constituent of HDL cholesterol 
+(p=0.0003). Additional adjustment for serum HDL levels attenuated the association, suggesting that 
+the effects of GL on apolipoprotein A-I are driven by changes in HDL.  
+Conclusions: These findings provide further evidence for the beneficial effects of a low GL diet on 
+blood lipid profiles. 
+Funding Source: Advanced Foods and Materials Network  
+ 
+ 
+Short Oral Abstract 14 - Serum Non-Esterified Fatty Acid (NEFA) Concentrations 
+are Associated with Longitudinal Progression of β -Cell Dysfunction: 
+Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort   
+(Luke W. Johnston, Canada) 
+ 
+Luke W. Johnston*1, Christine Lee1, Stewart Harris2, Ravi Retnakaran3, Bernard Zinman3,4, Richard P. 
+Bazinet1, Anthony J. Hanley1,3,5 
+1 Department of Nutritional Sciences, University of Toronto; 2 Centre for Studies in Family Medicine, 
+University of Western Ontario, London, CA; 3 Division of Endocrinology, University of Toronto; 4 
+Samuel Lunenfeld Research Institute, Mount Sinai Hospital, Toronto; 5 Dalla Lana School of Public 
+Health, University of Toronto. 
+ 
+Objective: Elevated fasting NEFA concentrations are associated with incident type 2 diabetes 
+(T2DM), however NEFA are physiologically diverse. Limited longitudinal data exist examining total and 
+individual NEFA on the progression of metabolic disorders underlying T2DM. Our aim was to study the 
+longitudinal associations of total and individual NEFA with insulin sensitivity (IS) and β-cell function. 
+Methods: Adults at-risk for T2DM in PROMISE had glucose and insulin measured from a glucose 
+tolerance test at 3 visits over 6-yrs (n=478). Baseline NEFA were analyzed using thin-layer-
+chromatography and gas-liquid-chromatography with flame-ionization detector. The inverse of HOMA-
+IR (HOMA-IS) and the Matsuda index assessed IS, while the Insulinogenic Index over HOMA-IR 
+(IGI/IR) and the Insulin Secretion-Sensitivity Index-2 (ISSI-2) assessed β-cell function. Dysglycemia 
+was defined as incident pre-diabetes or T2DM. Generalized estimating equations was performed 
+adjusting for waist, physical activity, alcohol, and sex. 
+
+62 
+ 
+
+

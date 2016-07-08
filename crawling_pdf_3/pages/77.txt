@@ -1,0 +1,60 @@
+Methods: We conducted a systematic review and meta-analysis of the effect of a low GI/GL diet on 
+body  weight.  We  searched  databases  Medline,  EMBASE,  and  Cochrane  Library  (through  June  26 
+2014).  We  selected  randomized  controlled  trials  ≥12  weeks  in  duration  reporting  body  weight.  The 
+intervention diet was either low GI or GL compared against high GI/GL diets. We extracted all relevant 
+data, which was pooled using the generic inverse variance method using random effects models and 
+expressed as mean differences (MD)  with 95%  CIs. Heterogeneity  was  assessed by the Cochran Q 
+statistic  and  quantified  by  the  I2  statistic.  Study  quality  was  assessed  using  the  Heyland 
+Methodological  Quality  Score  (MQS)1  and  to  assess  risk  of  bias  the  Cochrane  Collaboration  Risk of 
+Bias Tool2 was used.  
+Results:  Eligibility criteria were met by 28 RCTs (31 comparisons) including 2,778 participants who 
+were healthy (n=43), had type 2 diabetesmellitus (n=693), was overweight or obese (n=2382), or had 
+the metabolic syndrome (n=448).  Low GI/GL diets did not significantly decrease body weight 
+compared to high GI/GL diets (MD= -0.44kg (95% Cis -0.92, 0.05 kg)) with evidence of substantial 
+heterogeneity (p<0.05). Most of the trials were of short duration (<12 weeks) and of poor quality 
+(MQS<8).  
+Limitations: Most of the trials were of short duration (<12 weeks) and of poor quality (MQS<8) with 
+substantial unexplained inter-study heterogeneity.  
+Conclusion: Low GI/GL diets do not lead to significantly more weight loss than high GI/GL diets. To 
+address the sources of uncertainty, there is a need for larger, longer, higher quality trials.  
+Funding: The Canadian Institutes of Health Research (funding reference number, 129920) through 
+the Canada-wide Human Nutrition Trialists’ Network (NTN) and PSI foundation.  
+ 
+ 
+21.  Starch Intake and Incidence of Type 2 Diabetes: A Systematic Review and Meta-
+
+Analysis of Prospective Cohorts 
+
+(Sandhya Pudaruth) 
+ 
+Sandhya Sahye-Pudaruth1, 2, & 3, Sonia Blanco Mejia1, 2, David Jenkins1, 2, 3,4, 5, 6, & 7, Ann Fox 1, 3, John L. 
+Sievenpiper1, 2, 4, & 5  
+1Department of Nutritional Sciences, Faculty of Medicine, University of Toronto, Toronto, Canada 
+2Toronto 3D Knowledge Synthesis and Clinical Trials Unit, Risk Factor Modification Center, St. 
+Michael’s Hospital, Toronto, Canada,  3Dalla Lana School Public Health, University of Toronto, 
+Toronto, Canada  4Clinical Nutrition and Risk Factor Modification Centre, St. Michael’s Hospital, 
+Toronto, Canada, 5Keenan Research Center of the Li Ka Shing  Knowledge Institute, St. Michael’s 
+Hospital, Toronto, Canada, 6Division of Endocrinology and Metabolism,   St. Michael’s Hospital, 
+Toronto, Canada, 7Department of Medicine Faculty of Medicine, University of Toronto, Toronto, 
+Canada. E-mail: sandhya.sahye.pudaruth@utoronto.ca 
+ 
+Objective: To investigate the association between starch intake and incidence of type 2 diabetes. 
+Methods: MEDLINE, EMBASE, and The Cochrane Registry were searched through February 10, 
+2015.  Prospective cohort studies in humans investigating the association between starch intake and 
+incidence of type 2 diabetes were included. Full article review and data extraction were conducted by 
+two independent investigators.  Pool analyses were conducted using the generic inverse variance 
+method with random effects models.  Interstudy heterogeneity was assessed using the Cochran Q (X2) 
+statistic and quantified by I2 statistic. 
+Results: 12 prospective cohort studies were included with a total of 137,840 otherwise healthy and 
+non-diabetic participants. The risk ratio for incident type 2 diabetes comparing the highest to the 
+lowest quintile of starch intake was 0.90 g (95% CI, 0.81, 1.00 g), I² = 0%, P =0.04.   
+Conclusion: Our meta-analysis found that starch, regardless of the amount consumed was related 
+with a reduced risk of type 2 diabetes.  Our evidence is supported by prospective cohort studies only, 
+and more research clarifying the mechanisms by which starch reduces the risk for type 2 diabetes 
+should be explored.   
+ 
+
+78 
+ 
+
+

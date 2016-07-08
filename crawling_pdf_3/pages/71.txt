@@ -1,0 +1,58 @@
+12.   
+Impact of a 6-Month Healthy Lifestyle Education Program Tailored for Rural 
+Adults with Prediabetes in Stratford and Tavistock, Ontario: Preliminary Nutrition 
+Results 
+(Adrienne Vermeer) 
+ 
+Adrienne Vermeer*1, Sarita Azzi2, Mathilde Lavigne-Robichaud2, Sean Blaine1, Bridget Whebby1, 
+Teresa Barresi1, Isabelle Giroux2 
+1STAR Family Health Team, Stratford, Ontario,  
+2Faculty of Health Sciences, University of Ottawa, Ottawa, Ontario. 
+ 
+Objectives: To assess the impact on client’s perception, dietary intake and type 2 diabetes mellitus 
+(T2DM) risk factors of a 6-month healthy lifestyle education program tailored for rural adults with 
+prediabetes.   
+Methods: Rural adults identified with impaired fasting glucose and/or impaired glucose tolerance were 
+referred to the 6-month education program by their physician. The program provided participants with 
+credible nutrition information and promoted the development of skills regarding healthy eating 
+strategies known to help prevent or delay the development of T2DM. Pre- and post-program 3-day 
+food records, as well as anthropometric, demographic and biochemical data were collected. 
+Participants also completed a program feedback form. Food intake records were reviewed with clients 
+by a registered dietitian and analyzed using the ESHA Food Processor SQL version 10.14.0. 
+Results: Preliminary data from 21 participants (13 men, 8 women) are presented. They attended 
+7.1±0.9 (mean ± SD) out of 8 visits. Participants were aged 61.9±6.5 and their average body mass 
+index (BMI) was 32.5±6.6 kg/m2. Ninety percent of the participants said they felt confident that they 
+could continue to implement many of the healthy eating strategies learned as part of the prediabetes 
+education program. Participants reduced their average energy (2151±675 versus 1771±453 kcal, 
+p=0.01) and carbohydrate (250.6±89.0 versus 194.7±44.4 g, p=0,006) intake. Also, the average BMI 
+(32.5±6.6 versus 31.6±6.4 kg/m2, p=0.01) and fasting blood glucose (6.07±0.44 versus 5.27±0.54, 
+p=0.05) improved significantly from before to after the 6-month education program.  
+ 
+Conclusions:  Based on these preliminary results, it appears that this 6-month healthy lifestyle 
+education program may have helped those rural adults improve some of their risk factors for 
+developing T2DM, dietary behaviours, and confidence in making healthy eating choices. 
+Protocol registration: 6262-06-2010/0690496 
+Funding: Public Health Agency of Canada : Canadian Diabetes Strategy. 
+
+ 
+13.    Lactose Intolerance Gene Variants, Dairy Consumption, Plasma 25-
+
+hydroxyvitamin D and Biomarkers of Type 2 Diabetes in Young Canadian Adults 
+
+(Ohood Alharbi) 
+ 
+Ohood Alharbi1*, Ahmed El-Sohemy1 
+1Department of Nutritional Sciences, Faculty of Medicine, University of Toronto, Toronto, ON, Canada 
+ 
+Background: Gene variants located upstream of the LCT gene have been associated with lactose 
+intolerance (LI) in different ethnic groups. However, the prevalence of these gene variants in Canada 
+remains unknown. Individuals with LI often limit or avoid dairy consumption, which may lead to an 
+inadequate intake of vitamin D. Recent evidence suggests an inverse association between dairy 
+intake and risk of type 2 diabetes.  
+ 
+ 
+
+72 
+ 
+
+

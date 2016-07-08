@@ -1,0 +1,60 @@
+The  Effect  of  Highly  Viscous  Fibre-Gel  on  Appetite  and  Glycemic  Response  in 
+
+5.   
+Healthy Individuals 
+(Fei Au-yueng) 
+ 
+Fei Au-Yeung*1,2, Elena Jovanovski1,2, Thanh Ho1,2, Andreea Zurbau1,2, Alexandra L Jenkins2, Vladimir 
+Vuksan1,2,3,4,5 
+1Department of Nutritional Sciences, Faculty of Medicine, University of Toronto, ON, Canada; 2Clinical 
+Nutrition and Risk Factor Modification Centre, St. Michael’s Hospital, Toronto, ON, Canada; 
+3Department of Medicine, Faculty of Medicine, University of Toronto, Toronto, ON, Canada; 4Keenan 
+Research Centre of the Li Ka Shing Knowledge Institute, St. Michael’s Hospital, Toronto, ON, Canada; 
+5Division of Endocrinology & Metabolism, St. Michael's Hospital, Toronto, ON., Canada 
+ 
+Objective: Konjac-glucomannan (KGM) is a viscous dietary fibre that has been indicated in the 
+treatment of body weight and diabetes. Pre-hydration of KGM greatly changes its physicochemical 
+properties but little is known about its health benefits. Thus, we aim to assess the acute effects of 
+KGM administered in the form of a powder or a pre-hydrated gel on appetite and glycemic response. 
+Methods: Following a randomized, double-blinded, cross-over design, participants were administered 
+1 of 5 test meals on 5 separate occasions with >2 day washout period. Each meal consisted of 50g 
+carbohydrates (CHO) in the form of bread, margarine, and a gel dessert. The test conditions were: 
+50g CHO in bread with 5g KGM as a powder (50PK) or pre-hydrated into the gel KGM (50GK) or a 
+fibre free control (50C), and 25g CHO in bread with 25g CHO in gel dessert with 5g KGM pre-hydrated 
+into the gel (25GK) or fibre free control (25C). All test meals were identical except for the form of fibre. 
+A standardized lunch was consumed 180min later. Satiety was recorded using visual analogue scales.  
+Results: Eighteen healthy individuals (M: 7/F: 11; Age: 28.6 ± 3yrs; BMI: 23.3 ± 0.7kg/m2) were 
+enrolled and 15 provided blood samples. The iAUC after 120 min for blood glucose was lower after 
+50PK (MD: -40%, p<0.001) and 50GK (MD: -23%, p=0.049) vs. 50C. No differences were observed 
+between 50PK and 50GK (p=0.16). Additionally, 50GK increased satiety after 120 min vs. 50PK (MD: 
++26%, p=0.035) and 50C (MD: +28%, p=0.025). The iAUC after 120 min for blood glucose was lower 
+in 25GK vs. 25C (MD: -28%, p=0.006), but no significant differences were observed in satiety. 
+Conclusions: These findings suggest that KGM may improve glycemic control irrespective of 
+administration mode, but consumption in a pre-hydrated gel may confer additional benefits from 
+improved satiety and should be further explored. 
+Protocol registration: Clinicaltrials.gov identifier, NCT01657058 
+Funding: This project was internally funded by St. Michael’s Hospital. 
+ 
+ 
+6.    A Randomized Crossover Trial Of Walking After Eating And Standard Physical 
+Activity Advice In T2DM: Participant Acceptability And Compliance  
+(Bernard Venn) 
+ 
+Andrew N Reynolds1,2, Bernard J Venn1*, Sheila Williams3, Jim I Mann1, 2, 4 
+1 Department of Human Nutrition, University of Otago, Dunedin New Zealand; 2 Edgar National Centre 
+for Diabetes and Obesity Research, Dunedin New Zealand; 3 Department of Preventive and Social 
+Medicine, University of Otago, Dunedin New Zealand; 4 Faculty of Medicine, University of Otago, 
+Dunedin New Zealand 
+Email: bernard.venn@otago.ac.nz 
+ 
+Objective: To compare participant acceptability and compliance to two approaches of increasing 
+physical activity in people with T2DM. 
+Methods: Forty-one T2DM adults (HbA1c 58.9 mmol/mol) completed two 2-week interventions in 
+randomized order of a 30-minute walk per day and walking for 10-minutes after each main meal with a 
+four-week washout. Compliance with walking regimens was captured by tri-axial accelerometers 
+(GT3X, ActiGraph). Walking preference and measures of motivation for physical activity were 
+recorded pre- and post-intervention measured on a five-point Likert scale. 
+67 
+ 
+
+

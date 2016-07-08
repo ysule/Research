@@ -1,0 +1,42 @@
+25.  SIRT1 enhances lipid storage and utilization in adipose tissues by promoting 
+
+mitophagy: role of adiponectin 
+
+(Yu Cai) 
+ 
+Yu Cai1*, Ming-Ming Li1, Cheng Xu1, Yu Wang1. 
+1Department of Pharmacology & Pharmacy, LKS Faculty of Medicine, The University of Hong Kong, 
+Hong Kong, China.  
+E-mail: yuwanghk@hku.hk 
+ 
+Objective: SIRT1, as a NAD+-dependent protein deacetylase, is a key energy sensor controlling 
+cellular responses to nutrient availability and in turn protecting against ageing-related metabolic 
+diseases. Previous study demonstrated mice overexpressing SIRT1 selectively in adipose tissues 
+(Adipo-SIRT1) exhibit increased capacity of lipid storage and utilization, which contributes to their 
+enhanced systemic insulin sensitivity. The present study aims to assess whether the beneficial effect 
+of SIRT1 is dependent on adiponectin, an adipocyte-derived and insulin-sensitizing hormone. 
+Methods: In light of this, Adipo-SIRT1 mice have been crossed with adiponectin-knockout mice (AKO) 
+to produce mice with both genetic modifications (Adipo-SIRT1/AKO). 
+Results: Compared to Adipo-SIRT1 mice, adiponectin deficiency prevents SIRT1-mediated lipid 
+storage in adipose tissues, but enhances ectopic lipid accumulation in liver. Compared to wild type 
+mice, Adipo-SIRT1/AKO mice are less insulin sensitive and show impaired glucose tolerance.  
+Mechanistically, mitophagy is enhanced by SIRT1 overexpression in adipose tissues, accompanied by 
+decreased activity of mitochondrial complex-I. 
+Conclusions: Adiponectin is involved in the regulation of mitochondria functions by SIRT1, through 
+modulating lipid constituents in adipose tissues. 
+Protocol registration: not applicable 
+Funding Source: Seeding Funds for Basic Research of The University of Hong Kong, Research 
+Grant Council grants (HKU779712M and HKU780613M); Collaborative Research Funds (HKU2/07C 
+and HKU4/CRF/10) of Hong Kong; the Area of Excellent Scheme (AoE/P-10-01) established under 
+University Grants Committee, HKSAR; and the National Basic Research Program of China (973 
+Program) (2011CB504004 and 2010CB945500). 
+ 
+ 
+ 
+
+ 
+
+81 
+ 
+
+

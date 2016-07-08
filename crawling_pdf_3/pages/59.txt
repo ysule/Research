@@ -1,0 +1,56 @@
+Institute,  The  Hospital  for  Sick  Kids,  Toronto,  Ontario,  CANADA;  4Clinical  Nutrition  and  Risk  Factor 
+Modification Centre, Toronto, Ontario, CANADA. 
+ 
+Background:  Dietary  advice  in  pregnancy  is  a  key  strategy  promoted  to  prevent  and  manage 
+gestational  diabetes  mellitus  (GDM).  However  the  evidence  to  support  various  healthful  dietary 
+patterns to achieve optimal glycemic control in pregnant women has not been adequately synthesized.  
+Objective:  To  conduct  a  systematic  review  and  network  meta-analysis  of  randomized  trials  of  ≥4 
+week  duration  in  order  to  compare  the  relative  efficacy  of  healthful  dietary  patterns  on  measures  of 
+glycemic  control  (fasting  blood  glucose  [FBG]  and  insulin  [FBI],  glycated  hemoglobin  [HbA1c], 
+Homeostatic Model Assessment- Insulin Resistance [HOMA-IR]) in pregnant women. 
+Methods:  MEDLINE,  EMBASE,  and  COCHRANE  (to  July  2014)  were  used  to  identify  randomized 
+trials of dietary patterns for glycemic control during pregnancy. Two independent reviewers extracted 
+relevant  study  characteristics  and  data.  A  network  meta-analysis  using  a  Bayesian  framework  and 
+random-effects model was conducted to estimate the effectiveness of dietary patterns on FBG. Owing 
+to  a  lack  of  trials  that  met  the  inclusion  criteria,  we  conducted  pair-wise  meta-analyses  using  fixed-
+effects model with generic inverse variance  weighting for FBI and HOMA-IR. There were insufficient 
+trials to conduct a meta-analysis for HbA1c.  
+Results:  Twelve studies with a median follow-up duration of 13 weeks met our inclusion criteria (n= 
+1869). There were no significant differences for any of the dietary comparisons (routine care, energy-
+restricted,  high-fibre,  low  glycemic  index,  Dietary  Approach  to  Stop  Hypertension  [DASH]  diets)  on 
+FBG.  Pair-wise  meta-analyses  between  high-fibre  and  low  glycemic  index  diets  also  did  not  show 
+significant differences on FBI and HOMA-IR. 
+Limitation: <5 trials were identified for comparisons between diets. 
+Conclusions: The preliminary results from these analyses demonstrated that there are no significant 
+differences  between  diets  on  FBG,  FBI,  and  HOMA-IR.  Larger  trials  of  higher  quality  are  needed  to 
+confirm these results. 
+ 
+ 
+Short Oral Abstract 11 - Cross-Sectional Associations of Plasma Fatty Acid 
+Composition with Plasma Concentration of Leptin in Finnish Children   
+(Taisa M Venäläinen, Finland) 
+ 
+Taisa  M  Venäläinen*1,2,  Vanessa  DF  de  Mello2,  Ursula  S  Schwab2,  Jyrki  J  Ågren1,  Aino-Maija 
+Eloranta1, Virpi I Lindi1, Timo A Lakka1 
+1Institute of Biomedicine, University of Eastern Finland, Kuopio, Finland; 2Institute of Public Health and 
+Clinical Nutrition, University of Eastern Finland, Kuopio, Finland 
+ 
+Objective: We investigated the associations of proportions of fatty acids in plasma cholesteryl esters 
+(CE), phospholipids (PL) and triacylglycerols (TG) with plasma concentration of leptin among Finnish 
+children.  
+Methods:  The  subjects  were  a  population  sample  of  376  children  aged  6-8  years  examined  at 
+baseline  in  the  Physical  Activity  and  Nutrition  in  Children  (PANIC)  study.  Plasma  fatty  acid 
+composition  was  measured  by  gas  chromatography  and  plasma  concentration  of  leptin  by 
+radioimmunoassay. Data were analyzed using linear regression models. 
+Results: Higher proportions of myristic acid and lower proportions of cis-vaccenic acid in plasma CE, 
+PL  and  TG  were  associated  with  higher  plasma  concentration  of  leptin. In  CE,    higher  proportion  of 
+gamma-linolenic  acid  and  lower  proportion  of  arachidonic  acid  were  associated  with  higher  leptin 
+concentration.  In  PL,  higher  proportion  of  linoleic  acid  and  lower  proportions  of  nervonic  and 
+arachidonic  acids  were  associated  with  higher  leptin  concentration.  In  TG,  higher  proportions  of 
+palmitic,  stearic  and  gamma-linolenic  acids  and  lower  proportions  of  linoleic,  oleic,  cis-vaccenic  and 
+docosapentaenoic acids were related to higher leptin concentration.  
+
+60 
+ 
+
+

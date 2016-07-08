@@ -1,0 +1,58 @@
+3Department of Biostatistics, New Bolton Center, School of Veterinary Medicine, University of 
+Pennsylvania, Philadelphia, PA;  
+4Clinical Research Unit, University of Alabama at Birmingham, Birmingham, AL;  
+5Division of Endocrinology and Metabolism, Department of Medicine, University of Alabama at 
+Birmingham, Birmingham, AL;  
+6Department of Human Studies, University of Alabama at Birmingham, Birmingham, AL;  
+7Ingredion Inc., Bridgewater, NJ. 
+Email: bgower@uab.edu 
+ 
+Objective: This study was designed to examine the effect of HAM-RS2 resistant starch on insulin 
+sensitivity in women. 
+Methods: Participants were 40 healthy pre- and postmenopausal women.  The study was conducted 
+using a randomized, placebo-controlled, double-blind cross-over design.  HAM-RS2 (HI-MAIZE®260 
+corn starch, Ingredion Incorporated, Bridgewater, NJ) was formulated into snack foods and tested at 
+two doses, 15 and 30 g resistant starch per day.  An isocaloric snack formulated with a highly-
+digestible waxy corn starch served as a control.  Each arm was 4 weeks, with a 4-week wash-out 
+period between.  The main outcome was insulin sensitivity (SI) assessed at the end of each arm by 
+Minimal Model.  Data were analyzed by mixed-effects modeling, adjusting for covariates. 
+Results: Two Gaussian distributions for SI were identified, an insulin-resistant (IR) group (SI<7.8), and 
+an insulin-sensitive (IS) group (SI>7.8).  Among IR participants, SI was on average 16% higher after 
+the 30 g supplement when compared to the control (P=0.02). No effect of HAM-RS2 on insulin 
+sensitivity was observed among IS participants. 
+Conclusions:  Among insulin-resistant women, consumption of 30 g/d HAM-RS2 improved insulin 
+sensitivity by 16%.  Because insulin resistance is a risk factor for diabetes, HAM-RS2 may be an 
+appropriate dietary ingredient to reduce risk for diabetes in insulin-resistant women. 
+Protocol registration: NCT0152806 
+Funding source: Ingredion Incorporated, P30DK56336, P60DK079626, UL1RR025777 
+ 
+ 
+Oral Abstract 8 – Linking microbial consumption of resistant starch to 
+functional outcomes  
+(Maria Marco, USA) 
+ 
+Intestinal microorganisms have important beneficial roles in the regulation of energy homeostasis, lipid 
+and glucose metabolism, and the immune system. Conversely, a dysbiotic gut microbiota is 
+associated with obesity, type 2 diabetes mellitus, and metabolic syndrome. Therefore, dietary 
+approaches to modulate the composition and activities of the gut microbiota might be sufficient to 
+protect and alleviate the symptoms against these chronic diseases. This presentation will describe 
+recent highlights in the progress to unravel how dietary fermentable carbohydrates such as type 2 
+resistant starch (RS) improve metabolic health. Specifically, findings from human and murine studies 
+will presented with regard to the specific bacterial groups enriched with RS consumption and the 
+impact of RS on the intestinal and serum metabolomes and gene expression in the intestine as well as 
+distal sites in the body. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+50 
+ 
+
+

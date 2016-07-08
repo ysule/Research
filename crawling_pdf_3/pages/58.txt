@@ -1,0 +1,56 @@
+Short Oral Abstract 9 - Effect of oat β-glucan on markers of lipid control: a 
+systematic review and meta-analysis  
+(Thanh Ho, Canada) 
+ 
+Thanh Ho1,3*, John Sievenpiper1,2,4, Andreea Zurbau1,3, Sonia Mejia Blanco1,3,4, Russell de Souza1,4,5, 
+Elena Jovanovski1,3, Alexandra Jenkins1, David JA Jenkins1,3,4, Vladimir Vuksan1,2,3 
+ 1Clinical Nutrition and Risk Factor Modification Centre, St. Michael’s Hospital, 193 Yonge Street, 
+Toronto, Ontario, Canada 
+2Li Ka Shing Knowledge Institute and Keenan Research Centre, St. Michael’s Hospital, 209 Victoria 
+Street, Toronto, Ontario, Canada 
+3Department of Nutritional Sciences, Faculty of Medicine, University of Toronto, 150 College Street, 
+Toronto, Ontario, Canada 
+4Toronto 3D Knowledge Synthesis and Clinical Trials Unit, St. Michael’s Hospital, 61 Queen Street 
+East, Toronto, Ontario, Canada 
+5Department of Clinical Epidemiology & Biostatistics, Faculty of Health Sciences, McMaster University, 
+Hamilton, Ontario, Canada 
+ 
+Objective: Low-density lipoprotein cholesterol (LDL-C) lowering has been the focused of 
+cardiovascular disease (CVD) prevention, however, despite highly effective statin therapy for LDL-C 
+lowering, residual risk remains. Therefore, alternative lipid targets, ie. apolipoprotein B (apoB) and 
+non-high-density lipoprotein cholesterol (non-HDL-C), have been implemented to assess residual risk. 
+β-glucan, the main soluble fibre found in oats, is often ascribed with being the main active component 
+responsible for the cholesterol-lowering effect. Given the established LDL-C lowering effect of oat β-
+glucan (OβG), this systematic review and meta-analysis seeks to update the evidence in the context of 
+OβG and LDL-C and additionally, to summarize and quantify the effect of OβG on the alternate lipid 
+targets, apoB and non-HDL-C, for the first time.   
+Methods: MEDLINE, Embase, CINAHL, and the Cochrane Central Register of Controlled Trials were 
+searched. Randomized controlled trials ≥3 weeks reporting OβG consumption on LDL-C, apoB and/or 
+non-HDL-C. Two independent reviewer’s extracted relevant data and assessed study quality and risk 
+of bias. Data were pooled using the generic inverse variance method with random effects models and 
+expressed as mean differences with 95% confidence intervals (CI’s). Heterogeneity was assessed 
+(Cochran Q-statistic) and quantified (I2). 
+Results: 51 trials were included (n=3420). A median dose of 3.6 g/d significantly lowered LDL-C 
+(MD=-0.23 [95% CI: -0.33, -0.14]; p<0.00001), apoB (MD=-0.05 [95% CI: -0.08, -0.02]; p<0.00001) 
+and non-HDL-C (MD=-0.24 [95% CI: -0.28, -0.20]; p<0.00001) compared with control diets.  
+Conclusion: Pooled analyses confirm an LDL-C lowering effect with consumption of OβG. It 
+additionally implicates a beneficial effect on alternate lipid targets, apoB and non-HDL-C. Though, the 
+results may be limited by the short duration, poor quality of the majority of the trials, and significant 
+between-study heterogeneity. 
+Trial Registration: ClinicalTrials.gov NCT02068248 
+Funding: N/A 
+ 
+ 
+Short Oral Abstract 10 - The Effects of Maternal Diet on Glycemic Control: A 
+Systematic Review and Network Meta-Analysis  
+(Vanessa Ha, Canada) 
+ 
+Vanessa Ha1,4*, Ashley J Bonner1, Jaynendr K Jadoo, Joseph Beyene1,3, Sonia Anand1,2, Russell J de 
+Souza1,4 
+1Department  of  Clinical  Epidemiology  &  Biostatistics,  2Department  of  Medicine,  Faculty  of  Health 
+Sciences,  McMaster  University,  Hamilton,  Ontario,  CANADA;  3Health  Sciences  Program,  Research 
+
+59 
+ 
+
+

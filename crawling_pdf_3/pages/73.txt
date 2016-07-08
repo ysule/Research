@@ -1,0 +1,57 @@
+15.    Effects of FTO on Obesity-related Anthropometrics are modulated by Age, 
+Physical Activity and Artificially Sweetened Beverages: results from The HUNT Study 
+(Ingrid Lovold Mostad) 
+ 
+Ingrid L Mostad1,2*, Thea Bjørnland3, Mette Langaas3, Valdemar Grill2 
+1Department of Clinical Nutrition, Clinic of Clinical Service, St. Olavs Hospital, Trondheim University 
+Hospital, Trondheim, Norway; 2Department of Cancer Research and Molecular Medicine, Faculty of 
+Medicine, Norwegian University of Science and Technology, Trondheim, Norway; 3Department of 
+Mathematical Sciences, Faculty of Information Technology, Mathematics and Electrical Engineering, 
+Norwegian University of Science and Technology, Trondheim, Norway 
+E-mail: ingrid.l.mostad@ntnu.no 
+ 
+Objective: To test for interactions of non-genetic factors with effects of FTO 
+Methods: The two outermost quartiles of waist-hip-ratio in the HUNT3 all adult population survey was 
+genotyped for FTO (rs9939609). We analysed data emerging from this extreme phenotype sampling 
+by complete response analysis, by estimating effects of environmental exposures as well as genetic 
+effects, separately for men and women in age groups 20-40, 40-60 and 60-80 years. We tested for 
+interaction effects between FTO and non-genetic factors by stratification on the non-genetic factors in 
+the 40-60 year age group. A P-value < 6.5x10-4 was considered significant after Bonferroni correction. 
+Results: In the 40-60 year age group (7944 women, 6694 men) anthropometric measurements 
+confirmed that the FTO minor frequency allele (A-allele, MAF 0.42) was associated with  increases in 
+waist-hip-ratio, BMI, body weight, waist and hip circumference, but not height. Effect sizes were similar 
+but not significant in the 60-80 year age (3948 women, 4084 men) whereas they were lower in the 20-
+40 year age group (4816 women, 3273 men). Reported high physical activity reduced the FTO effect 
+in women and reversed the effect in men, as evident from non-overlapping confidence intervals. Intake 
+of artificially sweetened beverages significantly modulated effects of FTO on waist circumference in 
+women, the effect size of the risk allele being  larger for regular drinkers vs never drinkers. Smoking 
+(in a comparison ever vs. never) tended to increase the impact of the risk allele in men but not in 
+women.  
+ 
+Conclusions: In this Norwegian population the effect of the FTO obesity risk allele is modulated by 
+age, physical activity and drinking artificially sweetened beverages, with a tendency also for interaction 
+with smoking. The findings highlight the importance of interaction between environmental and genetic 
+risk factors for obesity. 
+Funding: Liaison Committee between the Central Norway RHA and NTNU. 
+ 
+ 
+16.    Plasma fatty acids as predictors of glycemia and type 2 diabetes – METSIM Study 
+(Maria Lankinen) 
+ 
+Maria Lankinen*1, Alena Stančáková2, Matti Uusitupa1,4, Jyrki Ågren3, Jussi Pihlajamäki1,5, Johanna 
+Kuusisto2,6, Ursula Schwab1,7, Markku Laakso2,6 
+1Institute of Public Health and Clinical Nutrition, 2Institute of Clinical Sciences, Internal Medicine and 
+3Institute of Biomedicine Physiology, University of Eastern Finland, Kuopio Finland and 4Research 
+Unit, 5Clinical Nutrition and Obesity Center, 6Department of Medicine and 7Institute of Clinical 
+Medicine, Internal Medicine, Kuopio University Hospital, Kuopio, Finland.  
+ 
+Objective: Our aim was to investigate the fasting proportions of fatty acids (FAs) and estimated 
+desaturase and elongase activities in three different lipid fractions in plasma, phospholipids (PL), 
+cholesteryl esters (CE) and triglycerides (TG), as predictors for the worsening of glycemia (area under 
+the glucose curve in an oral glucose tolerance test, Glucose AUC) and incident type 2 diabetes 
+(T2DM) in a 5.9-y follow-up of the population-based METSIM cohort. 
+
+74 
+ 
+
+

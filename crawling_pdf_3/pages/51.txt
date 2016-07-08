@@ -1,0 +1,55 @@
+Source of Support: Funding was provided by The Coca-Cola Company.  By contractual agreement, 
+all decisions regarding the content of the manuscript—including design, analysis, and interpretation—
+rest solely with the authors.  
+ 
+ 
+Oral Abstract 11 - Lowering Glucose and Insulin Responses to a Starchy Staple: 
+From Formulation to Flux  
+(David Mela, The Netherlands) 
+ 
+Hanny M Boers1, Theo H van Dijk2, Coby Eelderink3, Harry Hiemstra1, Anne-Roos Hoogenraad1, 
+Katrina MacAulay4, Peter Murray4, Harry PF Peters1, Marion G Priebe3, Jack WM Seijen ten Hoorn1, 
+Mirjam AM Vente-Spreeuwenberg1, David J Mela1* 
+1Unilever R&D, Vlaardingen NL; 2Dept Laboratory Medicine and 3Center for Medical Biomics, 
+University Medical Center Groningen, Groningen NL; 4Unilever R&D, Sharnbrook UK 
+E-Mail: david_mela@unilever.com 
+ 
+Objective: There is growing endorsement for the benefits of lowering acute post-prandial glucose 
+(PPG) and insulin (PPI) responses to carbohydrate-rich staples. This work describes the selection and 
+effects of incorporating viscous fibres and an alternative starch source into the wheat-based flour 
+(‘atta’) used for making flatbreads, a widely-consumed carbohydrate source in South Asia.  
+Methods: From existing literature, in vitro glucose release, and product feasibility, guar gum (GG), 
+konjac mannan (KM) and chickpea flour (CPF) were prioritized for clinical testing in freshly prepared 
+flatbreads. Trial 1 (balanced-order incomplete block design, n=38 UK subjects) compared 10 modified 
+atta formulations (2/4/6% GG; 2/4% KM; 15% CPF, and 10 or 15% CPF plus 2 or 4% GG) to an 
+existing full-fibre commercial product reference. Based on those results, Trial 2 (full crossover design, 
+n=50 Indian subjects) tested 3 formulations (15% CPF + 2/3/4% GG). Trial 3 then measured effects of 
+CPF+GG on glucose fluxes using dual isotope labelling (n=12 Dutch males). 
+Results: In Trial 1, 6% GG, 4% KM, and 15% CPF plus 2 or 4% GG produced significant (p<0.01), 
+≥30% reductions in PPG 2-hr incremental area under the curve. A model with 3 in vitro parameters 
+closely predicted these results (R2
+marked PPI reductions, both GG dose-related. Trial 3 showed these reductions in PPG and PPI 
+occurred with modest reductions in glucose uptake and clearance, and much more substantial 
+suppression of hepatic glucose production rate.  
+Conclusions: 1) The combined CPF+GG formulations significantly reduce PPG and PPI; 2) in vitro 
+assays can aid in prioritizing formulations for clinical testing; and 3) the dose-related PPG-lowering 
+effects of GG+CPF predominantly reflect post-absorptive effects rather than rates of glucose uptake.  
+Protocol Registration: ClinicalTrials.gov Identifier: NCT01734590 (Trial 3) 
+Funding source: Unilever 
+
+adj=0.98). Trial 2 largely confirmed the results for PPG also with 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+52 
+ 
+
+

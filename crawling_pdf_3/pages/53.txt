@@ -1,0 +1,58 @@
+Methods: Altogether 79 volunteers with elevated fasting plasma glucose (5.5-6.9 mmol/l), BMI 25-36 
+kg/m2 and age 43 to 72 years participated in the 12-week parallel randomized controlled trial with four 
+groups. The fatty fish group consumed 4 meals of fatty fish per week to provide ~ 1 g EPA and DHA 
+per day. The lean fish group consumed 4 meals of lean fish per week. The ALA group ingested 
+camelina sativa oil in order to get 10 g ALA per day. The control group consumed lean meat products. 
+Control and ALA groups were allowed to eat 1 fish meal per week.  The study diets were isocaloric. 
+Oral glucose tolerance test (OGTT) and frequently sampled intravenous glucose tolerance test 
+(FSIGT) were performed and blood samples for analyses of serum lipid profile, fatty acids, 
+inflammatory markers and metabolomics and lipidomics profiles were drawn at the beginning and at 
+the end of the intervention. ANCOVA models adjusted for age, gender, use of statins and baseline 
+value was used for comparing changes between the groups.  
+Results: There were major changes in the fatty acid composition of phospholipids, cholesteryl esters 
+and triglycerides in eicosapentaenoic acid, docosahexaenoic acid in the fatty fish group and ALA in 
+the ALA group, which reflect good compliance to the diets. No significant changes in glucose and 
+insulin metabolism were found based on OGTT or FSIGT. Concentrations of total and LDL cholesterol 
+(C), LDL-C/HDL-C ratio and Apo B/Apo A-I ratio changed significantly differently between the groups. 
+The biggest changes were seen in the ALA group where the total and LDL-C concentrations 
+decreased compared with the fatty fish group and the lean fish group, and LDL-C/HDL-C and Apo 
+B/Apo A-I ratios decreased compared with the lean fish group. Inflammatory markers - high sensitivity 
+C-reactive protein (CRP), Interleukin 1 receptor antagonist (IL-1Ra) and Interleukin 1 beta (IL-1 beta) - 
+did not change during the intervention. 
+Conclusion: The results suggest that a diet enriched in ALA could improve the serum lipid profile in 
+subjects with impaired glucose metabolism. Changes in lipid metabolism are going to be studied in-
+depth utilizing metabolomics and lipidomics methods. 
+Protocol registration: ClinicalTrials.gov NCT01768429 
+Funding. Finnish Diabetes Research Foundation, Competitive Research Funding of the Northern 
+Savo Hospital District special state subsidy for health research (VTR), Juho Vainio Foundation, 
+Finnish Cultural Foundation, North Savo Regional Fund, Paavo Nurmi Foundation, Yrjö Jahnsson 
+Foundation. 
+ 
+ 
+Short Oral Abstract 3 - A High-Protein Diet Reduces Liver Fat Content and 
+Improves Glomerular Filtration Rate in Subjects with Type 2 Diabetes   
+(Mariya Markova, Germany) 
+ 
+Mariya Markova*1, Silke Hornemann1, Stephanie Sucher1, Olga Pivovarova1,2, Andreas F.H. Pfeiffer1,2 
+1Department of Clinical Nutrition, German Institute of Human Nutrition Potsdam-Rehbruecke, Nuthetal, 
+Germany; 2Department of Endocrinology, Diabetes and Nutrition, Campus Benjamin Franklin, Charité 
+University Medicine, Berlin, Germany 
+E-Mail: Mariya.Markova@dife.de 
+ 
+
+Objective: Previous studies reported both favourable and adverse impacts of high-protein diet in type 
+2 diabetes. In our study, we evaluated in detail the effects of two isocaloric high-protein diets of animal 
+(AP) and plant (PP) origin in type 2 diabetic patients. 
+Methods: Individuals with type 2 diabetes were randomized to either high-animal or high-plant protein 
+diet (30% protein, 40% carbohydrates, 30% fat) for 6 weeks. The AP diet was rich in meat and dairy 
+foods, while the PP group received products with high amount of dietary pulses and pea protein. Blood 
+samples were collected every two weeks to measure routine parameters. Magnetic resonance 
+imaging was performed at the beginning and at the end of the study. 
+Results: The study included 30 subjects (age 65±6 years, BMI 30.5±3.6 kg/m2, HbA1c 7.0±0.6%). We 
+observed reduction of cholesterol, LDL- and HDL-cholesterol in all participants. Levels of liver 
+parameters (AST, ALT, GGT) in blood improved significantly after diet intervention in both groups. 
+
+54 
+ 
+
+

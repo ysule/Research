@@ -1,0 +1,57 @@
+Methods: The FA proportions were measured in plasma PL, CE and TG fractions in 1364 Finnish 
+men aged 45 to 68 y at baseline (mean ± SD: age 55 ± 5.6 year; body mass index 26.5 ± 3.5 kg/m2; 
+fasting plasma glucose 5.8 ± 0.6 mmol/l). The prospective follow-up study included only men who 
+were non-diabetic at baseline and had data available at the follow-up (n=1302). A total of 71 
+participants developed new T2DM during the follow-up.  
+Results: After the adjustment for confounding factors, total saturated FAs, palmitoleic acid (16:1n-7), 
+di-homo-gamma-linolenic acid (20:3n-6) and estimated stearoyl coenzyme A desaturase 1 and delta-6 
+desaturase (D6D) enzyme activities significantly predicted the worsening of glycemia, whereas total 
+PUFA, linoleic acid (18:2n-6) and elongase activity were the main predictors for decreased Glucose 
+AUC. Estimated D6D activity and dihomo-gamma-linolenic acid (20:3n-6) increased the risk of incident 
+T2DM. The results were consistent across the three different lipid fractions, but FA proportions in PL 
+and CE were stronger predictors for worsening of glycemia and incident T2DM than FA proportions in 
+TG. 
+Conclusion: FA proportions in plasma lipid fractions and their ratios reflecting desaturase and 
+elongase enzyme activities predicted the worsening of glycemia and incident T2DM. 
+Funding: Academy of Finland, University of Eastern Finland. 
+ 
+ 
+17.  Prospective relevance of fruit and vegetable consumption during puberty for risk 
+markers of type 2 diabetes in young adulthood – the role of the dietary glycemic 
+index 
+
+(Anette Buyken) 
+ 
+Anette E Buyken*1*, Danika Krupp1, Katharina J Penczynski1, Katja Bolzenius1, Stefan A Wudy2, 
+Thomas Remer1 
+1IEL – Nutritional Epidemiology, Rheinische Friedrich-Wilhelms-University Bonn, DONALD Study at 
+the Research Institute of Child Nutrition, Dortmund 
+2Justus Liebig University of Giessen, Center of Child and Adolescent Medicine, Laboratory for 
+Translational Hormone Analytics in Pediatric Endocrinology, Peptide Hormone Research Unit, 
+Giessen 
+E-mail: buyken@uni-bonn.de 
+ 
+Objective: A higher consumption of fruits and vegetable (FV) may confer a lower risk of developing 
+type 2 diabetes. This protective link may be partly attributable to flavonoids provided by these foods 
+(FV-flavonoid). In addition, many fruits in particular are also characterized by a low or intermediate 
+glycemic index (GI). This study examined the prospective associations of habitual FV or FV-flavonoid 
+intake during puberty with homeostasis model assessment insulin resistance (HOMA-IR), alanine 
+aminotransferase (ALT) and -glutamyltransferase (GGT) in younger adulthood and whether these are 
+partly attributable to the dietary GI.  
+Methods: Healthy participants from the DONALD Study were eligible for analysis if they had provided 
+a fasting blood sample in adulthood (18-39 y) and at least two 3-day dietary records during puberty 
+(girls: 9-15y, boys: 10-16y, n=260). Additional multivariable regression analyses among those 
+providing at least three 24-h urines in puberty (n=222) addressed urinary hippuric acid (HA), a 
+biomarker of FV-flavonoid.  
+Results: A higher FV intake was independently related to lower HOMA-IR values (ptrend=0.03) and a 
+tendency for lower GGT values (ptrend=0.099) in adulthood. These associations were removed by 
+additional inclusion of dietary GI (conditional model, p=0.2 and p=0.5). Similarly, associations between 
+higher HA excretion in puberty and lower adult HOMA-IR (p=0.03) and GGT (p=0.0001) were 
+attenuated in a conditional model with dietary GI (p=0.08 and p=0.0005). Associations between 
+pubertal HA and adult ALT (p=0.009) were not responsive to dietary GI adjustments. FV-flavonoids 
+estimated from dietary records were not related to adult risk markers of type 2 diabetes (p>0.05).  
+
+75 
+ 
+
+

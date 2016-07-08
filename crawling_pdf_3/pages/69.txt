@@ -1,0 +1,56 @@
+Objective: Despite longstanding dietary recommendations for reduced saturated fatty acid (SFA) 
+intake, growing evidence highlights distinct effects of individual circulating SFA on cardiometabolic 
+outcomes, with potential protective effects of odd and longer-chain SFA. Less is known, however, 
+regarding the impact of individual SFA on subclinical inflammation, a known predictor of type 2 
+diabetes and CVD. The study investigated cross-sectional associations of individual serum SFA (12:0, 
+14:0, 15:0, 16:0, 18:0, 20:0, 22:0, and total SFA) with pro-inflammatory biomarkers and adiponectin. 
+Methods: The study analyzed data from 624 White, African American, and Hispanic adults, aged 40-
+69 years and free of diabetes at baseline from the IRAS cohort. Serum SFA were analyzed using gas 
+chromatography. Clinical measures included oral glucose tolerance tests, fasting serum pro-
+inflammatory markers (fibrinogen, CRP, white cell count, PAI-1 and TNF-α), and adiponectin, an 
+adipokine which is inversely related to inflammation. Outcome variables included adiponectin 
+concentrations as well as inflammatory variable clusters defined by principal components (PC) 
+analysis of the five pro-inflammatory markers. Two PCs were identified, PC 1: fibrinogen, CRP and 
+white cell count; and PC 2: PAI-1 and TNF-α. Multiple regression analyses were adjusted for 
+demographic, lifestyle and dietary variables, waist circumference, and glucose tolerance status. 
+Results: Total SFA was not significantly associated with pro-inflammatory markers (PC 1 or PC 2) or 
+with adiponectin (p>0.05), however, individual SFA had unique effects. 15:0 (β=-0.10; p=0.01) and 
+22:0 (β=-0.08; p=0.04) were negatively associated, while 14:0 (β=0.13; p=0.0003) and 16:0 (β=0.17; 
+p<0.0001) were positively associated with PC 2 in fully adjusted models. Furthermore, 20:0 (β=0.08; 
+p=0.03) was positively, and 14:0 (β=-0.15; p<0.0001) and 16:0 (β=-0.15; p<0.0001) were negatively 
+associated with adiponectin in fully adjusted models. None of the SFA were associated with PC 1. 
+Conclusions: Lower circulating odd- and longer-chain, and higher even-chain SFA, were related to 
+worsened subclinical inflammation status. 
+Funding Source: Banting & Best Diabetes Centre, Tamarack Graduate Award in Diabetes Research 
+and Dairy Farmers of Canada Graduate Student Fellowship. IRAS was funded by the NHLBI of the 
+NIH. 
+ 
+ 
+10.    Nutrition related behaviors among parents who attended a Health Promotion 
+camp organized by the School health Club, Sri Lanka.  
+(Chamil Senavirathne) 
+ 
+C.P Senavirathne*1, K.Wichramasinghe2, P. Katulanda1, N. Rajapakse3, I. Liyanage4, I. 
+Karunathilake5, A. Pathirana3, A. Alagiyawanna3, A. Olupeliyawa5, A.Chandrapala5,  
+1 Diabetes Research Unit, Department of Clinical Medicine, Faculty of Medicine Colombo, 2University 
+of Oxford United Kingdom, 3Health Education Bureau, Ministry of Health, 4 Faculty of Medicine 
+University of Jayawardenapura, 5Faculty of Medicine, University of Colombo,  
+Introduction: Non communicable diseases which are caused by modifiable lifestyle factors, are in fact 
+a worldwide pandemic of devastating proportions. It is required to introduce effective tools to improve 
+skills on change the unhealthy lifestyle factors.  
+Aim- to observe the dietary and physical activity related behaviors among parents, attending the 
+health promotion camp organized by school health club with the participation in Moneragala District, 
+Sri Lanka.  
+Methods: Target population (n=119) was parents of school children. 32 we males (26.8%) This 
+observational study was conducted through the school health club of the area. Students were trained 
+to obtain physical measurements (BMI). Model dining table, model boutique was used to observe the 
+nutrition related behaviors. Exercise session was carried out in order to encourage participants to 
+improve the leisure time physical activities.   
+ 
+ 
+ 
+
+70 
+ 
+
+

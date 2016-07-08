@@ -1,0 +1,57 @@
+analyzed by isotope dilution high resolution gas chromatography and mass spectrometry after clean 
+up on silica and carbon columns. Non-dioxin-like POPs were analyzed by gas chromatography with 
+electron capture detector. All measurements were performed at 0 and 12 weeks. For statistical 
+analysis we used repeated measures ANOVA and a multivariate regression model. Correlations were 
+calculated using Pearson's correlations.  
+Results: We did not observe any difference between the groups in serum levels of most POPs in 
+response to both hypocaloric diets. In the groups combined, changes in serum concentrations of the 
+POPs were correlated to changes in HbA1c (r=+0.34; p<0.01), fasting plasma glucose (r=+0.41; 
+p<0.01) and β-cell function measured as insulin secretion at a reference glucose level (r=-0.37; 
+p<0.01), independent of changes in body weight and volume of visceral fat.  
+Conclusions: Our findings support the relationship between POPs and diabetes, especially β-cell 
+function.  
+ClinicalTrials.gov number, NCT00883038 
+This work was supported by the project grant IGA MZCR NT/14250-3 from Ministry of Health, Prague, 
+Czech Republic and Institutional Support MZCR 00023001 (IKEM, Prague, Czech Republic). 
+ 
+ 
+Oral Abstract 3 – Tree nuts improve glycemic control in all-comers: A 
+systematic review and meta-analysis of randomized controlled trials  
+(Effie Viguiliouk, Canada) 
+ 
+Effie Viguiliouk1, 2*, Cyril WC Kendall1, 2, Sonia Blanco Mejia1, 2, Vanessa Ha2, 4, Stephanie Nishi1, 2, 
+Arash Mirrahimi2, 3, Adrian I. Cozma2, 5, Viranda H. Jayalath2, Livia S. Augustin1, 2, Laura Chiavaroli1, 2, 
+Lawrence A. Leiter1, 2, Russell J. de Souza2, 4, David JA Jenkins1, 2, John L. Sievenpiper1, 2 
+1Nutritional Sciences, University of Toronto, Toronto, ON, Canada 
+2Toronto 3D Knowledge Synthesis and Clinical Trials Unit, St. Michael’s Hospital, Toronto, ON, 
+Canada 
+3School of Medicine, Queen's University, Kingston, ON, Canada 
+4Clinical Epidemiology & Biostatistics, McMaster University, Hamilton, ON, Canada 
+5Undergraduate Medical Education, University of Toronto, Toronto, ON, Canada 
+E-mail: effie.viguiliouk@mail.utoronto.ca 
+ 
+Objective: Tree nut consumption is associated with reduced diabetes risk, however, results from 
+randomized controlled trials (RCTs) on glycemic control have been inconsistent. To assess the effect 
+of tree nuts on glycemic control we conducted a systematic review and meta-analysis of RCTs. 
+Methods: We searched MEDLINE, EMBASE, CINAHL, and Cochrane databases through 8 August 
+2014 for relevant RCTs ≥3-weeks reporting HbA1c, fasting glucose, fasting insulin, and/or HOMA-IR. 
+Three independent reviewers extracted relevant data. Data were pooled using generic inverse 
+variance random effects models and expressed as mean differences (MD) with 95% confidence 
+intervals (CI). Heterogeneity was assessed (Cochran's Q) and quantified (I2). 
+Results: 32 trials (n=1688) met the eligibility criteria. Diets emphasizing tree nuts significantly lowered 
+fasting glucose (MD=-0.11 mmol/L, 95% CI:-0.18, -0.03 mmol/L; P=0.004), fasting insulin (MD=-4.80 
+pmol/L, 95% CI:-8.15, -1.45 pmol/L; P=0.005) and HOMA-IR (MD=-0.45, 95% CI:-0.81, -0.09; P=0.01) 
+compared with isocaloric control diets. No significant treatment effects were observed for HbA1c, 
+however the direction of effect favoured tree nuts. 
+Limitations: Majority of trials were of poor quality (MQS<8) and short duration (follow-up<12 weeks). 
+Conclusion: Pooled analyses show that inclusion of tree nuts into the diet improves glycemic control. 
+Owing to the uncertainties in our analyses there is a need for longer, higher quality trials.  
+Protocol registration: Clinicaltrials.gov identifier: NCT01630980 
+Funding: International Tree Nut Council Nutrition Research & Education Foundation 
+ 
+ 
+
+47 
+ 
+
+

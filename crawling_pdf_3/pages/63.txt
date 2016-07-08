@@ -1,0 +1,58 @@
+Posters 
+ 
+1.    Variability of Acute Response to Equicaloric Test Meals Varying in Glycemic Index 
+
+and Glycemic Load on Postprandial Glycemia in Healthy Adults 
+
+(Andreea Zurbau) 
+
+ 
+Andreea Zurbau1*, Christy Brissette, Elena Jovanovski1, Thomas Wolever1,2,3, Vladimir Vuksan1,2, 
+Alexandra Jenkins2 
+1 Department of Nutritional Sciences, Faculty of Medicine, University of Toronto, Toronto ON, Canada 
+2 Clinical Nutrition and Risk Factor Modification Centre, St. Michael’s Hospital, Toronto ON, Canada 
+3 Li Ka Shing Knowledge Institute, St. Michael's Hospital, Toronto, ON, Canada 
+4 Department of Medicine, Faculty of Medicine, University of Toronto, Toronto, ON, CANADA 
+ 
+Objective:  The importance of the interrelation of the quality (glycemic index [GI]) and the quantity 
+(glycemic load [GL]) of carbohydrate in the context of a mixed meal on blood glucose is still debated. 
+This study therefore investigated all 4 permutations of high and low GI and GL meals on postprandial 
+glycemia [PPG].   
+Methods:  A total of 17 healthy subjects completed all test meals (8 males, 9 females; age 27 ± 12y; 
+body mass index 22.2 ± 2.8 kg/m²). Subjects consumed 4 different test meals: LowGI-LowCHO 
+(GI=28, GL=14), LowGI-HighCHO (GI=28, GL=42), HighGI-LowCHO (GI=85, GL=14) and HighGI-
+HighGL (GI=85, GL=42), with a carbohydrate content of 17, 94, 50 and 50g respectively. Energy was 
+balanced by adding fat and protein. Capillary blood samples were collected at fasting and 15, 30, 45, 
+60, 90, 120, 190, and 240 minutes post-consumption.   
+Results:  The incremental area under the blood glucose curve (iAUC) after the HighGI-HighCHO and 
+LowGI-HighCHO meals were significantly higher than the LowGI-LowCHO and HighGI-LowCHO 
+meals for 2h post consumption (p<0.05). The 2 to 4h iAUC was significantly higher following the 
+LowGI-HighCHO meal compared to the HighGI-HighCHO and HighGI-LowCHO meals.  
+Conclusions:  Postprandial glucose levels at 15, 30 and 45min were the lowest after the low GI, low 
+GL test meal. Despite almost doubling the carbohydrate in the LowGI-HighCHO meals compared to 
+the HighGI-HighCHO meal, there was no difference in iAUC. This preliminary analysis demonstrates 
+that changing the GI and GL of meals result in different PPG profiles which were not necessarily 
+predicted by carbohydrate content.  
+Protocol Registration: clinicaltrials.gov identifier NCT01883700 
+Funding: Risk Factor Modification Centre, St. Michael’s Hospital 
+ 
+
+2.    Study on Immediate and Long-term Effects on Incretin Release Induced by 
+Artificial Sweeteners (ILIAS) – Results and Outlook from the SEGATROM Study 
+(Andreas Pfeiffer) 
+ 
+Kemper M1,2, Kabisch S1,2, Meyerhof W3, Behrens M3, Hofmann T4, Pfeiffer A.F.H.*.1,2,5 
+1 German Institute of Human Nutrition Potsdam-Rehbrücke (DIfE), Department of Clinical Nutrition, 
+Nuthetal, Germany 
+2 German Center for Diabetes Research, Munich (DZD) 
+3 German Institute of Human Nutrition Potsdam-Rehbrücke (DIfE), Department of Molecular Genetics, 
+Nuthetal, Germany 
+4 Technische Universität München, Department of Food Chemistry and Sensory Science, Munich, 
+Germany 
+5 Charité University Hospital Berlin, Department of Endocrinology, Diabetes and Nutrition, Berlin, 
+Germany 
+ 
+64 
+ 
+
+
