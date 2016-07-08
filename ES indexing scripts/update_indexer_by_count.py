@@ -15,9 +15,6 @@ if not url:
 	print 'detected no input..'
 	print ' Assuming default url:' + url
 
-c = 'curl -XPUT '+url+'/_mapping" -d' + "'" + '{ "movie": {"properties": {"director": {"type": "multi_field","fields": {"director": {"type": "string"},"original": {"type" : "string", "index" : "not_analyzed"}} } }}}' + "'"
-os.system(c)
-
 
 client = MongoClient()
 #conencting to database named dummy

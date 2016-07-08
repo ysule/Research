@@ -2,6 +2,7 @@ import os
 import pymongo
 from pymongo import MongoClient
 import ast
+from nltk.tag import pos_tag
 
 client = MongoClient()
 db = client.test
@@ -49,16 +50,26 @@ for text_file in text_files:
         d['title'] = ''
         d['author_details'] = list()
         names = dict()
+        name  = ''
         data = list()
         for i,line in enumerate(lines):
             if i>10 and i<18:
                 if len(line)>4:
                     if ',' not in line:
                         data.append(line)
-        d['author_details'] = [{"name":data[-1].rstrip().lstrip().replace('\n',' ')}]
+                        sentence = line
+                        tagged_sent = pos_tag(sentence.split())
+                        propernouns = [word for word,pos in tagged_sent if pos == 'NNP']
+        for n in propernouns:
+            if n not in name:
+                name = name + ' ' + n
+            if len(n) > 1:
+                for p in data:
+                    p.replace(n,'')
+
+        d['author_details'] = [{"name":name}]
         for i,p in enumerate(data):
-            if i != len(data)-1:
-                d['title'] = d['title'] + p.rstrip().lstrip().replace('\n',' ')
+                d['title'] = d['title'] +' ' + p.rstrip().lstrip().replace('\n',' ').replace(data[-1].rstrip().lstrip().replace('\n',' '),'')
 
     d['abstract'] = d['abstract'].rstrip().lstrip()
     d['biography'] = d['biography'].rstrip().lstrip()
